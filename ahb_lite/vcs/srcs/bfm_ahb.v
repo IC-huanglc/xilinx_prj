@@ -386,6 +386,8 @@ task ahb_write_burst;
          HBUSREQ <= #1 1'b1;
          @ (posedge HCLK);
          while ((HGRANT!==1'b1)||(HREADY!==1'b1)) @ (posedge HCLK);
+         
+         //the following is address phase.
          HADDR  <= #1 addr;
          HTRANS <= #1 2'b10; //`HTRANS_NONSEQ;
          if (leng==4)       HBURST <= #1 3'b011; //`HBURST_INCR4;
@@ -394,6 +396,8 @@ task ahb_write_burst;
          else               HBURST <= #1 3'b001; //`HBURST_INCR;
          HWRITE <= #1 1'b1; //`HWRITE_WRITE;
          HSIZE  <= #1 3'b010; //`HSIZE_WORD;
+
+         //the following is data phase, and next address phase, so HADDR = addr+(i+1)*4
          for (i=0; i<leng-1; i=i+1) begin
              @ (posedge HCLK);
              while (HREADY==1'b0) @ (posedge HCLK);
@@ -402,6 +406,9 @@ task ahb_write_burst;
              HTRANS <= #1 2'b11; //`HTRANS_SEQ;
              while (HREADY==1'b0) @ (posedge HCLK);
          end
+
+         //the following is the last data phase, 
+         //and in this phase, HADDR <= 0, even though in for-loop HADDR <= addr+(2+1)*4;
          @ (posedge HCLK);
          while (HREADY==0) @ (posedge HCLK);
          HWDATA <= #1 data_burst[i%1024];
