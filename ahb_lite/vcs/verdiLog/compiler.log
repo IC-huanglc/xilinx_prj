@@ -1,0 +1,46 @@
+*design* DebussyLib (btIdent Verdi_O-2018.09-SP2)
+Command arguments:
+    +define+verilog
+    -f file.f
+        +incdir+/home/ICer/xilinx_prj/ahb_lite/ahb_lite.srcs/sources_1/imports/sim
+        +incdir+/home/ICer/xilinx_prj/ahb_lite/ahb_lite.srcs/sim_1/imports/sim
+        \
+        /home/ICer/xilinx_prj/ahb_lite/vcs/srcs/ahb_decoder_s3.v
+        \
+        /home/ICer/xilinx_prj/ahb_lite/vcs/srcs/ahb_default_slave.v
+        \
+        /home/ICer/xilinx_prj/ahb_lite/vcs/srcs/ahb_lite_s3.v
+        \
+        /home/ICer/xilinx_prj/ahb_lite/vcs/srcs/ahb_s2m_s3.v
+        \
+        /home/ICer/xilinx_prj/ahb_lite/vcs/srcs/bfm_ahb.v
+        \
+        /home/ICer/xilinx_prj/ahb_lite/vcs/srcs/mem_ahb.v
+        \
+        /home/ICer/xilinx_prj/ahb_lite/vcs/srcs/top.v
+
+
+*Error* failed to open source file "\" with read access: No such file or directory
+
+
+*Error* failed to open source file "\" with read access: No such file or directory
+
+
+*Error* failed to open source file "\" with read access: No such file or directory
+
+
+*Error* failed to open source file "\" with read access: No such file or directory
+
+
+*Error* failed to open source file "\" with read access: No such file or directory
+
+
+*Error* failed to open source file "\" with read access: No such file or directory
+
+
+*Error* failed to open source file "\" with read access: No such file or directory
+
+Highest level modules:
+top
+
+Total	7 error(s),   0 warning(s)

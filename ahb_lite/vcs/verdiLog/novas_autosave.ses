@@ -1,0 +1,84 @@
+@verdi rc file Version 1.0
+[General]
+saveDB = TRUE
+relativePath = FALSE
+saveSingleView = FALSE
+saveNWaveWinId = 
+VerdiVersion = Verdi_O-2018.09-SP2
+[KeyNote]
+Line1 = Automatic Backup 0
+Line2 = Save Open Database Information: Yes
+Line3 = Path Option: Absolute Paths
+Line4 = Windows Option: All Windows
+[TestBench]
+ConstrViewShow = 0
+InherViewShow = 0
+FSDBMsgShow = 0
+AnnotationShow = 0
+Console = FALSE
+powerDumped = 0
+[hb]
+postSimFile = /home/ICer/xilinx_prj/ahb_lite/vcs/top.vf
+syncTime = 0
+viewport = 0 20 1914 860 0 0 253 898
+activeNode = "top.u_ahb_lite"
+activeScope = "top.u_ahb_lite"
+activeFile = "/home/ICer/xilinx_prj/ahb_lite/vcs/srcs/ahb_lite_s3.v"
+interactiveMode = False
+viewType = Source
+simulatorMode = False
+sourceBeginLine = 18
+baMode = False
+srcLineNum = True
+AutoWrap = True
+IdentifyFalseLogic = False
+syncSignal = False
+traceMode = Hierarchical
+showTraceInSchema = True
+paMode = False
+funcMode = False
+powerAwareAnnot = True
+amsAnnot = True
+traceCrossHier = True
+DnDtraceCrossHierOnly = True
+traceIncTopPort = False
+leadingZero = False
+signalPane = False
+Scope1 = "top.u_ahb_lite"
+Scope2 = "top.u_bfm_ahb"
+Scope3 = "top"
+multipleSelection = 1 28 13 0 0
+sdfCheckUndef = FALSE
+simFlow = FALSE
+[hb.design]
+importCmd = "-f" "file.f" 
+invokeDir = /home/ICer/xilinx_prj/ahb_lite/vcs
+[hb.sourceTab.1]
+scope = top.u_ahb_lite
+File = /home/ICer/xilinx_prj/ahb_lite/vcs/srcs/ahb_lite_s3.v
+Line = 19
+[nMemoryManager]
+WaveformFile = /home/ICer/xilinx_prj/ahb_lite/vcs/top.vf
+UserActionNum = 0
+nMemWindowNum = 0
+[wave.0]
+viewPort = 0 27 1914 334 100 65
+primaryWindow = TRUE
+SessionFile = /home/ICer/xilinx_prj/ahb_lite/vcs/verdiLog/novas_autosave.ses.wave.0
+displayGrid = FALSE
+hierarchicalName = FALSE
+snap = TRUE
+displayLeadingZeros = FALSE
+fixDelta = FALSE
+displayCursorMarker = FALSE
+autoUpdate = FALSE
+highlightGlitchs = FALSE
+waveformSyncCursorMarker = FALSE
+waveformSyncHorizontalRange = FALSE
+waveformSyncVerticalscroll = FALSE
+displayErrors = TRUE
+displayMsgSymbols = TRUE
+showMsgDescriptions = TRUE
+autoFit = FALSE
+displayDeltaY = FALSE
+centerCursor = FALSE

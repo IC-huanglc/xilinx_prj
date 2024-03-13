@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="214282800000fs"></ZoomStartTime>
+      <ZoomEndTime time="214473000001fs"></ZoomEndTime>
+      <Cursor1Time time="214370000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="265"></NameColumnWidth>
+      <ValueColumnWidth column_width="168"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="3" />
+   <wave_markers>
+      <marker time="214370000000" label="" />
+   </wave_markers>
+   <wvobject fp_name="group167" type="group">
+      <obj_property name="label">master</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/top/u_ahb_lite/HRESETn" type="logic">
+         <obj_property name="ElementShortName">HRESETn</obj_property>
+         <obj_property name="ObjectShortName">HRESETn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/u_ahb_lite/HCLK" type="logic">
+         <obj_property name="ElementShortName">HCLK</obj_property>
+         <obj_property name="ObjectShortName">HCLK</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/u_ahb_lite/M_HADDR" type="array">
+         <obj_property name="ElementShortName">M_HADDR[31:0]</obj_property>
+         <obj_property name="ObjectShortName">M_HADDR[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/u_ahb_lite/M_HTRANS" type="array">
+         <obj_property name="ElementShortName">M_HTRANS[1:0]</obj_property>
+         <obj_property name="ObjectShortName">M_HTRANS[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/u_ahb_lite/M_HWRITE" type="logic">
+         <obj_property name="ElementShortName">M_HWRITE</obj_property>
+         <obj_property name="ObjectShortName">M_HWRITE</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/u_ahb_lite/M_HSIZE" type="array">
+         <obj_property name="ElementShortName">M_HSIZE[2:0]</obj_property>
+         <obj_property name="ObjectShortName">M_HSIZE[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/u_ahb_lite/M_HBURST" type="array">
+         <obj_property name="ElementShortName">M_HBURST[2:0]</obj_property>
+         <obj_property name="ObjectShortName">M_HBURST[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/u_ahb_lite/M_HPROT" type="array">
+         <obj_property name="ElementShortName">M_HPROT[3:0]</obj_property>
+         <obj_property name="ObjectShortName">M_HPROT[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/u_ahb_lite/M_HWDATA" type="array">
+         <obj_property name="ElementShortName">M_HWDATA[31:0]</obj_property>
+         <obj_property name="ObjectShortName">M_HWDATA[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/u_ahb_lite/M_HRDATA" type="array">
+         <obj_property name="ElementShortName">M_HRDATA[31:0]</obj_property>
+         <obj_property name="ObjectShortName">M_HRDATA[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/u_ahb_lite/M_HRESP" type="array">
+         <obj_property name="ElementShortName">M_HRESP[1:0]</obj_property>
+         <obj_property name="ObjectShortName">M_HRESP[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/u_ahb_lite/M_HREADY" type="logic">
+         <obj_property name="ElementShortName">M_HREADY</obj_property>
+         <obj_property name="ObjectShortName">M_HREADY</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group286" type="group">
+      <obj_property name="label">mem0</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/top/\BM_BLK[0].u_mem_ahb /HRESETn" type="logic">
+         <obj_property name="ElementShortName">HRESETn</obj_property>
+         <obj_property name="ObjectShortName">HRESETn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[0].u_mem_ahb /HCLK" type="logic">
+         <obj_property name="ElementShortName">HCLK</obj_property>
+         <obj_property name="ObjectShortName">HCLK</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[0].u_mem_ahb /HSEL" type="logic">
+         <obj_property name="ElementShortName">HSEL</obj_property>
+         <obj_property name="ObjectShortName">HSEL</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[0].u_mem_ahb /HADDR" type="array">
+         <obj_property name="ElementShortName">HADDR[31:0]</obj_property>
+         <obj_property name="ObjectShortName">HADDR[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[0].u_mem_ahb /HTRANS" type="array">
+         <obj_property name="ElementShortName">HTRANS[1:0]</obj_property>
+         <obj_property name="ObjectShortName">HTRANS[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[0].u_mem_ahb /HWRITE" type="logic">
+         <obj_property name="ElementShortName">HWRITE</obj_property>
+         <obj_property name="ObjectShortName">HWRITE</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[0].u_mem_ahb /HSIZE" type="array">
+         <obj_property name="ElementShortName">HSIZE[2:0]</obj_property>
+         <obj_property name="ObjectShortName">HSIZE[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[0].u_mem_ahb /HBURST" type="array">
+         <obj_property name="ElementShortName">HBURST[2:0]</obj_property>
+         <obj_property name="ObjectShortName">HBURST[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[0].u_mem_ahb /HWDATA" type="array">
+         <obj_property name="ElementShortName">HWDATA[31:0]</obj_property>
+         <obj_property name="ObjectShortName">HWDATA[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[0].u_mem_ahb /HRDATA" type="array">
+         <obj_property name="ElementShortName">HRDATA[31:0]</obj_property>
+         <obj_property name="ObjectShortName">HRDATA[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[0].u_mem_ahb /HRESP" type="array">
+         <obj_property name="ElementShortName">HRESP[1:0]</obj_property>
+         <obj_property name="ObjectShortName">HRESP[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[0].u_mem_ahb /HREADYin" type="logic">
+         <obj_property name="ElementShortName">HREADYin</obj_property>
+         <obj_property name="ObjectShortName">HREADYin</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[0].u_mem_ahb /HREADYout" type="logic">
+         <obj_property name="ElementShortName">HREADYout</obj_property>
+         <obj_property name="ObjectShortName">HREADYout</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[0].u_mem_ahb /mem" type="array">
+         <obj_property name="ElementShortName">mem[0:255][31:0]</obj_property>
+         <obj_property name="ObjectShortName">mem[0:255][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[0].u_mem_ahb /T_ADDR" type="array">
+         <obj_property name="ElementShortName">T_ADDR[9:0]</obj_property>
+         <obj_property name="ObjectShortName">T_ADDR[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[0].u_mem_ahb /T_ADDRw" type="array">
+         <obj_property name="ElementShortName">T_ADDRw[9:0]</obj_property>
+         <obj_property name="ObjectShortName">T_ADDRw[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[0].u_mem_ahb /T_DATA" type="array">
+         <obj_property name="ElementShortName">T_DATA[31:0]</obj_property>
+         <obj_property name="ObjectShortName">T_DATA[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[0].u_mem_ahb /T_BE" type="array">
+         <obj_property name="ElementShortName">T_BE[3:0]</obj_property>
+         <obj_property name="ObjectShortName">T_BE[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[0].u_mem_ahb /T_BE_D" type="array">
+         <obj_property name="ElementShortName">T_BE_D[3:0]</obj_property>
+         <obj_property name="ObjectShortName">T_BE_D[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[0].u_mem_ahb /T_WR" type="logic">
+         <obj_property name="ElementShortName">T_WR</obj_property>
+         <obj_property name="ObjectShortName">T_WR</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[0].u_mem_ahb /T_WR_D" type="logic">
+         <obj_property name="ElementShortName">T_WR_D</obj_property>
+         <obj_property name="ObjectShortName">T_WR_D</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[0].u_mem_ahb /T_ENABLED" type="logic">
+         <obj_property name="ElementShortName">T_ENABLED</obj_property>
+         <obj_property name="ObjectShortName">T_ENABLED</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[0].u_mem_ahb /count" type="array">
+         <obj_property name="ElementShortName">count[5:0]</obj_property>
+         <obj_property name="ObjectShortName">count[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[0].u_mem_ahb /state" type="logic">
+         <obj_property name="ElementShortName">state</obj_property>
+         <obj_property name="ObjectShortName">state</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[0].u_mem_ahb /xxy" type="array">
+         <obj_property name="ElementShortName">xxy[31:0]</obj_property>
+         <obj_property name="ObjectShortName">xxy[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[0].u_mem_ahb /SIZE_IN_BYTES" type="array">
+         <obj_property name="ElementShortName">SIZE_IN_BYTES[31:0]</obj_property>
+         <obj_property name="ObjectShortName">SIZE_IN_BYTES[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[0].u_mem_ahb /DELAY" type="array">
+         <obj_property name="ElementShortName">DELAY[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[0].u_mem_ahb /INIT" type="array">
+         <obj_property name="ElementShortName">INIT[31:0]</obj_property>
+         <obj_property name="ObjectShortName">INIT[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[0].u_mem_ahb /ADD_WIDTH" type="array">
+         <obj_property name="ElementShortName">ADD_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ADD_WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[0].u_mem_ahb /NUM_WORDS" type="array">
+         <obj_property name="ElementShortName">NUM_WORDS[31:0]</obj_property>
+         <obj_property name="ObjectShortName">NUM_WORDS[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[0].u_mem_ahb /IDLE" type="array">
+         <obj_property name="ElementShortName">IDLE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">IDLE[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[0].u_mem_ahb /WAIT" type="array">
+         <obj_property name="ElementShortName">WAIT[31:0]</obj_property>
+         <obj_property name="ObjectShortName">WAIT[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group319" type="group">
+      <obj_property name="label">mem1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/top/\BM_BLK[1].u_mem_ahb /HRESETn" type="logic">
+         <obj_property name="ElementShortName">HRESETn</obj_property>
+         <obj_property name="ObjectShortName">HRESETn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[1].u_mem_ahb /HCLK" type="logic">
+         <obj_property name="ElementShortName">HCLK</obj_property>
+         <obj_property name="ObjectShortName">HCLK</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[1].u_mem_ahb /HSEL" type="logic">
+         <obj_property name="ElementShortName">HSEL</obj_property>
+         <obj_property name="ObjectShortName">HSEL</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[1].u_mem_ahb /HADDR" type="array">
+         <obj_property name="ElementShortName">HADDR[31:0]</obj_property>
+         <obj_property name="ObjectShortName">HADDR[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[1].u_mem_ahb /HTRANS" type="array">
+         <obj_property name="ElementShortName">HTRANS[1:0]</obj_property>
+         <obj_property name="ObjectShortName">HTRANS[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[1].u_mem_ahb /HWRITE" type="logic">
+         <obj_property name="ElementShortName">HWRITE</obj_property>
+         <obj_property name="ObjectShortName">HWRITE</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[1].u_mem_ahb /HSIZE" type="array">
+         <obj_property name="ElementShortName">HSIZE[2:0]</obj_property>
+         <obj_property name="ObjectShortName">HSIZE[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[1].u_mem_ahb /HBURST" type="array">
+         <obj_property name="ElementShortName">HBURST[2:0]</obj_property>
+         <obj_property name="ObjectShortName">HBURST[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[1].u_mem_ahb /HWDATA" type="array">
+         <obj_property name="ElementShortName">HWDATA[31:0]</obj_property>
+         <obj_property name="ObjectShortName">HWDATA[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[1].u_mem_ahb /HRDATA" type="array">
+         <obj_property name="ElementShortName">HRDATA[31:0]</obj_property>
+         <obj_property name="ObjectShortName">HRDATA[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[1].u_mem_ahb /HRESP" type="array">
+         <obj_property name="ElementShortName">HRESP[1:0]</obj_property>
+         <obj_property name="ObjectShortName">HRESP[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[1].u_mem_ahb /HREADYin" type="logic">
+         <obj_property name="ElementShortName">HREADYin</obj_property>
+         <obj_property name="ObjectShortName">HREADYin</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[1].u_mem_ahb /HREADYout" type="logic">
+         <obj_property name="ElementShortName">HREADYout</obj_property>
+         <obj_property name="ObjectShortName">HREADYout</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[1].u_mem_ahb /mem" type="array">
+         <obj_property name="ElementShortName">mem[0:255][31:0]</obj_property>
+         <obj_property name="ObjectShortName">mem[0:255][31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[1].u_mem_ahb /T_ADDR" type="array">
+         <obj_property name="ElementShortName">T_ADDR[9:0]</obj_property>
+         <obj_property name="ObjectShortName">T_ADDR[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[1].u_mem_ahb /T_ADDRw" type="array">
+         <obj_property name="ElementShortName">T_ADDRw[9:0]</obj_property>
+         <obj_property name="ObjectShortName">T_ADDRw[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[1].u_mem_ahb /T_DATA" type="array">
+         <obj_property name="ElementShortName">T_DATA[31:0]</obj_property>
+         <obj_property name="ObjectShortName">T_DATA[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[1].u_mem_ahb /T_BE" type="array">
+         <obj_property name="ElementShortName">T_BE[3:0]</obj_property>
+         <obj_property name="ObjectShortName">T_BE[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[1].u_mem_ahb /T_BE_D" type="array">
+         <obj_property name="ElementShortName">T_BE_D[3:0]</obj_property>
+         <obj_property name="ObjectShortName">T_BE_D[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[1].u_mem_ahb /T_WR" type="logic">
+         <obj_property name="ElementShortName">T_WR</obj_property>
+         <obj_property name="ObjectShortName">T_WR</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[1].u_mem_ahb /T_WR_D" type="logic">
+         <obj_property name="ElementShortName">T_WR_D</obj_property>
+         <obj_property name="ObjectShortName">T_WR_D</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[1].u_mem_ahb /T_ENABLED" type="logic">
+         <obj_property name="ElementShortName">T_ENABLED</obj_property>
+         <obj_property name="ObjectShortName">T_ENABLED</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[1].u_mem_ahb /count" type="array">
+         <obj_property name="ElementShortName">count[5:0]</obj_property>
+         <obj_property name="ObjectShortName">count[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[1].u_mem_ahb /state" type="logic">
+         <obj_property name="ElementShortName">state</obj_property>
+         <obj_property name="ObjectShortName">state</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[1].u_mem_ahb /xxy" type="array">
+         <obj_property name="ElementShortName">xxy[31:0]</obj_property>
+         <obj_property name="ObjectShortName">xxy[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[1].u_mem_ahb /SIZE_IN_BYTES" type="array">
+         <obj_property name="ElementShortName">SIZE_IN_BYTES[31:0]</obj_property>
+         <obj_property name="ObjectShortName">SIZE_IN_BYTES[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[1].u_mem_ahb /DELAY" type="array">
+         <obj_property name="ElementShortName">DELAY[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[1].u_mem_ahb /INIT" type="array">
+         <obj_property name="ElementShortName">INIT[31:0]</obj_property>
+         <obj_property name="ObjectShortName">INIT[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[1].u_mem_ahb /ADD_WIDTH" type="array">
+         <obj_property name="ElementShortName">ADD_WIDTH[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ADD_WIDTH[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[1].u_mem_ahb /NUM_WORDS" type="array">
+         <obj_property name="ElementShortName">NUM_WORDS[31:0]</obj_property>
+         <obj_property name="ObjectShortName">NUM_WORDS[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[1].u_mem_ahb /IDLE" type="array">
+         <obj_property name="ElementShortName">IDLE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">IDLE[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top/\BM_BLK[1].u_mem_ahb /WAIT" type="array">
+         <obj_property name="ElementShortName">WAIT[31:0]</obj_property>
+         <obj_property name="ObjectShortName">WAIT[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

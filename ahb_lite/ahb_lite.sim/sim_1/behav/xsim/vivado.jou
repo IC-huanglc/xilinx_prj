@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Mar 12 10:20:29 2024
+# Process ID: 24384
+# Current directory: C:/Users/user/Desktop/ahb_lite/ahb_lite.sim/sim_1/behav/xsim
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22688 C:\Users\user\Desktop\ahb_lite\ahb_lite.sim\sim_1\behav\xsim\top_behav.wdb
+# Log file: C:/Users/user/Desktop/ahb_lite/ahb_lite.sim/sim_1/behav/xsim/vivado.log
+# Journal file: C:/Users/user/Desktop/ahb_lite/ahb_lite.sim/sim_1/behav/xsim\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_wave_database {C:\Users\user\Desktop\ahb_lite\ahb_lite.sim\sim_1\behav\xsim\top_behav.wdb}
+open_wave_config {C:/Users/user/Desktop/ahb_lite/top_behav.wcfg}
+current_wave_config {top_behav.wcfg}
+add_wave {{/top/u_ahb_lite/HRESETn}} {{/top/u_ahb_lite/HCLK}} {{/top/u_ahb_lite/M_HADDR}} {{/top/u_ahb_lite/M_HTRANS}} {{/top/u_ahb_lite/M_HWRITE}} {{/top/u_ahb_lite/M_HSIZE}} {{/top/u_ahb_lite/M_HBURST}} {{/top/u_ahb_lite/M_HPROT}} {{/top/u_ahb_lite/M_HWDATA}} {{/top/u_ahb_lite/M_HRDATA}} {{/top/u_ahb_lite/M_HRESP}} {{/top/u_ahb_lite/M_HREADY}} 
+current_wave_config {top_behav.wcfg}
+add_wave {{/top/u_ahb_lite/HREADYd}} 
+current_wave_config {top_behav.wcfg}
+add_wave {{/top/u_ahb_lite/Uahb_default_slave/HREADYout}} 
+close_sim

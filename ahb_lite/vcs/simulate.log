@@ -1,0 +1,501 @@
+Command: /home/ICer/xilinx_prj/ahb_lite/vcs/./top_simv -ucli -licqueue -l simulate.log -do simulate.do
+Chronologic VCS simulator copyright 1991-2018
+Contains Synopsys proprietary information.
+Compiler version O-2018.09-1_Full64; Runtime version O-2018.09-1_Full64;  Mar 13 13:26 2024
+ucli% run
+Info: top.u_ahb_lite.Uahb_decoder HSEL0: from 0x0000_0000 to 0x00ff_FFFF
+Info: top.u_ahb_lite.Uahb_decoder HSEL1: from 0x1000_0000 to 0x10ff_FFFF
+Info: top.u_ahb_lite.Uahb_decoder HSEL2: from 0x2000_0000 to 0x20ff_FFFF
+*Verdi* Loading libsscore_vcs201809.so
+FSDB Dumper for VCS, Release Verdi_O-2018.09-SP2, Linux x86_64/64bit, 02/21/2019
+(C) 1996 - 2019 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* FSDB: The switch FSDB file size might not match the input size (10000MB) because of performance concerns.
+*Verdi* FSDB: To have the FSDB file size match the input size (10000MB), set the FSDB_ENV_PRECISE_AUTOSWITCH environment, though the dumping performance might decrease.
+*Verdi* : Enable automatic switching of the FSDB file.
+*Verdi* : (Filename='top', Limit Size=10000MB, File Amount=100).
+*Verdi* : Create FSDB file 'top_000.fsdb'
+*Verdi* : Create the file 'wave_file.log' to log the time range of each FSDB file.
+*Verdi* : Create virtual FSDB file 'top.vf' to log each FSDB file.
+*Verdi* : Begin traversing the scope (top), layer (0).
+*Verdi* : End of traversing.
+*Verdi* : Begin traversing the MDAs, layer (0).
+*Verdi* : Enable +mda and +packedmda dumping.
+*Verdi* : End of traversing the MDAs.
+top HCLK 20.000000 nsec 50.000000 Mhz
+begin to SINGLE TEST..., at                  270
+======================================
+top.u_bfm_ahb.memory_test: read-after-write test with 1-byte access
+top.u_bfm_ahb.memory_test: start addr = 0x0, finish addr = 0xff, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x466c4b8c, aligned data = 0x8c, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x2d57715a, aligned data = 0x7100, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x2e6dfb5c, aligned data = 0x6d0000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xbd82ea7b, aligned data = 0xbd000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x4fc5f39f, aligned data = 0x9f, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xdebaaebd, aligned data = 0xae00, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8270a604, aligned data = 0x700000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xd1d788a3, aligned data = 0xd1000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x81de9003, aligned data = 0x3, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xdb5f10b6, aligned data = 0x1000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8d3b801a, aligned data = 0x3b0000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x9c8b8839, aligned data = 0x9c000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xf91d02f2, aligned data = 0xf2, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xf6cec2ed, aligned data = 0xc200, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xe4afc2c9, aligned data = 0xaf0000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xcf07f89e, aligned data = 0xcf000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x283be550, aligned data = 0x50, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x2664b34c, aligned data = 0xb300, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8c986c19, aligned data = 0x980000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xbda4a27b, aligned data = 0xbd000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xdae592b5, aligned data = 0xb5, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x84388a08, aligned data = 0x8a00, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x49a63793, aligned data = 0xa60000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x9f74143e, aligned data = 0x9f000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xa8102850, aligned data = 0x50, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8ecab81d, aligned data = 0xb800, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x5a2b9fb4, aligned data = 0x2b0000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8cf9911, aligned data = 0x8000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x30198360, aligned data = 0x60, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x517067a2, aligned data = 0x6700, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x5098e1a1, aligned data = 0x980000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x2ca33b59, aligned data = 0x2c000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x42a33d85, aligned data = 0x85, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xe17f80c2, aligned data = 0x8000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8bb7f817, aligned data = 0xb70000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x3079c960, aligned data = 0x30000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xc82eb090, aligned data = 0x90, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x5c3ab5b8, aligned data = 0xb500, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x88a8a211, aligned data = 0xa80000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x9f48cc3e, aligned data = 0x9f000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xb78ff16, aligned data = 0x16, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x517d6da2, aligned data = 0x6d00, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xa9c5915, aligned data = 0x9c0000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xc6fc948d, aligned data = 0xc6000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xbe96fe7d, aligned data = 0x7d, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x4727d58e, aligned data = 0xd500, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xd4525aa8, aligned data = 0x520000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8cc42a19, aligned data = 0x8c000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xd7d14eaf, aligned data = 0xaf, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xc14ada82, aligned data = 0xda00, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x6f53a1de, aligned data = 0x530000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x41d5b08, aligned data = 0x4000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x22404b44, aligned data = 0x44, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xfb1428f6, aligned data = 0x2800, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x3ceee979, aligned data = 0xee0000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xd4a0b2a9, aligned data = 0xd4000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x1e280f3c, aligned data = 0x3c, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x3c7a2d78, aligned data = 0x2d00, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xccf4ae99, aligned data = 0xf40000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x3a8d7d75, aligned data = 0x3a000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8d14761a, aligned data = 0x1a, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x78a811f1, aligned data = 0x1100, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x36332f6c, aligned data = 0x330000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x2e15c55c, aligned data = 0x2e000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xc5b51e8b, aligned data = 0x8b, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xa129c042, aligned data = 0xc000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xecb264d9, aligned data = 0xb20000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xfd6a58fa, aligned data = 0xfd000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xab796056, aligned data = 0x56, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xd9d7eab3, aligned data = 0xea00, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x51b00da3, aligned data = 0xb00000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x6586c3cb, aligned data = 0x65000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xe5ec5ccb, aligned data = 0xcb, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x7983f9f3, aligned data = 0xf900, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xf95ba2f2, aligned data = 0x5b0000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xf5bd50eb, aligned data = 0xf5000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xb3d0ea67, aligned data = 0x67, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x83641806, aligned data = 0x1800, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x625261c4, aligned data = 0x520000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x4a030d94, aligned data = 0x4a000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x75fda9eb, aligned data = 0xeb, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x53f330a, aligned data = 0x3300, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x9adb4435, aligned data = 0xdb0000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x67fbc3cf, aligned data = 0x67000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xcdf8f29b, aligned data = 0x9b, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8658f80c, aligned data = 0xf800, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xfe30d1f, aligned data = 0xe30000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x4ac5ff95, aligned data = 0x4a000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xec54e4d8, aligned data = 0xd8, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x731dd1e6, aligned data = 0xd100, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x81b83003, aligned data = 0xb80000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x69870fd3, aligned data = 0x69000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x6acb5bd5, aligned data = 0xd5, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x318eeb63, aligned data = 0xeb00, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xda86eeb5, aligned data = 0x860000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xc4b6fe89, aligned data = 0xc4000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xce19f09c, aligned data = 0x9c, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x4a6e3194, aligned data = 0x3100, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x629543c5, aligned data = 0x950000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xc62c988c, aligned data = 0xc6000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8b9e0017, aligned data = 0x17, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xd32a50a6, aligned data = 0x5000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8e3ee61c, aligned data = 0x3e0000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xffe968ff, aligned data = 0xff000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x2eb0ab5d, aligned data = 0x5d, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x48ab509, aligned data = 0xb500, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x61b15bc3, aligned data = 0xb10000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x95a5ba2b, aligned data = 0x95000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xf9c2c6f3, aligned data = 0xf3, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xaa1b8a54, aligned data = 0x8a00, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x2667d94c, aligned data = 0x670000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xdd1c9cba, aligned data = 0xdd000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x1f38f33e, aligned data = 0x3e, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xd659bcac, aligned data = 0xbc00, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xee675adc, aligned data = 0x670000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8117d802, aligned data = 0x81000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x6e078bdc, aligned data = 0xdc, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x79ef70f, aligned data = 0xf700, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x213a9f42, aligned data = 0x3a0000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x333bfd66, aligned data = 0x33000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xe0eab1c, aligned data = 0x1c, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xa9cda453, aligned data = 0xa400, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xeae211d, aligned data = 0xae0000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xb8945271, aligned data = 0xb8000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xa8362e50, aligned data = 0x50, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xa0bcf441, aligned data = 0xf400, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x434c1d86, aligned data = 0x4c0000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xdcdee8b9, aligned data = 0xdc000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x1649b32c, aligned data = 0x2c, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x4764d38e, aligned data = 0xd300, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x1a988f35, aligned data = 0x980000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x98988631, aligned data = 0x98000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x769491ed, aligned data = 0xed, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xfc9e71f, aligned data = 0xe700, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xcb0d3296, aligned data = 0xd0000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x75c8bdeb, aligned data = 0x75000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x3f3de97e, aligned data = 0x7e, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xafa9a05f, aligned data = 0xa000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xe7d582cf, aligned data = 0xd50000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xff8dd6ff, aligned data = 0xff000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xad64925a, aligned data = 0x5a, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x85e62c0b, aligned data = 0x2c00, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x144abf28, aligned data = 0x4a0000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xc868de90, aligned data = 0xc8000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xabfb2c57, aligned data = 0x57, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xa4b27449, aligned data = 0x7400, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x652fdfca, aligned data = 0x2f0000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x5349a1a6, aligned data = 0x53000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xe64131c, aligned data = 0x1c, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xac7e2458, aligned data = 0x2400, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xabada257, aligned data = 0xad0000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xeb5aaad6, aligned data = 0xeb000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xbacd6075, aligned data = 0x75, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x63a1abc7, aligned data = 0xab00, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xa60e824c, aligned data = 0xe0000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x368d476d, aligned data = 0x36000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x204cf340, aligned data = 0x40, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xb6ca2e6d, aligned data = 0x2e00, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xd23abca4, aligned data = 0x3a0000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xee5811d, aligned data = 0xe000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x14bc6529, aligned data = 0x29, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8e25a21c, aligned data = 0xa200, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x5df44dbb, aligned data = 0xf40000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xee8626dd, aligned data = 0xee000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xf65510ec, aligned data = 0xec, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xa34eae46, aligned data = 0xae00, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x70d2ede1, aligned data = 0xd20000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xfa7cc2f4, aligned data = 0xfa000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xad0c165a, aligned data = 0x5a, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x43f8bf87, aligned data = 0xbf00, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xcc001c98, aligned data = 0x0, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x784da3f0, aligned data = 0x78000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xe7ae4ecf, aligned data = 0xcf, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xad5bfe5a, aligned data = 0xfe00, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x7bb315f7, aligned data = 0xb30000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x3a3fd174, aligned data = 0x3a000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xb0bc5661, aligned data = 0x61, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x6c615dd8, aligned data = 0x5d00, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x166cd52c, aligned data = 0x6c0000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x4e69199c, aligned data = 0x4e000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x37068b6e, aligned data = 0x6e, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xee8e82dd, aligned data = 0x8200, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xc5f4148b, aligned data = 0xf40000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xfc7a08f8, aligned data = 0xfc000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x660907cc, aligned data = 0xcc, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x2fb1df5f, aligned data = 0xdf00, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x1611532c, aligned data = 0x110000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xde49eabc, aligned data = 0xde000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xaa07a654, aligned data = 0x54, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x304e9b60, aligned data = 0x9b00, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x450acb8a, aligned data = 0xa0000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x9f22ca3e, aligned data = 0x9f000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xfbea06f7, aligned data = 0xf7, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xa0c8a241, aligned data = 0xa200, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x91e07823, aligned data = 0xe00000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xadcd765b, aligned data = 0xad000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x10d78121, aligned data = 0x21, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xed50a4da, aligned data = 0xa400, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xc4481888, aligned data = 0x480000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xed5d78da, aligned data = 0xed000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x49933593, aligned data = 0x93, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x96900a2d, aligned data = 0xa00, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xea6924d4, aligned data = 0x690000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x30bd1d61, aligned data = 0x30000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xbd97fa7b, aligned data = 0x7b, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x83150006, aligned data = 0x0, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x858dd10, aligned data = 0x580000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xcf97119, aligned data = 0xc000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x7df471fb, aligned data = 0xfb, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xb57e746a, aligned data = 0x7400, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x3556396a, aligned data = 0x560000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x4e4e419c, aligned data = 0x4e000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xebe6f2d7, aligned data = 0xd7, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x93681026, aligned data = 0x1000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x62c5f7c5, aligned data = 0xc50000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x1bf21537, aligned data = 0x1b000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xbf399c7e, aligned data = 0x7e, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xa9164252, aligned data = 0x4200, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xc8ee9491, aligned data = 0xee0000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x96a23c2d, aligned data = 0x96000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x185e4b30, aligned data = 0x30, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x95e2342b, aligned data = 0x3400, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xb5744a6a, aligned data = 0x740000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x7deec5fb, aligned data = 0x7d000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xba4a9874, aligned data = 0x74, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8d65d21a, aligned data = 0xd200, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x3795156f, aligned data = 0x950000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x28467550, aligned data = 0x28000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x4813e190, aligned data = 0x90, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x9967ca32, aligned data = 0xca00, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xe624b2cc, aligned data = 0x240000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xd9c2deb3, aligned data = 0xd9000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x224b4344, aligned data = 0x44, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x88878611, aligned data = 0x8600, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xbb489e76, aligned data = 0x480000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x45b4498b, aligned data = 0x45000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x40199780, aligned data = 0x80, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x35a9336b, aligned data = 0x3300, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xc1f41283, aligned data = 0xf40000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xc6edc28d, aligned data = 0xc6000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x201b7b40, aligned data = 0x40, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x9421bc28, aligned data = 0xbc00, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x11240f22, aligned data = 0x240000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x9ad11635, aligned data = 0x9a000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xacfd4a59, aligned data = 0x59, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xaca2d059, aligned data = 0xd000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x50db4ba1, aligned data = 0xdb0000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x2b1ad356, aligned data = 0x2b000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xb1d72263, aligned data = 0x63, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x76e6d7ed, aligned data = 0xd700, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xc4de4489, aligned data = 0xde0000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x326e4164, aligned data = 0x32000000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x3a48df74, aligned data = 0x74, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x3c1cff78, aligned data = 0xff00, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x992f3832, aligned data = 0x2f0000, added by huanglc
+[     61530] top.u_bfm_ahb.memory_test OK: from 00000000 to 000000ff
+top.u_bfm_ahb.memory_test read-all-after-write-all with 1-byte access
+[    122730] top.u_bfm_ahb.memory_test OK: from 00000000 to 000000ff
+top.u_bfm_ahb.memory_test: read-after-write test with 2-byte access
+top.u_bfm_ahb.memory_test: start addr = 0x0, finish addr = 0xff, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x466c4b8c, aligned data = 0x4b8c, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x2d57715a, aligned data = 0x2d570000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x2e6dfb5c, aligned data = 0xfb5c, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xbd82ea7b, aligned data = 0xbd820000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x4fc5f39f, aligned data = 0xf39f, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xdebaaebd, aligned data = 0xdeba0000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8270a604, aligned data = 0xa604, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xd1d788a3, aligned data = 0xd1d70000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x81de9003, aligned data = 0x9003, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xdb5f10b6, aligned data = 0xdb5f0000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8d3b801a, aligned data = 0x801a, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x9c8b8839, aligned data = 0x9c8b0000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xf91d02f2, aligned data = 0x2f2, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xf6cec2ed, aligned data = 0xf6ce0000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xe4afc2c9, aligned data = 0xc2c9, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xcf07f89e, aligned data = 0xcf070000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x283be550, aligned data = 0xe550, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x2664b34c, aligned data = 0x26640000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8c986c19, aligned data = 0x6c19, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xbda4a27b, aligned data = 0xbda40000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xdae592b5, aligned data = 0x92b5, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x84388a08, aligned data = 0x84380000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x49a63793, aligned data = 0x3793, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x9f74143e, aligned data = 0x9f740000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xa8102850, aligned data = 0x2850, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8ecab81d, aligned data = 0x8eca0000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x5a2b9fb4, aligned data = 0x9fb4, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8cf9911, aligned data = 0x8cf0000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x30198360, aligned data = 0x8360, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x517067a2, aligned data = 0x51700000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x5098e1a1, aligned data = 0xe1a1, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x2ca33b59, aligned data = 0x2ca30000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x42a33d85, aligned data = 0x3d85, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xe17f80c2, aligned data = 0xe17f0000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8bb7f817, aligned data = 0xf817, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x3079c960, aligned data = 0x30790000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xc82eb090, aligned data = 0xb090, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x5c3ab5b8, aligned data = 0x5c3a0000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x88a8a211, aligned data = 0xa211, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x9f48cc3e, aligned data = 0x9f480000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xb78ff16, aligned data = 0xff16, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x517d6da2, aligned data = 0x517d0000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xa9c5915, aligned data = 0x5915, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xc6fc948d, aligned data = 0xc6fc0000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xbe96fe7d, aligned data = 0xfe7d, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x4727d58e, aligned data = 0x47270000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xd4525aa8, aligned data = 0x5aa8, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8cc42a19, aligned data = 0x8cc40000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xd7d14eaf, aligned data = 0x4eaf, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xc14ada82, aligned data = 0xc14a0000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x6f53a1de, aligned data = 0xa1de, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x41d5b08, aligned data = 0x41d0000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x22404b44, aligned data = 0x4b44, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xfb1428f6, aligned data = 0xfb140000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x3ceee979, aligned data = 0xe979, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xd4a0b2a9, aligned data = 0xd4a00000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x1e280f3c, aligned data = 0xf3c, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x3c7a2d78, aligned data = 0x3c7a0000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xccf4ae99, aligned data = 0xae99, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x3a8d7d75, aligned data = 0x3a8d0000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8d14761a, aligned data = 0x761a, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x78a811f1, aligned data = 0x78a80000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x36332f6c, aligned data = 0x2f6c, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x2e15c55c, aligned data = 0x2e150000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xc5b51e8b, aligned data = 0x1e8b, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xa129c042, aligned data = 0xa1290000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xecb264d9, aligned data = 0x64d9, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xfd6a58fa, aligned data = 0xfd6a0000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xab796056, aligned data = 0x6056, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xd9d7eab3, aligned data = 0xd9d70000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x51b00da3, aligned data = 0xda3, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x6586c3cb, aligned data = 0x65860000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xe5ec5ccb, aligned data = 0x5ccb, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x7983f9f3, aligned data = 0x79830000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xf95ba2f2, aligned data = 0xa2f2, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xf5bd50eb, aligned data = 0xf5bd0000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xb3d0ea67, aligned data = 0xea67, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x83641806, aligned data = 0x83640000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x625261c4, aligned data = 0x61c4, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x4a030d94, aligned data = 0x4a030000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x75fda9eb, aligned data = 0xa9eb, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x53f330a, aligned data = 0x53f0000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x9adb4435, aligned data = 0x4435, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x67fbc3cf, aligned data = 0x67fb0000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xcdf8f29b, aligned data = 0xf29b, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8658f80c, aligned data = 0x86580000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xfe30d1f, aligned data = 0xd1f, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x4ac5ff95, aligned data = 0x4ac50000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xec54e4d8, aligned data = 0xe4d8, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x731dd1e6, aligned data = 0x731d0000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x81b83003, aligned data = 0x3003, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x69870fd3, aligned data = 0x69870000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x6acb5bd5, aligned data = 0x5bd5, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x318eeb63, aligned data = 0x318e0000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xda86eeb5, aligned data = 0xeeb5, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xc4b6fe89, aligned data = 0xc4b60000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xce19f09c, aligned data = 0xf09c, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x4a6e3194, aligned data = 0x4a6e0000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x629543c5, aligned data = 0x43c5, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xc62c988c, aligned data = 0xc62c0000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8b9e0017, aligned data = 0x17, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xd32a50a6, aligned data = 0xd32a0000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8e3ee61c, aligned data = 0xe61c, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xffe968ff, aligned data = 0xffe90000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x2eb0ab5d, aligned data = 0xab5d, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x48ab509, aligned data = 0x48a0000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x61b15bc3, aligned data = 0x5bc3, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x95a5ba2b, aligned data = 0x95a50000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xf9c2c6f3, aligned data = 0xc6f3, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xaa1b8a54, aligned data = 0xaa1b0000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x2667d94c, aligned data = 0xd94c, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xdd1c9cba, aligned data = 0xdd1c0000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x1f38f33e, aligned data = 0xf33e, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xd659bcac, aligned data = 0xd6590000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xee675adc, aligned data = 0x5adc, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8117d802, aligned data = 0x81170000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x6e078bdc, aligned data = 0x8bdc, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x79ef70f, aligned data = 0x79e0000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x213a9f42, aligned data = 0x9f42, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x333bfd66, aligned data = 0x333b0000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xe0eab1c, aligned data = 0xab1c, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xa9cda453, aligned data = 0xa9cd0000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xeae211d, aligned data = 0x211d, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xb8945271, aligned data = 0xb8940000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xa8362e50, aligned data = 0x2e50, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xa0bcf441, aligned data = 0xa0bc0000, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x434c1d86, aligned data = 0x1d86, added by huanglc
+[    153210] top.u_bfm_ahb.memory_test OK: from 00000000 to 000000ff
+top.u_bfm_ahb.memory_test read-all-after-write-all with 2-byte access
+[    183690] top.u_bfm_ahb.memory_test OK: from 00000000 to 000000ff
+top.u_bfm_ahb.memory_test: read-after-write test with 4-byte access
+top.u_bfm_ahb.memory_test: start addr = 0x0, finish addr = 0xff, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x466c4b8c, aligned data = 0x466c4b8c, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x2d57715a, aligned data = 0x2d57715a, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x2e6dfb5c, aligned data = 0x2e6dfb5c, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xbd82ea7b, aligned data = 0xbd82ea7b, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x4fc5f39f, aligned data = 0x4fc5f39f, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xdebaaebd, aligned data = 0xdebaaebd, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8270a604, aligned data = 0x8270a604, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xd1d788a3, aligned data = 0xd1d788a3, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x81de9003, aligned data = 0x81de9003, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xdb5f10b6, aligned data = 0xdb5f10b6, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8d3b801a, aligned data = 0x8d3b801a, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x9c8b8839, aligned data = 0x9c8b8839, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xf91d02f2, aligned data = 0xf91d02f2, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xf6cec2ed, aligned data = 0xf6cec2ed, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xe4afc2c9, aligned data = 0xe4afc2c9, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xcf07f89e, aligned data = 0xcf07f89e, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x283be550, aligned data = 0x283be550, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x2664b34c, aligned data = 0x2664b34c, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8c986c19, aligned data = 0x8c986c19, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xbda4a27b, aligned data = 0xbda4a27b, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xdae592b5, aligned data = 0xdae592b5, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x84388a08, aligned data = 0x84388a08, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x49a63793, aligned data = 0x49a63793, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x9f74143e, aligned data = 0x9f74143e, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xa8102850, aligned data = 0xa8102850, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8ecab81d, aligned data = 0x8ecab81d, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x5a2b9fb4, aligned data = 0x5a2b9fb4, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8cf9911, aligned data = 0x8cf9911, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x30198360, aligned data = 0x30198360, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x517067a2, aligned data = 0x517067a2, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x5098e1a1, aligned data = 0x5098e1a1, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x2ca33b59, aligned data = 0x2ca33b59, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x42a33d85, aligned data = 0x42a33d85, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xe17f80c2, aligned data = 0xe17f80c2, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8bb7f817, aligned data = 0x8bb7f817, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x3079c960, aligned data = 0x3079c960, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xc82eb090, aligned data = 0xc82eb090, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x5c3ab5b8, aligned data = 0x5c3ab5b8, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x88a8a211, aligned data = 0x88a8a211, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x9f48cc3e, aligned data = 0x9f48cc3e, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xb78ff16, aligned data = 0xb78ff16, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x517d6da2, aligned data = 0x517d6da2, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xa9c5915, aligned data = 0xa9c5915, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xc6fc948d, aligned data = 0xc6fc948d, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xbe96fe7d, aligned data = 0xbe96fe7d, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x4727d58e, aligned data = 0x4727d58e, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xd4525aa8, aligned data = 0xd4525aa8, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8cc42a19, aligned data = 0x8cc42a19, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xd7d14eaf, aligned data = 0xd7d14eaf, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xc14ada82, aligned data = 0xc14ada82, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x6f53a1de, aligned data = 0x6f53a1de, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x41d5b08, aligned data = 0x41d5b08, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x22404b44, aligned data = 0x22404b44, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xfb1428f6, aligned data = 0xfb1428f6, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x3ceee979, aligned data = 0x3ceee979, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xd4a0b2a9, aligned data = 0xd4a0b2a9, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x1e280f3c, aligned data = 0x1e280f3c, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x3c7a2d78, aligned data = 0x3c7a2d78, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xccf4ae99, aligned data = 0xccf4ae99, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x3a8d7d75, aligned data = 0x3a8d7d75, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8d14761a, aligned data = 0x8d14761a, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x78a811f1, aligned data = 0x78a811f1, added by huanglc
+top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x36332f6c, aligned data = 0x36332f6c, added by huanglc
+[    198810] top.u_bfm_ahb.memory_test OK: from 00000000 to 000000ff
+top.u_bfm_ahb.memory_test read-all-after-write-all with 4-byte access
+[    213930] top.u_bfm_ahb.memory_test OK: from 00000000 to 000000ff
+begin to BURST TEST..., at               213930
+======================================
+top.u_bfm_ahb.memory_test_burst: read-all-after-write-all burst test with   4-beat access
+top.u_bfm_ahb.memory_test_burst   4-length burst read-after-write OK: from 00000000h to 000000ffh
+top.u_bfm_ahb.memory_test_burst: read-all-after-write-all burst test with  16-beat access
+top.u_bfm_ahb.memory_test_burst  16-length burst read-after-write OK: from 00000000h to 000000ffh
+top.u_bfm_ahb.memory_test_burst: read-all-after-write-all burst test with  32-beat access
+top.u_bfm_ahb.memory_test_burst  32-length burst read-after-write OK: from 00000000h to 000000ffh
+$finish called from file "/home/ICer/xilinx_prj/ahb_lite/vcs/srcs/bfm_ahb.v", line 78.
+$finish at simulation time            231810000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 231810000 ps
+CPU Time:      0.350 seconds;       Data structure size:   0.0Mb
+Wed Mar 13 13:26:06 2024

@@ -1,0 +1,18 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Desktop/ahb_lite/ahb_lite.srcs/sources_1/imports/design/ahb_decoder_s3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ahb_decoder_s3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Desktop/ahb_lite/ahb_lite.srcs/sources_1/imports/design/ahb_default_slave.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ahb_default_slave
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Desktop/ahb_lite/ahb_lite.srcs/sources_1/imports/design/ahb_lite_s3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ahb_decoder_s3
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'ahb_decoder_s3' [C:/Users/user/Desktop/ahb_lite/ahb_lite.srcs/sources_1/imports/design/ahb_decoder_s3.v:14]
+INFO: [VRFC 10-311] analyzing module ahb_s2m_s3
+INFO: [VRFC 10-311] analyzing module ahb_lite_s3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Desktop/ahb_lite/ahb_lite.srcs/sources_1/imports/design/ahb_s2m_s3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ahb_s2m_s3
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'ahb_s2m_s3' [C:/Users/user/Desktop/ahb_lite/ahb_lite.srcs/sources_1/imports/design/ahb_s2m_s3.v:12]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Desktop/ahb_lite/ahb_lite.srcs/sources_1/imports/sim/bfm_ahb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bfm_ahb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Desktop/ahb_lite/ahb_lite.srcs/sources_1/imports/design/mem_ahb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_ahb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Desktop/ahb_lite/ahb_lite.srcs/sim_1/imports/sim/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
