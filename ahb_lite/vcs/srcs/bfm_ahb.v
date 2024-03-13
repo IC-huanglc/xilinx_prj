@@ -101,7 +101,7 @@ module bfm_ahb #(parameter START_ADDR=0
             for (i=start; i<(finish-size+1); i=i+size) begin
                 gen = $random&~32'b0;   
                 data = align(i, gen, size); 
-                $display("%m: after $random&~32'b0, gen = 0x%0h, aligned data = 0x%0h, added by huanglc", gen, data);
+                $display("%m: in %0d-byte write access, gen = 0x%8h, aligned data = 0x%8h", size, gen, data);
                 ahb_write(i, size, data);
                 ahb_read(i, size, got);
                 got = align(i, got, size);
@@ -113,12 +113,13 @@ module bfm_ahb #(parameter START_ADDR=0
             if (error==0)
                    $display("[%10d] %m OK: from %x to %x", $time, start, finish);
             //-------------------------------------------------------------
-            $display("%m read-all-after-write-all with %d-byte access", size);
+            $display("\n%m read-all-after-write-all with %d-byte access", size);
             error = 0;
             gen = $random(1);
             for (i=start; i<(finish-size+1); i=i+size) begin
                 gen = {$random} & ~32'b0;
                 data = align(i, gen, size);
+                $display("%m: in %0d-byte write-all access, gen = %8h, align data = %8h", size, gen, data);
                 reposit[i] = data;
                 ahb_write(i, size, data);
             end
@@ -146,7 +147,7 @@ module bfm_ahb #(parameter START_ADDR=0
         reg [31:0] reposit[0:1023];
         integer seed;
         begin
-          $display("%m: read-all-after-write-all burst test with %d-beat access", leng);
+          $display("\n%m: read-all-after-write-all burst test with %d-beat access", leng);
           error = 0;
           seed  = 111;
           gen = $random(seed);
@@ -155,6 +156,7 @@ module bfm_ahb #(parameter START_ADDR=0
              for (i=start; i<(finish-(leng*4)+1); i=i+leng*4) begin
                  for (j=0; j<leng; j=j+1) begin
                      data_burst[j] = $random;
+                     $display("%m: in %0d-beat burst, gen data = 0x%8h", leng, data_burst[j]);
                      reposit[j+k*leng] = data_burst[j];
                  end
                  @ (posedge HCLK);

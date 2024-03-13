@@ -7,7 +7,7 @@ Warning-[DEBUG_DEP] Option will be deprecated
   '-debug_acc+dmptf -debug_region+cell+encrypt' instead.
 
                          Chronologic VCS (TM)
-        Version O-2018.09-1_Full64 -- Wed Mar 13 13:26:03 2024
+        Version O-2018.09-1_Full64 -- Wed Mar 13 16:48:17 2024
                Copyright (c) 1991-2018 by Synopsys Inc.
                          ALL RIGHTS RESERVED
 
@@ -22,14 +22,15 @@ TimeScale is 1 ps / 1 ps
 Notice: Ports coerced to inout, use -notice for details
 Starting vcs inline pass...
 4 modules and 0 UDP read.
-	However, due to incremental compilation, no re-compilation is necessary.
+recompiling module top
+	However, due to incremental compilation, only 1 module needs to be compiled. 
 rm -f _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
 ld -shared  -Bsymbolic  -o .//../top_simv.daidir//_csrc0.so objs/amcQw_d.o 
 rm -f _csrc0.so
 if [ -x ../top_simv ]; then chmod -x ../top_simv; fi
 g++  -o ../top_simv    -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/top_simv.daidir/ -Wl,-rpath=./top_simv.daidir/ \
 -Wl,-rpath='$ORIGIN'/top_simv.daidir//scsim.db.dir  -rdynamic -Wl,-rpath=/home/synopsys/vcs-mx/O-2018.09-1/linux64/lib \
--L/home/synopsys/vcs-mx/O-2018.09-1/linux64/lib    _65252_archive_1.so _prev_archive_1.so \
+-L/home/synopsys/vcs-mx/O-2018.09-1/linux64/lib    _52838_archive_1.so _prev_archive_1.so \
 _csrc0.so  SIM_l.o  _csrc0.so     rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o \
 rmar_llvm_0_0.o          -lzerosoft_rt_stubs -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew \
 -lsimprofile -lvirsim -luclinative /home/synopsys/vcs-mx/O-2018.09-1/linux64/lib/vcs_tls.o \
@@ -40,7 +41,7 @@ rmar_llvm_0_0.o          -lzerosoft_rt_stubs -lerrorinf -lsnpsmalloc -lvfs    -l
 Command: /home/ICer/xilinx_prj/ahb_lite/vcs/./top_simv +vcs+lic+wait -a elaborate.log
 Chronologic VCS simulator copyright 1991-2018
 Contains Synopsys proprietary information.
-Compiler version O-2018.09-1_Full64; Runtime version O-2018.09-1_Full64;  Mar 13 13:26 2024
+Compiler version O-2018.09-1_Full64; Runtime version O-2018.09-1_Full64;  Mar 13 16:48 2024
 Info: top.u_ahb_lite.Uahb_decoder HSEL0: from 0x0000_0000 to 0x00ff_FFFF
 Info: top.u_ahb_lite.Uahb_decoder HSEL1: from 0x1000_0000 to 0x10ff_FFFF
 Info: top.u_ahb_lite.Uahb_decoder HSEL2: from 0x2000_0000 to 0x20ff_FFFF
@@ -65,476 +66,1067 @@ begin to SINGLE TEST..., at                  270
 ======================================
 top.u_bfm_ahb.memory_test: read-after-write test with 1-byte access
 top.u_bfm_ahb.memory_test: start addr = 0x0, finish addr = 0xff, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x466c4b8c, aligned data = 0x8c, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x2d57715a, aligned data = 0x7100, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x2e6dfb5c, aligned data = 0x6d0000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xbd82ea7b, aligned data = 0xbd000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x4fc5f39f, aligned data = 0x9f, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xdebaaebd, aligned data = 0xae00, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8270a604, aligned data = 0x700000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xd1d788a3, aligned data = 0xd1000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x81de9003, aligned data = 0x3, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xdb5f10b6, aligned data = 0x1000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8d3b801a, aligned data = 0x3b0000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x9c8b8839, aligned data = 0x9c000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xf91d02f2, aligned data = 0xf2, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xf6cec2ed, aligned data = 0xc200, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xe4afc2c9, aligned data = 0xaf0000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xcf07f89e, aligned data = 0xcf000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x283be550, aligned data = 0x50, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x2664b34c, aligned data = 0xb300, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8c986c19, aligned data = 0x980000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xbda4a27b, aligned data = 0xbd000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xdae592b5, aligned data = 0xb5, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x84388a08, aligned data = 0x8a00, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x49a63793, aligned data = 0xa60000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x9f74143e, aligned data = 0x9f000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xa8102850, aligned data = 0x50, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8ecab81d, aligned data = 0xb800, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x5a2b9fb4, aligned data = 0x2b0000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8cf9911, aligned data = 0x8000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x30198360, aligned data = 0x60, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x517067a2, aligned data = 0x6700, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x5098e1a1, aligned data = 0x980000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x2ca33b59, aligned data = 0x2c000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x42a33d85, aligned data = 0x85, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xe17f80c2, aligned data = 0x8000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8bb7f817, aligned data = 0xb70000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x3079c960, aligned data = 0x30000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xc82eb090, aligned data = 0x90, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x5c3ab5b8, aligned data = 0xb500, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x88a8a211, aligned data = 0xa80000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x9f48cc3e, aligned data = 0x9f000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xb78ff16, aligned data = 0x16, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x517d6da2, aligned data = 0x6d00, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xa9c5915, aligned data = 0x9c0000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xc6fc948d, aligned data = 0xc6000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xbe96fe7d, aligned data = 0x7d, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x4727d58e, aligned data = 0xd500, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xd4525aa8, aligned data = 0x520000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8cc42a19, aligned data = 0x8c000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xd7d14eaf, aligned data = 0xaf, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xc14ada82, aligned data = 0xda00, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x6f53a1de, aligned data = 0x530000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x41d5b08, aligned data = 0x4000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x22404b44, aligned data = 0x44, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xfb1428f6, aligned data = 0x2800, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x3ceee979, aligned data = 0xee0000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xd4a0b2a9, aligned data = 0xd4000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x1e280f3c, aligned data = 0x3c, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x3c7a2d78, aligned data = 0x2d00, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xccf4ae99, aligned data = 0xf40000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x3a8d7d75, aligned data = 0x3a000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8d14761a, aligned data = 0x1a, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x78a811f1, aligned data = 0x1100, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x36332f6c, aligned data = 0x330000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x2e15c55c, aligned data = 0x2e000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xc5b51e8b, aligned data = 0x8b, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xa129c042, aligned data = 0xc000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xecb264d9, aligned data = 0xb20000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xfd6a58fa, aligned data = 0xfd000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xab796056, aligned data = 0x56, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xd9d7eab3, aligned data = 0xea00, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x51b00da3, aligned data = 0xb00000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x6586c3cb, aligned data = 0x65000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xe5ec5ccb, aligned data = 0xcb, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x7983f9f3, aligned data = 0xf900, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xf95ba2f2, aligned data = 0x5b0000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xf5bd50eb, aligned data = 0xf5000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xb3d0ea67, aligned data = 0x67, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x83641806, aligned data = 0x1800, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x625261c4, aligned data = 0x520000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x4a030d94, aligned data = 0x4a000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x75fda9eb, aligned data = 0xeb, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x53f330a, aligned data = 0x3300, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x9adb4435, aligned data = 0xdb0000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x67fbc3cf, aligned data = 0x67000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xcdf8f29b, aligned data = 0x9b, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8658f80c, aligned data = 0xf800, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xfe30d1f, aligned data = 0xe30000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x4ac5ff95, aligned data = 0x4a000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xec54e4d8, aligned data = 0xd8, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x731dd1e6, aligned data = 0xd100, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x81b83003, aligned data = 0xb80000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x69870fd3, aligned data = 0x69000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x6acb5bd5, aligned data = 0xd5, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x318eeb63, aligned data = 0xeb00, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xda86eeb5, aligned data = 0x860000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xc4b6fe89, aligned data = 0xc4000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xce19f09c, aligned data = 0x9c, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x4a6e3194, aligned data = 0x3100, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x629543c5, aligned data = 0x950000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xc62c988c, aligned data = 0xc6000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8b9e0017, aligned data = 0x17, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xd32a50a6, aligned data = 0x5000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8e3ee61c, aligned data = 0x3e0000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xffe968ff, aligned data = 0xff000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x2eb0ab5d, aligned data = 0x5d, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x48ab509, aligned data = 0xb500, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x61b15bc3, aligned data = 0xb10000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x95a5ba2b, aligned data = 0x95000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xf9c2c6f3, aligned data = 0xf3, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xaa1b8a54, aligned data = 0x8a00, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x2667d94c, aligned data = 0x670000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xdd1c9cba, aligned data = 0xdd000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x1f38f33e, aligned data = 0x3e, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xd659bcac, aligned data = 0xbc00, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xee675adc, aligned data = 0x670000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8117d802, aligned data = 0x81000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x6e078bdc, aligned data = 0xdc, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x79ef70f, aligned data = 0xf700, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x213a9f42, aligned data = 0x3a0000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x333bfd66, aligned data = 0x33000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xe0eab1c, aligned data = 0x1c, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xa9cda453, aligned data = 0xa400, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xeae211d, aligned data = 0xae0000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xb8945271, aligned data = 0xb8000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xa8362e50, aligned data = 0x50, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xa0bcf441, aligned data = 0xf400, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x434c1d86, aligned data = 0x4c0000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xdcdee8b9, aligned data = 0xdc000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x1649b32c, aligned data = 0x2c, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x4764d38e, aligned data = 0xd300, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x1a988f35, aligned data = 0x980000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x98988631, aligned data = 0x98000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x769491ed, aligned data = 0xed, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xfc9e71f, aligned data = 0xe700, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xcb0d3296, aligned data = 0xd0000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x75c8bdeb, aligned data = 0x75000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x3f3de97e, aligned data = 0x7e, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xafa9a05f, aligned data = 0xa000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xe7d582cf, aligned data = 0xd50000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xff8dd6ff, aligned data = 0xff000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xad64925a, aligned data = 0x5a, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x85e62c0b, aligned data = 0x2c00, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x144abf28, aligned data = 0x4a0000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xc868de90, aligned data = 0xc8000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xabfb2c57, aligned data = 0x57, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xa4b27449, aligned data = 0x7400, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x652fdfca, aligned data = 0x2f0000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x5349a1a6, aligned data = 0x53000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xe64131c, aligned data = 0x1c, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xac7e2458, aligned data = 0x2400, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xabada257, aligned data = 0xad0000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xeb5aaad6, aligned data = 0xeb000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xbacd6075, aligned data = 0x75, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x63a1abc7, aligned data = 0xab00, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xa60e824c, aligned data = 0xe0000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x368d476d, aligned data = 0x36000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x204cf340, aligned data = 0x40, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xb6ca2e6d, aligned data = 0x2e00, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xd23abca4, aligned data = 0x3a0000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xee5811d, aligned data = 0xe000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x14bc6529, aligned data = 0x29, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8e25a21c, aligned data = 0xa200, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x5df44dbb, aligned data = 0xf40000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xee8626dd, aligned data = 0xee000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xf65510ec, aligned data = 0xec, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xa34eae46, aligned data = 0xae00, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x70d2ede1, aligned data = 0xd20000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xfa7cc2f4, aligned data = 0xfa000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xad0c165a, aligned data = 0x5a, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x43f8bf87, aligned data = 0xbf00, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xcc001c98, aligned data = 0x0, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x784da3f0, aligned data = 0x78000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xe7ae4ecf, aligned data = 0xcf, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xad5bfe5a, aligned data = 0xfe00, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x7bb315f7, aligned data = 0xb30000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x3a3fd174, aligned data = 0x3a000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xb0bc5661, aligned data = 0x61, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x6c615dd8, aligned data = 0x5d00, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x166cd52c, aligned data = 0x6c0000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x4e69199c, aligned data = 0x4e000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x37068b6e, aligned data = 0x6e, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xee8e82dd, aligned data = 0x8200, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xc5f4148b, aligned data = 0xf40000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xfc7a08f8, aligned data = 0xfc000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x660907cc, aligned data = 0xcc, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x2fb1df5f, aligned data = 0xdf00, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x1611532c, aligned data = 0x110000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xde49eabc, aligned data = 0xde000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xaa07a654, aligned data = 0x54, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x304e9b60, aligned data = 0x9b00, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x450acb8a, aligned data = 0xa0000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x9f22ca3e, aligned data = 0x9f000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xfbea06f7, aligned data = 0xf7, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xa0c8a241, aligned data = 0xa200, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x91e07823, aligned data = 0xe00000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xadcd765b, aligned data = 0xad000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x10d78121, aligned data = 0x21, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xed50a4da, aligned data = 0xa400, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xc4481888, aligned data = 0x480000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xed5d78da, aligned data = 0xed000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x49933593, aligned data = 0x93, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x96900a2d, aligned data = 0xa00, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xea6924d4, aligned data = 0x690000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x30bd1d61, aligned data = 0x30000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xbd97fa7b, aligned data = 0x7b, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x83150006, aligned data = 0x0, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x858dd10, aligned data = 0x580000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xcf97119, aligned data = 0xc000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x7df471fb, aligned data = 0xfb, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xb57e746a, aligned data = 0x7400, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x3556396a, aligned data = 0x560000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x4e4e419c, aligned data = 0x4e000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xebe6f2d7, aligned data = 0xd7, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x93681026, aligned data = 0x1000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x62c5f7c5, aligned data = 0xc50000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x1bf21537, aligned data = 0x1b000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xbf399c7e, aligned data = 0x7e, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xa9164252, aligned data = 0x4200, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xc8ee9491, aligned data = 0xee0000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x96a23c2d, aligned data = 0x96000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x185e4b30, aligned data = 0x30, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x95e2342b, aligned data = 0x3400, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xb5744a6a, aligned data = 0x740000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x7deec5fb, aligned data = 0x7d000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xba4a9874, aligned data = 0x74, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8d65d21a, aligned data = 0xd200, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x3795156f, aligned data = 0x950000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x28467550, aligned data = 0x28000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x4813e190, aligned data = 0x90, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x9967ca32, aligned data = 0xca00, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xe624b2cc, aligned data = 0x240000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xd9c2deb3, aligned data = 0xd9000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x224b4344, aligned data = 0x44, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x88878611, aligned data = 0x8600, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xbb489e76, aligned data = 0x480000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x45b4498b, aligned data = 0x45000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x40199780, aligned data = 0x80, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x35a9336b, aligned data = 0x3300, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xc1f41283, aligned data = 0xf40000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xc6edc28d, aligned data = 0xc6000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x201b7b40, aligned data = 0x40, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x9421bc28, aligned data = 0xbc00, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x11240f22, aligned data = 0x240000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x9ad11635, aligned data = 0x9a000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xacfd4a59, aligned data = 0x59, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xaca2d059, aligned data = 0xd000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x50db4ba1, aligned data = 0xdb0000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x2b1ad356, aligned data = 0x2b000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xb1d72263, aligned data = 0x63, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x76e6d7ed, aligned data = 0xd700, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xc4de4489, aligned data = 0xde0000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x326e4164, aligned data = 0x32000000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x3a48df74, aligned data = 0x74, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x3c1cff78, aligned data = 0xff00, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x992f3832, aligned data = 0x2f0000, added by huanglc
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x466c4b8c, aligned data = 0x0000008c
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x2d57715a, aligned data = 0x00007100
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x2e6dfb5c, aligned data = 0x006d0000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xbd82ea7b, aligned data = 0xbd000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x4fc5f39f, aligned data = 0x0000009f
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xdebaaebd, aligned data = 0x0000ae00
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x8270a604, aligned data = 0x00700000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xd1d788a3, aligned data = 0xd1000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x81de9003, aligned data = 0x00000003
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xdb5f10b6, aligned data = 0x00001000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x8d3b801a, aligned data = 0x003b0000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x9c8b8839, aligned data = 0x9c000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xf91d02f2, aligned data = 0x000000f2
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xf6cec2ed, aligned data = 0x0000c200
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xe4afc2c9, aligned data = 0x00af0000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xcf07f89e, aligned data = 0xcf000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x283be550, aligned data = 0x00000050
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x2664b34c, aligned data = 0x0000b300
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x8c986c19, aligned data = 0x00980000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xbda4a27b, aligned data = 0xbd000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xdae592b5, aligned data = 0x000000b5
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x84388a08, aligned data = 0x00008a00
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x49a63793, aligned data = 0x00a60000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x9f74143e, aligned data = 0x9f000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xa8102850, aligned data = 0x00000050
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x8ecab81d, aligned data = 0x0000b800
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x5a2b9fb4, aligned data = 0x002b0000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x08cf9911, aligned data = 0x08000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x30198360, aligned data = 0x00000060
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x517067a2, aligned data = 0x00006700
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x5098e1a1, aligned data = 0x00980000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x2ca33b59, aligned data = 0x2c000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x42a33d85, aligned data = 0x00000085
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xe17f80c2, aligned data = 0x00008000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x8bb7f817, aligned data = 0x00b70000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x3079c960, aligned data = 0x30000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xc82eb090, aligned data = 0x00000090
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x5c3ab5b8, aligned data = 0x0000b500
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x88a8a211, aligned data = 0x00a80000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x9f48cc3e, aligned data = 0x9f000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x0b78ff16, aligned data = 0x00000016
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x517d6da2, aligned data = 0x00006d00
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x0a9c5915, aligned data = 0x009c0000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xc6fc948d, aligned data = 0xc6000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xbe96fe7d, aligned data = 0x0000007d
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x4727d58e, aligned data = 0x0000d500
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xd4525aa8, aligned data = 0x00520000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x8cc42a19, aligned data = 0x8c000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xd7d14eaf, aligned data = 0x000000af
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xc14ada82, aligned data = 0x0000da00
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x6f53a1de, aligned data = 0x00530000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x041d5b08, aligned data = 0x04000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x22404b44, aligned data = 0x00000044
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xfb1428f6, aligned data = 0x00002800
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x3ceee979, aligned data = 0x00ee0000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xd4a0b2a9, aligned data = 0xd4000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x1e280f3c, aligned data = 0x0000003c
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x3c7a2d78, aligned data = 0x00002d00
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xccf4ae99, aligned data = 0x00f40000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x3a8d7d75, aligned data = 0x3a000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x8d14761a, aligned data = 0x0000001a
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x78a811f1, aligned data = 0x00001100
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x36332f6c, aligned data = 0x00330000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x2e15c55c, aligned data = 0x2e000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xc5b51e8b, aligned data = 0x0000008b
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xa129c042, aligned data = 0x0000c000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xecb264d9, aligned data = 0x00b20000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xfd6a58fa, aligned data = 0xfd000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xab796056, aligned data = 0x00000056
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xd9d7eab3, aligned data = 0x0000ea00
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x51b00da3, aligned data = 0x00b00000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x6586c3cb, aligned data = 0x65000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xe5ec5ccb, aligned data = 0x000000cb
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x7983f9f3, aligned data = 0x0000f900
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xf95ba2f2, aligned data = 0x005b0000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xf5bd50eb, aligned data = 0xf5000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xb3d0ea67, aligned data = 0x00000067
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x83641806, aligned data = 0x00001800
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x625261c4, aligned data = 0x00520000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x4a030d94, aligned data = 0x4a000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x75fda9eb, aligned data = 0x000000eb
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x053f330a, aligned data = 0x00003300
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x9adb4435, aligned data = 0x00db0000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x67fbc3cf, aligned data = 0x67000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xcdf8f29b, aligned data = 0x0000009b
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x8658f80c, aligned data = 0x0000f800
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x0fe30d1f, aligned data = 0x00e30000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x4ac5ff95, aligned data = 0x4a000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xec54e4d8, aligned data = 0x000000d8
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x731dd1e6, aligned data = 0x0000d100
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x81b83003, aligned data = 0x00b80000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x69870fd3, aligned data = 0x69000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x6acb5bd5, aligned data = 0x000000d5
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x318eeb63, aligned data = 0x0000eb00
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xda86eeb5, aligned data = 0x00860000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xc4b6fe89, aligned data = 0xc4000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xce19f09c, aligned data = 0x0000009c
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x4a6e3194, aligned data = 0x00003100
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x629543c5, aligned data = 0x00950000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xc62c988c, aligned data = 0xc6000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x8b9e0017, aligned data = 0x00000017
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xd32a50a6, aligned data = 0x00005000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x8e3ee61c, aligned data = 0x003e0000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xffe968ff, aligned data = 0xff000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x2eb0ab5d, aligned data = 0x0000005d
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x048ab509, aligned data = 0x0000b500
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x61b15bc3, aligned data = 0x00b10000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x95a5ba2b, aligned data = 0x95000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xf9c2c6f3, aligned data = 0x000000f3
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xaa1b8a54, aligned data = 0x00008a00
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x2667d94c, aligned data = 0x00670000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xdd1c9cba, aligned data = 0xdd000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x1f38f33e, aligned data = 0x0000003e
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xd659bcac, aligned data = 0x0000bc00
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xee675adc, aligned data = 0x00670000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x8117d802, aligned data = 0x81000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x6e078bdc, aligned data = 0x000000dc
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x079ef70f, aligned data = 0x0000f700
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x213a9f42, aligned data = 0x003a0000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x333bfd66, aligned data = 0x33000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x0e0eab1c, aligned data = 0x0000001c
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xa9cda453, aligned data = 0x0000a400
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x0eae211d, aligned data = 0x00ae0000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xb8945271, aligned data = 0xb8000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xa8362e50, aligned data = 0x00000050
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xa0bcf441, aligned data = 0x0000f400
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x434c1d86, aligned data = 0x004c0000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xdcdee8b9, aligned data = 0xdc000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x1649b32c, aligned data = 0x0000002c
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x4764d38e, aligned data = 0x0000d300
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x1a988f35, aligned data = 0x00980000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x98988631, aligned data = 0x98000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x769491ed, aligned data = 0x000000ed
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x0fc9e71f, aligned data = 0x0000e700
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xcb0d3296, aligned data = 0x000d0000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x75c8bdeb, aligned data = 0x75000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x3f3de97e, aligned data = 0x0000007e
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xafa9a05f, aligned data = 0x0000a000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xe7d582cf, aligned data = 0x00d50000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xff8dd6ff, aligned data = 0xff000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xad64925a, aligned data = 0x0000005a
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x85e62c0b, aligned data = 0x00002c00
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x144abf28, aligned data = 0x004a0000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xc868de90, aligned data = 0xc8000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xabfb2c57, aligned data = 0x00000057
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xa4b27449, aligned data = 0x00007400
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x652fdfca, aligned data = 0x002f0000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x5349a1a6, aligned data = 0x53000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x0e64131c, aligned data = 0x0000001c
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xac7e2458, aligned data = 0x00002400
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xabada257, aligned data = 0x00ad0000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xeb5aaad6, aligned data = 0xeb000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xbacd6075, aligned data = 0x00000075
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x63a1abc7, aligned data = 0x0000ab00
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xa60e824c, aligned data = 0x000e0000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x368d476d, aligned data = 0x36000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x204cf340, aligned data = 0x00000040
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xb6ca2e6d, aligned data = 0x00002e00
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xd23abca4, aligned data = 0x003a0000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x0ee5811d, aligned data = 0x0e000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x14bc6529, aligned data = 0x00000029
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x8e25a21c, aligned data = 0x0000a200
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x5df44dbb, aligned data = 0x00f40000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xee8626dd, aligned data = 0xee000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xf65510ec, aligned data = 0x000000ec
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xa34eae46, aligned data = 0x0000ae00
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x70d2ede1, aligned data = 0x00d20000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xfa7cc2f4, aligned data = 0xfa000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xad0c165a, aligned data = 0x0000005a
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x43f8bf87, aligned data = 0x0000bf00
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xcc001c98, aligned data = 0x00000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x784da3f0, aligned data = 0x78000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xe7ae4ecf, aligned data = 0x000000cf
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xad5bfe5a, aligned data = 0x0000fe00
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x7bb315f7, aligned data = 0x00b30000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x3a3fd174, aligned data = 0x3a000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xb0bc5661, aligned data = 0x00000061
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x6c615dd8, aligned data = 0x00005d00
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x166cd52c, aligned data = 0x006c0000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x4e69199c, aligned data = 0x4e000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x37068b6e, aligned data = 0x0000006e
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xee8e82dd, aligned data = 0x00008200
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xc5f4148b, aligned data = 0x00f40000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xfc7a08f8, aligned data = 0xfc000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x660907cc, aligned data = 0x000000cc
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x2fb1df5f, aligned data = 0x0000df00
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x1611532c, aligned data = 0x00110000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xde49eabc, aligned data = 0xde000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xaa07a654, aligned data = 0x00000054
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x304e9b60, aligned data = 0x00009b00
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x450acb8a, aligned data = 0x000a0000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x9f22ca3e, aligned data = 0x9f000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xfbea06f7, aligned data = 0x000000f7
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xa0c8a241, aligned data = 0x0000a200
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x91e07823, aligned data = 0x00e00000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xadcd765b, aligned data = 0xad000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x10d78121, aligned data = 0x00000021
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xed50a4da, aligned data = 0x0000a400
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xc4481888, aligned data = 0x00480000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xed5d78da, aligned data = 0xed000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x49933593, aligned data = 0x00000093
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x96900a2d, aligned data = 0x00000a00
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xea6924d4, aligned data = 0x00690000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x30bd1d61, aligned data = 0x30000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xbd97fa7b, aligned data = 0x0000007b
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x83150006, aligned data = 0x00000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x0858dd10, aligned data = 0x00580000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x0cf97119, aligned data = 0x0c000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x7df471fb, aligned data = 0x000000fb
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xb57e746a, aligned data = 0x00007400
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x3556396a, aligned data = 0x00560000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x4e4e419c, aligned data = 0x4e000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xebe6f2d7, aligned data = 0x000000d7
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x93681026, aligned data = 0x00001000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x62c5f7c5, aligned data = 0x00c50000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x1bf21537, aligned data = 0x1b000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xbf399c7e, aligned data = 0x0000007e
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xa9164252, aligned data = 0x00004200
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xc8ee9491, aligned data = 0x00ee0000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x96a23c2d, aligned data = 0x96000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x185e4b30, aligned data = 0x00000030
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x95e2342b, aligned data = 0x00003400
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xb5744a6a, aligned data = 0x00740000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x7deec5fb, aligned data = 0x7d000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xba4a9874, aligned data = 0x00000074
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x8d65d21a, aligned data = 0x0000d200
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x3795156f, aligned data = 0x00950000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x28467550, aligned data = 0x28000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x4813e190, aligned data = 0x00000090
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x9967ca32, aligned data = 0x0000ca00
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xe624b2cc, aligned data = 0x00240000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xd9c2deb3, aligned data = 0xd9000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x224b4344, aligned data = 0x00000044
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x88878611, aligned data = 0x00008600
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xbb489e76, aligned data = 0x00480000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x45b4498b, aligned data = 0x45000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x40199780, aligned data = 0x00000080
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x35a9336b, aligned data = 0x00003300
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xc1f41283, aligned data = 0x00f40000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xc6edc28d, aligned data = 0xc6000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x201b7b40, aligned data = 0x00000040
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x9421bc28, aligned data = 0x0000bc00
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x11240f22, aligned data = 0x00240000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x9ad11635, aligned data = 0x9a000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xacfd4a59, aligned data = 0x00000059
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xaca2d059, aligned data = 0x0000d000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x50db4ba1, aligned data = 0x00db0000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x2b1ad356, aligned data = 0x2b000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xb1d72263, aligned data = 0x00000063
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x76e6d7ed, aligned data = 0x0000d700
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0xc4de4489, aligned data = 0x00de0000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x326e4164, aligned data = 0x32000000
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x3a48df74, aligned data = 0x00000074
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x3c1cff78, aligned data = 0x0000ff00
+top.u_bfm_ahb.memory_test: in 1-byte write access, gen = 0x992f3832, aligned data = 0x002f0000
 [     61530] top.u_bfm_ahb.memory_test OK: from 00000000 to 000000ff
+
 top.u_bfm_ahb.memory_test read-all-after-write-all with 1-byte access
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 9c598438, align data = 00000038
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 43593986, align data = 00003900
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = ae130c5c, align data = 00130000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 672307ce, align data = 67000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 63cc97c7, align data = 000000c7
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = e3132cc6, align data = 00002c00
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = f9d762f3, align data = 00d70000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 61d767c3, align data = 61000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = af8f485f, align data = 0000005f
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 23886547, align data = 00006500
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = c4eb2089, align data = 00eb0000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = bf269c7e, align data = bf000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = a2dc1845, align data = 00000045
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = aeda305d, align data = 00003000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 48d42191, align data = 00d40000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 376dd36e, align data = 37000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = c78b428f, align data = 0000008f
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 1e3c9d3c, align data = 00009d00
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = e4dc02c9, align data = 00dc0000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 718af5e3, align data = 71000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = ee4ec2dc, align data = 000000dc
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 9602722c, align data = 00007200
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = afac205f, align data = 00ac0000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 88c8b011, align data = 88000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 68ae55d1, align data = 000000d1
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 00693f00, align data = 00003f00
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = e8a994d1, align data = 00a90000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 7f8a71ff, align data = 7f000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 98c37231, align data = 00000031
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = b3254c66, align data = 00004c00
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = a5113c4a, align data = 00110000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 4ab86395, align data = 4a000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 92b55c25, align data = 00000025
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 0badab17, align data = 0000ab00
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = d4d3b6a9, align data = 00d30000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = e1eb6ec3, align data = e1000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 4bf50b97, align data = 00000097
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 4e48239c, align data = 00002300
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 7b315bf6, align data = 00310000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 80594600, align data = 80000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 94393c28, align data = 00000028
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = d3d542a7, align data = 00004200
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = b716466e, align data = 00160000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 02805105, align data = 02000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = d43a6aa8, align data = 000000a8
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 525c55a4, align data = 00005500
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = f73654ee, align data = 00360000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 0c93bd19, align data = 0c000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 4e2ed39c, align data = 0000009c
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = cc576498, align data = 00006400
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 75e925eb, align data = 00e90000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 65a777cb, align data = 65000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 5c0671b8, align data = 000000b8
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 72bf41e5, align data = 00004100
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = d8c610b1, align data = 00c60000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = b39c2667, align data = b3000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = e766fece, align data = 000000ce
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 85d7720b, align data = 00007200
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 90003220, align data = 00000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 83cb3c07, align data = 83000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 1767fd2e, align data = 0000002e
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 00ba4901, align data = 00004900
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 518269a3, align data = 00820000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 4c72e598, align data = 4c000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = f00ea2e0, align data = 000000e0
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 9ba4cc37, align data = 0000cc00
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = cbcb5097, align data = 00cb0000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = d2e208a5, align data = d2000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 5f89f1bf, align data = 000000bf
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 7102cbe2, align data = 0000cb00
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 6c8943d9, align data = 00890000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 22645544, align data = 22000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = f52e9eea, align data = 000000ea
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 513ad1a2, align data = 0000d100
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = d6f65cad, align data = 00f60000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = ffee34ff, align data = ff000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 3e332b7c, align data = 0000007c
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 913a2822, align data = 00002800
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 65f479cb, align data = 00f40000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 8688d60d, align data = 86000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 842bd008, align data = 00000008
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = dfc0debf, align data = 0000de00
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = d5e936ab, align data = 00e90000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 587e27b0, align data = 58000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 69468dd2, align data = 000000d2
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 6d6dc1da, align data = 0000c100
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = f259f0e4, align data = 00590000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 9144cc22, align data = 91000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 9e471a3c, align data = 0000003c
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 738a59e7, align data = 00005900
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = e347c0c6, align data = 00470000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 642c3bc8, align data = 64000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = ae42f45c, align data = 0000005c
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = e596f4cb, align data = 0000f400
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 764b85ec, align data = 004b0000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 13c89727, align data = 13000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 9c1d5a38, align data = 00000038
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = d9969cb3, align data = 00009c00
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 7f71d9fe, align data = 00710000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = ae1ed05c, align data = ae000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = cdc3449b, align data = 0000009b
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = f31b22e6, align data = 00002200
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 2dd71b5b, align data = 00d70000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = b9909273, align data = b9000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 81277002, align data = 00000002
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = dd110cba, align data = 00000c00
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = f00360e0, align data = 00030000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = be884a7d, align data = be000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = c6fe5c8d, align data = 0000008d
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 9e4baa3c, align data = 0000aa00
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 44068d88, align data = 00060000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 59e523b3, align data = 59000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = bf3a407e, align data = 0000007e
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 54d109a9, align data = 00000900
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 8f54381e, align data = 00540000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 44270788, align data = 44000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 93471826, align data = 00000026
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = a3e5f047, align data = 0000f000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = da5fc0b4, align data = 005f0000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 795aa5f2, align data = 79000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 6a06a5d4, align data = 000000d4
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = e0d9eec1, align data = 0000ee00
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 0bf83f17, align data = 00f80000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 6dc567db, align data = 6d000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 518c5fa3, align data = 000000a3
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = ca934e95, align data = 00004e00
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 00649100, align data = 00640000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = fb5178f6, align data = fb000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = da9980b5, align data = 000000b5
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 57db1faf, align data = 00001f00
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 983f5230, align data = 003f0000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 73b9c9e7, align data = 73000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = e1d90ac3, align data = 000000c3
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = e86928d0, align data = 00002800
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 9b12e036, align data = 00120000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 03760106, align data = 03000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = c2dbb485, align data = 00000085
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = e4affac9, align data = 0000fa00
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 09b55713, align data = 00b50000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 51668fa2, align data = 51000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = f0d3fce1, align data = 000000e1
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 9868de30, align data = 0000de00
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 3c649178, align data = 00640000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 07409d0e, align data = 07000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = b1121e62, align data = 00000062
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = d3dfe0a7, align data = 0000e000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = e8a22ad1, align data = 00a20000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = aeba165d, align data = ae000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 734017e6, align data = 000000e6
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 9fffce3f, align data = 0000ce00
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = eacf7ed5, align data = 00cf0000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 0f75ab1e, align data = 0f000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 035da106, align data = 00000006
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 111e3322, align data = 00003300
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 6f89addf, align data = 00890000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = f9aec2f3, align data = f9000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 917c3622, align data = 00000022
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 04875b09, align data = 00005b00
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = d8c58cb1, align data = 00c50000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 29a58b53, align data = 29000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 4b3b1996, align data = 00000096
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 54ca51a9, align data = 00005100
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 7aabbdf5, align data = 00ab0000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = afcaf05f, align data = af000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 03033f06, align data = 00000006
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = d0c4e0a1, align data = 0000e000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 0c349918, align data = 00340000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 09ac9f13, align data = 09000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 21036742, align data = 00000042
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 016f9902, align data = 00009900
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 67843dcf, align data = 00840000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = d7a102af, align data = d7000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = d9ec0cb3, align data = 000000b3
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 8a69c214, align data = 0000c200
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = f60684ec, align data = 00060000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = db3346b6, align data = db000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 676b6dce, align data = 000000ce
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = b1456a62, align data = 00006a00
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = e44b0cc8, align data = 004b0000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = aa4f5654, align data = aa000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = be69827c, align data = 0000007c
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 57935faf, align data = 00005f00
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = f9a12ef3, align data = 00a10000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 432de186, align data = 43000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = ff040afe, align data = 000000fe
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 73af29e7, align data = 00002900
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = af740a5e, align data = 00740000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 6d004fda, align data = 6d000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 9a4a8034, align data = 00000034
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = d44b16a8, align data = 00001600
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = e46678c8, align data = 00660000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 915cce22, align data = 91000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = e9ba1ed3, align data = 000000d3
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = babc3275, align data = 00003200
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 472f178e, align data = 002f0000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 7a6a49f4, align data = 7a000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = b479e268, align data = 00000068
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 98064830, align data = 00004800
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 553441aa, align data = 00340000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 21cc6f43, align data = 21000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = de568abc, align data = 000000bc
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = f8a7e4f1, align data = 0000e400
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 88e81211, align data = 00e80000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 7c4fa7f8, align data = 7c000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 3c7e8f78, align data = 00000078
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 6b2655d6, align data = 00005500
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 13e46927, align data = 00e40000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = ee5520dc, align data = ee000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 4bfe2d97, align data = 00000097
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = ed59a4da, align data = 0000a400
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 40c6df81, align data = 00c60000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = d4fec6a9, align data = d4000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 45fb618b, align data = 0000008b
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 2c789f58, align data = 00009f00
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 58cccfb1, align data = 00cc0000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 501b47a0, align data = 50000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = cdb1e49b, align data = 0000009b
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = a3e4ce47, align data = 0000ce00
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = a92f5852, align data = 002f0000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 38d20b71, align data = 38000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 342f3968, align data = 00000068
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 66b681cd, align data = 00008100
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 043f5508, align data = 003f0000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = f10f40e2, align data = f1000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 0dce971b, align data = 0000001b
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 2008c340, align data = 0000c300
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = da4160b4, align data = 00410000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 77afd3ef, align data = 77000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 9574f82a, align data = 0000002a
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 96055e2c, align data = 00005e00
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = c609d88c, align data = 00090000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = ed6d6cda, align data = ed000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 198d1d33, align data = 00000033
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = bbb0e277, align data = 0000e200
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 2958d952, align data = 00580000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 768a7bed, align data = 76000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 6ec37fdd, align data = 000000dd
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 1d76993a, align data = 00009900
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 34f63d69, align data = 00f60000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 253e2b4a, align data = 25000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 24825b49, align data = 00000049
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 34748f68, align data = 00008f00
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 788da1f1, align data = 008d0000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 58e069b1, align data = 58000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = f72dacee, align data = 000000ee
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = ec878cd9, align data = 00008c00
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = d64a5eac, align data = 004a0000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = bdd5dc7b, align data = bd000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = bc1f3078, align data = 00000078
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 691723d2, align data = 00002300
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 763397ec, align data = 00330000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = da3bf6b4, align data = da000000
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = c3626086, align data = 00000086
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = d4a19ca9, align data = 00009c00
+top.u_bfm_ahb.memory_test: in 1-byte write-all access, gen = 1548212a, align data = 00480000
 [    122730] top.u_bfm_ahb.memory_test OK: from 00000000 to 000000ff
 top.u_bfm_ahb.memory_test: read-after-write test with 2-byte access
 top.u_bfm_ahb.memory_test: start addr = 0x0, finish addr = 0xff, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x466c4b8c, aligned data = 0x4b8c, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x2d57715a, aligned data = 0x2d570000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x2e6dfb5c, aligned data = 0xfb5c, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xbd82ea7b, aligned data = 0xbd820000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x4fc5f39f, aligned data = 0xf39f, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xdebaaebd, aligned data = 0xdeba0000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8270a604, aligned data = 0xa604, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xd1d788a3, aligned data = 0xd1d70000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x81de9003, aligned data = 0x9003, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xdb5f10b6, aligned data = 0xdb5f0000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8d3b801a, aligned data = 0x801a, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x9c8b8839, aligned data = 0x9c8b0000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xf91d02f2, aligned data = 0x2f2, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xf6cec2ed, aligned data = 0xf6ce0000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xe4afc2c9, aligned data = 0xc2c9, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xcf07f89e, aligned data = 0xcf070000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x283be550, aligned data = 0xe550, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x2664b34c, aligned data = 0x26640000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8c986c19, aligned data = 0x6c19, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xbda4a27b, aligned data = 0xbda40000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xdae592b5, aligned data = 0x92b5, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x84388a08, aligned data = 0x84380000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x49a63793, aligned data = 0x3793, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x9f74143e, aligned data = 0x9f740000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xa8102850, aligned data = 0x2850, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8ecab81d, aligned data = 0x8eca0000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x5a2b9fb4, aligned data = 0x9fb4, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8cf9911, aligned data = 0x8cf0000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x30198360, aligned data = 0x8360, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x517067a2, aligned data = 0x51700000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x5098e1a1, aligned data = 0xe1a1, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x2ca33b59, aligned data = 0x2ca30000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x42a33d85, aligned data = 0x3d85, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xe17f80c2, aligned data = 0xe17f0000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8bb7f817, aligned data = 0xf817, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x3079c960, aligned data = 0x30790000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xc82eb090, aligned data = 0xb090, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x5c3ab5b8, aligned data = 0x5c3a0000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x88a8a211, aligned data = 0xa211, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x9f48cc3e, aligned data = 0x9f480000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xb78ff16, aligned data = 0xff16, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x517d6da2, aligned data = 0x517d0000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xa9c5915, aligned data = 0x5915, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xc6fc948d, aligned data = 0xc6fc0000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xbe96fe7d, aligned data = 0xfe7d, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x4727d58e, aligned data = 0x47270000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xd4525aa8, aligned data = 0x5aa8, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8cc42a19, aligned data = 0x8cc40000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xd7d14eaf, aligned data = 0x4eaf, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xc14ada82, aligned data = 0xc14a0000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x6f53a1de, aligned data = 0xa1de, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x41d5b08, aligned data = 0x41d0000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x22404b44, aligned data = 0x4b44, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xfb1428f6, aligned data = 0xfb140000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x3ceee979, aligned data = 0xe979, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xd4a0b2a9, aligned data = 0xd4a00000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x1e280f3c, aligned data = 0xf3c, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x3c7a2d78, aligned data = 0x3c7a0000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xccf4ae99, aligned data = 0xae99, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x3a8d7d75, aligned data = 0x3a8d0000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8d14761a, aligned data = 0x761a, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x78a811f1, aligned data = 0x78a80000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x36332f6c, aligned data = 0x2f6c, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x2e15c55c, aligned data = 0x2e150000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xc5b51e8b, aligned data = 0x1e8b, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xa129c042, aligned data = 0xa1290000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xecb264d9, aligned data = 0x64d9, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xfd6a58fa, aligned data = 0xfd6a0000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xab796056, aligned data = 0x6056, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xd9d7eab3, aligned data = 0xd9d70000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x51b00da3, aligned data = 0xda3, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x6586c3cb, aligned data = 0x65860000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xe5ec5ccb, aligned data = 0x5ccb, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x7983f9f3, aligned data = 0x79830000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xf95ba2f2, aligned data = 0xa2f2, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xf5bd50eb, aligned data = 0xf5bd0000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xb3d0ea67, aligned data = 0xea67, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x83641806, aligned data = 0x83640000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x625261c4, aligned data = 0x61c4, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x4a030d94, aligned data = 0x4a030000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x75fda9eb, aligned data = 0xa9eb, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x53f330a, aligned data = 0x53f0000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x9adb4435, aligned data = 0x4435, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x67fbc3cf, aligned data = 0x67fb0000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xcdf8f29b, aligned data = 0xf29b, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8658f80c, aligned data = 0x86580000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xfe30d1f, aligned data = 0xd1f, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x4ac5ff95, aligned data = 0x4ac50000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xec54e4d8, aligned data = 0xe4d8, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x731dd1e6, aligned data = 0x731d0000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x81b83003, aligned data = 0x3003, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x69870fd3, aligned data = 0x69870000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x6acb5bd5, aligned data = 0x5bd5, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x318eeb63, aligned data = 0x318e0000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xda86eeb5, aligned data = 0xeeb5, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xc4b6fe89, aligned data = 0xc4b60000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xce19f09c, aligned data = 0xf09c, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x4a6e3194, aligned data = 0x4a6e0000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x629543c5, aligned data = 0x43c5, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xc62c988c, aligned data = 0xc62c0000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8b9e0017, aligned data = 0x17, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xd32a50a6, aligned data = 0xd32a0000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8e3ee61c, aligned data = 0xe61c, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xffe968ff, aligned data = 0xffe90000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x2eb0ab5d, aligned data = 0xab5d, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x48ab509, aligned data = 0x48a0000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x61b15bc3, aligned data = 0x5bc3, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x95a5ba2b, aligned data = 0x95a50000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xf9c2c6f3, aligned data = 0xc6f3, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xaa1b8a54, aligned data = 0xaa1b0000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x2667d94c, aligned data = 0xd94c, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xdd1c9cba, aligned data = 0xdd1c0000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x1f38f33e, aligned data = 0xf33e, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xd659bcac, aligned data = 0xd6590000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xee675adc, aligned data = 0x5adc, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8117d802, aligned data = 0x81170000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x6e078bdc, aligned data = 0x8bdc, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x79ef70f, aligned data = 0x79e0000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x213a9f42, aligned data = 0x9f42, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x333bfd66, aligned data = 0x333b0000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xe0eab1c, aligned data = 0xab1c, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xa9cda453, aligned data = 0xa9cd0000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xeae211d, aligned data = 0x211d, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xb8945271, aligned data = 0xb8940000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xa8362e50, aligned data = 0x2e50, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xa0bcf441, aligned data = 0xa0bc0000, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x434c1d86, aligned data = 0x1d86, added by huanglc
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x466c4b8c, aligned data = 0x00004b8c
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x2d57715a, aligned data = 0x2d570000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x2e6dfb5c, aligned data = 0x0000fb5c
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0xbd82ea7b, aligned data = 0xbd820000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x4fc5f39f, aligned data = 0x0000f39f
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0xdebaaebd, aligned data = 0xdeba0000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x8270a604, aligned data = 0x0000a604
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0xd1d788a3, aligned data = 0xd1d70000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x81de9003, aligned data = 0x00009003
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0xdb5f10b6, aligned data = 0xdb5f0000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x8d3b801a, aligned data = 0x0000801a
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x9c8b8839, aligned data = 0x9c8b0000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0xf91d02f2, aligned data = 0x000002f2
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0xf6cec2ed, aligned data = 0xf6ce0000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0xe4afc2c9, aligned data = 0x0000c2c9
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0xcf07f89e, aligned data = 0xcf070000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x283be550, aligned data = 0x0000e550
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x2664b34c, aligned data = 0x26640000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x8c986c19, aligned data = 0x00006c19
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0xbda4a27b, aligned data = 0xbda40000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0xdae592b5, aligned data = 0x000092b5
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x84388a08, aligned data = 0x84380000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x49a63793, aligned data = 0x00003793
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x9f74143e, aligned data = 0x9f740000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0xa8102850, aligned data = 0x00002850
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x8ecab81d, aligned data = 0x8eca0000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x5a2b9fb4, aligned data = 0x00009fb4
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x08cf9911, aligned data = 0x08cf0000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x30198360, aligned data = 0x00008360
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x517067a2, aligned data = 0x51700000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x5098e1a1, aligned data = 0x0000e1a1
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x2ca33b59, aligned data = 0x2ca30000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x42a33d85, aligned data = 0x00003d85
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0xe17f80c2, aligned data = 0xe17f0000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x8bb7f817, aligned data = 0x0000f817
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x3079c960, aligned data = 0x30790000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0xc82eb090, aligned data = 0x0000b090
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x5c3ab5b8, aligned data = 0x5c3a0000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x88a8a211, aligned data = 0x0000a211
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x9f48cc3e, aligned data = 0x9f480000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x0b78ff16, aligned data = 0x0000ff16
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x517d6da2, aligned data = 0x517d0000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x0a9c5915, aligned data = 0x00005915
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0xc6fc948d, aligned data = 0xc6fc0000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0xbe96fe7d, aligned data = 0x0000fe7d
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x4727d58e, aligned data = 0x47270000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0xd4525aa8, aligned data = 0x00005aa8
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x8cc42a19, aligned data = 0x8cc40000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0xd7d14eaf, aligned data = 0x00004eaf
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0xc14ada82, aligned data = 0xc14a0000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x6f53a1de, aligned data = 0x0000a1de
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x041d5b08, aligned data = 0x041d0000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x22404b44, aligned data = 0x00004b44
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0xfb1428f6, aligned data = 0xfb140000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x3ceee979, aligned data = 0x0000e979
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0xd4a0b2a9, aligned data = 0xd4a00000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x1e280f3c, aligned data = 0x00000f3c
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x3c7a2d78, aligned data = 0x3c7a0000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0xccf4ae99, aligned data = 0x0000ae99
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x3a8d7d75, aligned data = 0x3a8d0000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x8d14761a, aligned data = 0x0000761a
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x78a811f1, aligned data = 0x78a80000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x36332f6c, aligned data = 0x00002f6c
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x2e15c55c, aligned data = 0x2e150000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0xc5b51e8b, aligned data = 0x00001e8b
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0xa129c042, aligned data = 0xa1290000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0xecb264d9, aligned data = 0x000064d9
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0xfd6a58fa, aligned data = 0xfd6a0000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0xab796056, aligned data = 0x00006056
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0xd9d7eab3, aligned data = 0xd9d70000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x51b00da3, aligned data = 0x00000da3
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x6586c3cb, aligned data = 0x65860000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0xe5ec5ccb, aligned data = 0x00005ccb
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x7983f9f3, aligned data = 0x79830000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0xf95ba2f2, aligned data = 0x0000a2f2
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0xf5bd50eb, aligned data = 0xf5bd0000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0xb3d0ea67, aligned data = 0x0000ea67
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x83641806, aligned data = 0x83640000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x625261c4, aligned data = 0x000061c4
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x4a030d94, aligned data = 0x4a030000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x75fda9eb, aligned data = 0x0000a9eb
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x053f330a, aligned data = 0x053f0000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x9adb4435, aligned data = 0x00004435
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x67fbc3cf, aligned data = 0x67fb0000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0xcdf8f29b, aligned data = 0x0000f29b
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x8658f80c, aligned data = 0x86580000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x0fe30d1f, aligned data = 0x00000d1f
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x4ac5ff95, aligned data = 0x4ac50000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0xec54e4d8, aligned data = 0x0000e4d8
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x731dd1e6, aligned data = 0x731d0000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x81b83003, aligned data = 0x00003003
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x69870fd3, aligned data = 0x69870000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x6acb5bd5, aligned data = 0x00005bd5
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x318eeb63, aligned data = 0x318e0000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0xda86eeb5, aligned data = 0x0000eeb5
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0xc4b6fe89, aligned data = 0xc4b60000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0xce19f09c, aligned data = 0x0000f09c
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x4a6e3194, aligned data = 0x4a6e0000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x629543c5, aligned data = 0x000043c5
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0xc62c988c, aligned data = 0xc62c0000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x8b9e0017, aligned data = 0x00000017
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0xd32a50a6, aligned data = 0xd32a0000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x8e3ee61c, aligned data = 0x0000e61c
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0xffe968ff, aligned data = 0xffe90000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x2eb0ab5d, aligned data = 0x0000ab5d
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x048ab509, aligned data = 0x048a0000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x61b15bc3, aligned data = 0x00005bc3
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x95a5ba2b, aligned data = 0x95a50000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0xf9c2c6f3, aligned data = 0x0000c6f3
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0xaa1b8a54, aligned data = 0xaa1b0000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x2667d94c, aligned data = 0x0000d94c
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0xdd1c9cba, aligned data = 0xdd1c0000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x1f38f33e, aligned data = 0x0000f33e
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0xd659bcac, aligned data = 0xd6590000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0xee675adc, aligned data = 0x00005adc
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x8117d802, aligned data = 0x81170000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x6e078bdc, aligned data = 0x00008bdc
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x079ef70f, aligned data = 0x079e0000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x213a9f42, aligned data = 0x00009f42
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x333bfd66, aligned data = 0x333b0000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x0e0eab1c, aligned data = 0x0000ab1c
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0xa9cda453, aligned data = 0xa9cd0000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x0eae211d, aligned data = 0x0000211d
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0xb8945271, aligned data = 0xb8940000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0xa8362e50, aligned data = 0x00002e50
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0xa0bcf441, aligned data = 0xa0bc0000
+top.u_bfm_ahb.memory_test: in 2-byte write access, gen = 0x434c1d86, aligned data = 0x00001d86
 [    153210] top.u_bfm_ahb.memory_test OK: from 00000000 to 000000ff
+
 top.u_bfm_ahb.memory_test read-all-after-write-all with 2-byte access
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 9c598438, align data = 00008438
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 43593986, align data = 43590000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = ae130c5c, align data = 00000c5c
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 672307ce, align data = 67230000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 63cc97c7, align data = 000097c7
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = e3132cc6, align data = e3130000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = f9d762f3, align data = 000062f3
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 61d767c3, align data = 61d70000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = af8f485f, align data = 0000485f
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 23886547, align data = 23880000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = c4eb2089, align data = 00002089
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = bf269c7e, align data = bf260000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = a2dc1845, align data = 00001845
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = aeda305d, align data = aeda0000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 48d42191, align data = 00002191
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 376dd36e, align data = 376d0000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = c78b428f, align data = 0000428f
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 1e3c9d3c, align data = 1e3c0000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = e4dc02c9, align data = 000002c9
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 718af5e3, align data = 718a0000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = ee4ec2dc, align data = 0000c2dc
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 9602722c, align data = 96020000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = afac205f, align data = 0000205f
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 88c8b011, align data = 88c80000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 68ae55d1, align data = 000055d1
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 00693f00, align data = 00690000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = e8a994d1, align data = 000094d1
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 7f8a71ff, align data = 7f8a0000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 98c37231, align data = 00007231
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = b3254c66, align data = b3250000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = a5113c4a, align data = 00003c4a
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 4ab86395, align data = 4ab80000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 92b55c25, align data = 00005c25
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 0badab17, align data = 0bad0000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = d4d3b6a9, align data = 0000b6a9
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = e1eb6ec3, align data = e1eb0000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 4bf50b97, align data = 00000b97
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 4e48239c, align data = 4e480000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 7b315bf6, align data = 00005bf6
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 80594600, align data = 80590000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 94393c28, align data = 00003c28
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = d3d542a7, align data = d3d50000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = b716466e, align data = 0000466e
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 02805105, align data = 02800000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = d43a6aa8, align data = 00006aa8
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 525c55a4, align data = 525c0000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = f73654ee, align data = 000054ee
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 0c93bd19, align data = 0c930000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 4e2ed39c, align data = 0000d39c
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = cc576498, align data = cc570000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 75e925eb, align data = 000025eb
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 65a777cb, align data = 65a70000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 5c0671b8, align data = 000071b8
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 72bf41e5, align data = 72bf0000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = d8c610b1, align data = 000010b1
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = b39c2667, align data = b39c0000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = e766fece, align data = 0000fece
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 85d7720b, align data = 85d70000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 90003220, align data = 00003220
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 83cb3c07, align data = 83cb0000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 1767fd2e, align data = 0000fd2e
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 00ba4901, align data = 00ba0000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 518269a3, align data = 000069a3
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 4c72e598, align data = 4c720000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = f00ea2e0, align data = 0000a2e0
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 9ba4cc37, align data = 9ba40000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = cbcb5097, align data = 00005097
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = d2e208a5, align data = d2e20000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 5f89f1bf, align data = 0000f1bf
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 7102cbe2, align data = 71020000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 6c8943d9, align data = 000043d9
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 22645544, align data = 22640000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = f52e9eea, align data = 00009eea
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 513ad1a2, align data = 513a0000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = d6f65cad, align data = 00005cad
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = ffee34ff, align data = ffee0000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 3e332b7c, align data = 00002b7c
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 913a2822, align data = 913a0000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 65f479cb, align data = 000079cb
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 8688d60d, align data = 86880000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 842bd008, align data = 0000d008
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = dfc0debf, align data = dfc00000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = d5e936ab, align data = 000036ab
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 587e27b0, align data = 587e0000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 69468dd2, align data = 00008dd2
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 6d6dc1da, align data = 6d6d0000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = f259f0e4, align data = 0000f0e4
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 9144cc22, align data = 91440000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 9e471a3c, align data = 00001a3c
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 738a59e7, align data = 738a0000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = e347c0c6, align data = 0000c0c6
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 642c3bc8, align data = 642c0000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = ae42f45c, align data = 0000f45c
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = e596f4cb, align data = e5960000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 764b85ec, align data = 000085ec
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 13c89727, align data = 13c80000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 9c1d5a38, align data = 00005a38
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = d9969cb3, align data = d9960000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 7f71d9fe, align data = 0000d9fe
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = ae1ed05c, align data = ae1e0000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = cdc3449b, align data = 0000449b
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = f31b22e6, align data = f31b0000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 2dd71b5b, align data = 00001b5b
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = b9909273, align data = b9900000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 81277002, align data = 00007002
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = dd110cba, align data = dd110000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = f00360e0, align data = 000060e0
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = be884a7d, align data = be880000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = c6fe5c8d, align data = 00005c8d
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 9e4baa3c, align data = 9e4b0000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 44068d88, align data = 00008d88
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 59e523b3, align data = 59e50000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = bf3a407e, align data = 0000407e
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 54d109a9, align data = 54d10000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 8f54381e, align data = 0000381e
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 44270788, align data = 44270000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 93471826, align data = 00001826
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = a3e5f047, align data = a3e50000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = da5fc0b4, align data = 0000c0b4
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 795aa5f2, align data = 795a0000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 6a06a5d4, align data = 0000a5d4
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = e0d9eec1, align data = e0d90000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 0bf83f17, align data = 00003f17
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 6dc567db, align data = 6dc50000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 518c5fa3, align data = 00005fa3
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = ca934e95, align data = ca930000
+top.u_bfm_ahb.memory_test: in 2-byte write-all access, gen = 00649100, align data = 00009100
 [    183690] top.u_bfm_ahb.memory_test OK: from 00000000 to 000000ff
 top.u_bfm_ahb.memory_test: read-after-write test with 4-byte access
 top.u_bfm_ahb.memory_test: start addr = 0x0, finish addr = 0xff, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x466c4b8c, aligned data = 0x466c4b8c, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x2d57715a, aligned data = 0x2d57715a, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x2e6dfb5c, aligned data = 0x2e6dfb5c, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xbd82ea7b, aligned data = 0xbd82ea7b, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x4fc5f39f, aligned data = 0x4fc5f39f, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xdebaaebd, aligned data = 0xdebaaebd, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8270a604, aligned data = 0x8270a604, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xd1d788a3, aligned data = 0xd1d788a3, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x81de9003, aligned data = 0x81de9003, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xdb5f10b6, aligned data = 0xdb5f10b6, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8d3b801a, aligned data = 0x8d3b801a, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x9c8b8839, aligned data = 0x9c8b8839, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xf91d02f2, aligned data = 0xf91d02f2, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xf6cec2ed, aligned data = 0xf6cec2ed, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xe4afc2c9, aligned data = 0xe4afc2c9, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xcf07f89e, aligned data = 0xcf07f89e, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x283be550, aligned data = 0x283be550, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x2664b34c, aligned data = 0x2664b34c, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8c986c19, aligned data = 0x8c986c19, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xbda4a27b, aligned data = 0xbda4a27b, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xdae592b5, aligned data = 0xdae592b5, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x84388a08, aligned data = 0x84388a08, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x49a63793, aligned data = 0x49a63793, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x9f74143e, aligned data = 0x9f74143e, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xa8102850, aligned data = 0xa8102850, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8ecab81d, aligned data = 0x8ecab81d, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x5a2b9fb4, aligned data = 0x5a2b9fb4, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8cf9911, aligned data = 0x8cf9911, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x30198360, aligned data = 0x30198360, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x517067a2, aligned data = 0x517067a2, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x5098e1a1, aligned data = 0x5098e1a1, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x2ca33b59, aligned data = 0x2ca33b59, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x42a33d85, aligned data = 0x42a33d85, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xe17f80c2, aligned data = 0xe17f80c2, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8bb7f817, aligned data = 0x8bb7f817, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x3079c960, aligned data = 0x3079c960, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xc82eb090, aligned data = 0xc82eb090, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x5c3ab5b8, aligned data = 0x5c3ab5b8, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x88a8a211, aligned data = 0x88a8a211, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x9f48cc3e, aligned data = 0x9f48cc3e, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xb78ff16, aligned data = 0xb78ff16, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x517d6da2, aligned data = 0x517d6da2, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xa9c5915, aligned data = 0xa9c5915, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xc6fc948d, aligned data = 0xc6fc948d, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xbe96fe7d, aligned data = 0xbe96fe7d, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x4727d58e, aligned data = 0x4727d58e, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xd4525aa8, aligned data = 0xd4525aa8, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8cc42a19, aligned data = 0x8cc42a19, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xd7d14eaf, aligned data = 0xd7d14eaf, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xc14ada82, aligned data = 0xc14ada82, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x6f53a1de, aligned data = 0x6f53a1de, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x41d5b08, aligned data = 0x41d5b08, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x22404b44, aligned data = 0x22404b44, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xfb1428f6, aligned data = 0xfb1428f6, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x3ceee979, aligned data = 0x3ceee979, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xd4a0b2a9, aligned data = 0xd4a0b2a9, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x1e280f3c, aligned data = 0x1e280f3c, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x3c7a2d78, aligned data = 0x3c7a2d78, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xccf4ae99, aligned data = 0xccf4ae99, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x3a8d7d75, aligned data = 0x3a8d7d75, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8d14761a, aligned data = 0x8d14761a, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x78a811f1, aligned data = 0x78a811f1, added by huanglc
-top.u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x36332f6c, aligned data = 0x36332f6c, added by huanglc
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0x466c4b8c, aligned data = 0x466c4b8c
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0x2d57715a, aligned data = 0x2d57715a
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0x2e6dfb5c, aligned data = 0x2e6dfb5c
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0xbd82ea7b, aligned data = 0xbd82ea7b
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0x4fc5f39f, aligned data = 0x4fc5f39f
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0xdebaaebd, aligned data = 0xdebaaebd
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0x8270a604, aligned data = 0x8270a604
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0xd1d788a3, aligned data = 0xd1d788a3
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0x81de9003, aligned data = 0x81de9003
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0xdb5f10b6, aligned data = 0xdb5f10b6
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0x8d3b801a, aligned data = 0x8d3b801a
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0x9c8b8839, aligned data = 0x9c8b8839
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0xf91d02f2, aligned data = 0xf91d02f2
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0xf6cec2ed, aligned data = 0xf6cec2ed
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0xe4afc2c9, aligned data = 0xe4afc2c9
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0xcf07f89e, aligned data = 0xcf07f89e
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0x283be550, aligned data = 0x283be550
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0x2664b34c, aligned data = 0x2664b34c
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0x8c986c19, aligned data = 0x8c986c19
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0xbda4a27b, aligned data = 0xbda4a27b
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0xdae592b5, aligned data = 0xdae592b5
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0x84388a08, aligned data = 0x84388a08
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0x49a63793, aligned data = 0x49a63793
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0x9f74143e, aligned data = 0x9f74143e
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0xa8102850, aligned data = 0xa8102850
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0x8ecab81d, aligned data = 0x8ecab81d
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0x5a2b9fb4, aligned data = 0x5a2b9fb4
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0x08cf9911, aligned data = 0x08cf9911
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0x30198360, aligned data = 0x30198360
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0x517067a2, aligned data = 0x517067a2
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0x5098e1a1, aligned data = 0x5098e1a1
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0x2ca33b59, aligned data = 0x2ca33b59
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0x42a33d85, aligned data = 0x42a33d85
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0xe17f80c2, aligned data = 0xe17f80c2
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0x8bb7f817, aligned data = 0x8bb7f817
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0x3079c960, aligned data = 0x3079c960
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0xc82eb090, aligned data = 0xc82eb090
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0x5c3ab5b8, aligned data = 0x5c3ab5b8
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0x88a8a211, aligned data = 0x88a8a211
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0x9f48cc3e, aligned data = 0x9f48cc3e
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0x0b78ff16, aligned data = 0x0b78ff16
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0x517d6da2, aligned data = 0x517d6da2
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0x0a9c5915, aligned data = 0x0a9c5915
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0xc6fc948d, aligned data = 0xc6fc948d
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0xbe96fe7d, aligned data = 0xbe96fe7d
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0x4727d58e, aligned data = 0x4727d58e
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0xd4525aa8, aligned data = 0xd4525aa8
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0x8cc42a19, aligned data = 0x8cc42a19
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0xd7d14eaf, aligned data = 0xd7d14eaf
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0xc14ada82, aligned data = 0xc14ada82
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0x6f53a1de, aligned data = 0x6f53a1de
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0x041d5b08, aligned data = 0x041d5b08
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0x22404b44, aligned data = 0x22404b44
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0xfb1428f6, aligned data = 0xfb1428f6
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0x3ceee979, aligned data = 0x3ceee979
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0xd4a0b2a9, aligned data = 0xd4a0b2a9
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0x1e280f3c, aligned data = 0x1e280f3c
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0x3c7a2d78, aligned data = 0x3c7a2d78
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0xccf4ae99, aligned data = 0xccf4ae99
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0x3a8d7d75, aligned data = 0x3a8d7d75
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0x8d14761a, aligned data = 0x8d14761a
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0x78a811f1, aligned data = 0x78a811f1
+top.u_bfm_ahb.memory_test: in 4-byte write access, gen = 0x36332f6c, aligned data = 0x36332f6c
 [    198810] top.u_bfm_ahb.memory_test OK: from 00000000 to 000000ff
+
 top.u_bfm_ahb.memory_test read-all-after-write-all with 4-byte access
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = 9c598438, align data = 9c598438
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = 43593986, align data = 43593986
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = ae130c5c, align data = ae130c5c
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = 672307ce, align data = 672307ce
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = 63cc97c7, align data = 63cc97c7
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = e3132cc6, align data = e3132cc6
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = f9d762f3, align data = f9d762f3
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = 61d767c3, align data = 61d767c3
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = af8f485f, align data = af8f485f
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = 23886547, align data = 23886547
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = c4eb2089, align data = c4eb2089
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = bf269c7e, align data = bf269c7e
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = a2dc1845, align data = a2dc1845
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = aeda305d, align data = aeda305d
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = 48d42191, align data = 48d42191
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = 376dd36e, align data = 376dd36e
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = c78b428f, align data = c78b428f
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = 1e3c9d3c, align data = 1e3c9d3c
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = e4dc02c9, align data = e4dc02c9
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = 718af5e3, align data = 718af5e3
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = ee4ec2dc, align data = ee4ec2dc
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = 9602722c, align data = 9602722c
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = afac205f, align data = afac205f
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = 88c8b011, align data = 88c8b011
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = 68ae55d1, align data = 68ae55d1
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = 00693f00, align data = 00693f00
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = e8a994d1, align data = e8a994d1
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = 7f8a71ff, align data = 7f8a71ff
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = 98c37231, align data = 98c37231
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = b3254c66, align data = b3254c66
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = a5113c4a, align data = a5113c4a
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = 4ab86395, align data = 4ab86395
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = 92b55c25, align data = 92b55c25
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = 0badab17, align data = 0badab17
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = d4d3b6a9, align data = d4d3b6a9
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = e1eb6ec3, align data = e1eb6ec3
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = 4bf50b97, align data = 4bf50b97
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = 4e48239c, align data = 4e48239c
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = 7b315bf6, align data = 7b315bf6
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = 80594600, align data = 80594600
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = 94393c28, align data = 94393c28
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = d3d542a7, align data = d3d542a7
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = b716466e, align data = b716466e
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = 02805105, align data = 02805105
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = d43a6aa8, align data = d43a6aa8
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = 525c55a4, align data = 525c55a4
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = f73654ee, align data = f73654ee
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = 0c93bd19, align data = 0c93bd19
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = 4e2ed39c, align data = 4e2ed39c
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = cc576498, align data = cc576498
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = 75e925eb, align data = 75e925eb
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = 65a777cb, align data = 65a777cb
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = 5c0671b8, align data = 5c0671b8
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = 72bf41e5, align data = 72bf41e5
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = d8c610b1, align data = d8c610b1
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = b39c2667, align data = b39c2667
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = e766fece, align data = e766fece
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = 85d7720b, align data = 85d7720b
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = 90003220, align data = 90003220
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = 83cb3c07, align data = 83cb3c07
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = 1767fd2e, align data = 1767fd2e
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = 00ba4901, align data = 00ba4901
+top.u_bfm_ahb.memory_test: in 4-byte write-all access, gen = 518269a3, align data = 518269a3
 [    213930] top.u_bfm_ahb.memory_test OK: from 00000000 to 000000ff
 begin to BURST TEST..., at               213930
 ======================================
+
 top.u_bfm_ahb.memory_test_burst: read-all-after-write-all burst test with   4-beat access
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0xca5c4a94
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0x05387f0a
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0x89eb8613
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0xec00ecd8
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0xf4a820e9
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0x93677826
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0xc226a484
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0x11d9bd23
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0x14921729
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0xf8929ef1
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0x1d57593a
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0x44b63789
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0x7ad787f5
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0xd6089eac
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0x72395de4
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0xbd77e67a
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0xb4319068
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0x5e70e3bc
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0x3d5a317a
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0xe4b718c9
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0x8a710c14
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0xa537984a
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0xb6950e6d
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0xd30edaa6
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0x9d5a983a
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0x32b9ab65
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0xb44ef068
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0x5428f7a8
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0x6f4291de
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0x0930c512
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0x98729430
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0x7889fbf1
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0x81691002
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0x065f530c
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0x432c7786
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0x821d3004
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0xdc15f4b8
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0x4dfc839b
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0xc766d28e
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0xb780a66f
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0x1e74d93c
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0x28e04151
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0x5d05a5ba
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0x6a1125d4
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0xf23116e4
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0x84ef3409
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0xcce2a899
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0x3ab63b75
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0x7ed1cffd
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0x01c6cf03
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0x528959a5
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0x696e35d2
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0x38d5d971
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0x36293b6c
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0xafb2f45f
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0xbb9a1c77
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0x288fd351
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0x9a296234
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0xed8274db
+top.u_bfm_ahb.memory_test_burst: in 4-beat burst, gen data = 0x4509bf8a
 top.u_bfm_ahb.memory_test_burst   4-length burst read-after-write OK: from 00000000h to 000000ffh
+
 top.u_bfm_ahb.memory_test_burst: read-all-after-write-all burst test with  16-beat access
+top.u_bfm_ahb.memory_test_burst: in 16-beat burst, gen data = 0xca5c4a94
+top.u_bfm_ahb.memory_test_burst: in 16-beat burst, gen data = 0x05387f0a
+top.u_bfm_ahb.memory_test_burst: in 16-beat burst, gen data = 0x89eb8613
+top.u_bfm_ahb.memory_test_burst: in 16-beat burst, gen data = 0xec00ecd8
+top.u_bfm_ahb.memory_test_burst: in 16-beat burst, gen data = 0xf4a820e9
+top.u_bfm_ahb.memory_test_burst: in 16-beat burst, gen data = 0x93677826
+top.u_bfm_ahb.memory_test_burst: in 16-beat burst, gen data = 0xc226a484
+top.u_bfm_ahb.memory_test_burst: in 16-beat burst, gen data = 0x11d9bd23
+top.u_bfm_ahb.memory_test_burst: in 16-beat burst, gen data = 0x14921729
+top.u_bfm_ahb.memory_test_burst: in 16-beat burst, gen data = 0xf8929ef1
+top.u_bfm_ahb.memory_test_burst: in 16-beat burst, gen data = 0x1d57593a
+top.u_bfm_ahb.memory_test_burst: in 16-beat burst, gen data = 0x44b63789
+top.u_bfm_ahb.memory_test_burst: in 16-beat burst, gen data = 0x7ad787f5
+top.u_bfm_ahb.memory_test_burst: in 16-beat burst, gen data = 0xd6089eac
+top.u_bfm_ahb.memory_test_burst: in 16-beat burst, gen data = 0x72395de4
+top.u_bfm_ahb.memory_test_burst: in 16-beat burst, gen data = 0xbd77e67a
+top.u_bfm_ahb.memory_test_burst: in 16-beat burst, gen data = 0xb4319068
+top.u_bfm_ahb.memory_test_burst: in 16-beat burst, gen data = 0x5e70e3bc
+top.u_bfm_ahb.memory_test_burst: in 16-beat burst, gen data = 0x3d5a317a
+top.u_bfm_ahb.memory_test_burst: in 16-beat burst, gen data = 0xe4b718c9
+top.u_bfm_ahb.memory_test_burst: in 16-beat burst, gen data = 0x8a710c14
+top.u_bfm_ahb.memory_test_burst: in 16-beat burst, gen data = 0xa537984a
+top.u_bfm_ahb.memory_test_burst: in 16-beat burst, gen data = 0xb6950e6d
+top.u_bfm_ahb.memory_test_burst: in 16-beat burst, gen data = 0xd30edaa6
+top.u_bfm_ahb.memory_test_burst: in 16-beat burst, gen data = 0x9d5a983a
+top.u_bfm_ahb.memory_test_burst: in 16-beat burst, gen data = 0x32b9ab65
+top.u_bfm_ahb.memory_test_burst: in 16-beat burst, gen data = 0xb44ef068
+top.u_bfm_ahb.memory_test_burst: in 16-beat burst, gen data = 0x5428f7a8
+top.u_bfm_ahb.memory_test_burst: in 16-beat burst, gen data = 0x6f4291de
+top.u_bfm_ahb.memory_test_burst: in 16-beat burst, gen data = 0x0930c512
+top.u_bfm_ahb.memory_test_burst: in 16-beat burst, gen data = 0x98729430
+top.u_bfm_ahb.memory_test_burst: in 16-beat burst, gen data = 0x7889fbf1
+top.u_bfm_ahb.memory_test_burst: in 16-beat burst, gen data = 0x81691002
+top.u_bfm_ahb.memory_test_burst: in 16-beat burst, gen data = 0x065f530c
+top.u_bfm_ahb.memory_test_burst: in 16-beat burst, gen data = 0x432c7786
+top.u_bfm_ahb.memory_test_burst: in 16-beat burst, gen data = 0x821d3004
+top.u_bfm_ahb.memory_test_burst: in 16-beat burst, gen data = 0xdc15f4b8
+top.u_bfm_ahb.memory_test_burst: in 16-beat burst, gen data = 0x4dfc839b
+top.u_bfm_ahb.memory_test_burst: in 16-beat burst, gen data = 0xc766d28e
+top.u_bfm_ahb.memory_test_burst: in 16-beat burst, gen data = 0xb780a66f
+top.u_bfm_ahb.memory_test_burst: in 16-beat burst, gen data = 0x1e74d93c
+top.u_bfm_ahb.memory_test_burst: in 16-beat burst, gen data = 0x28e04151
+top.u_bfm_ahb.memory_test_burst: in 16-beat burst, gen data = 0x5d05a5ba
+top.u_bfm_ahb.memory_test_burst: in 16-beat burst, gen data = 0x6a1125d4
+top.u_bfm_ahb.memory_test_burst: in 16-beat burst, gen data = 0xf23116e4
+top.u_bfm_ahb.memory_test_burst: in 16-beat burst, gen data = 0x84ef3409
+top.u_bfm_ahb.memory_test_burst: in 16-beat burst, gen data = 0xcce2a899
+top.u_bfm_ahb.memory_test_burst: in 16-beat burst, gen data = 0x3ab63b75
 top.u_bfm_ahb.memory_test_burst  16-length burst read-after-write OK: from 00000000h to 000000ffh
+
 top.u_bfm_ahb.memory_test_burst: read-all-after-write-all burst test with  32-beat access
+top.u_bfm_ahb.memory_test_burst: in 32-beat burst, gen data = 0xca5c4a94
+top.u_bfm_ahb.memory_test_burst: in 32-beat burst, gen data = 0x05387f0a
+top.u_bfm_ahb.memory_test_burst: in 32-beat burst, gen data = 0x89eb8613
+top.u_bfm_ahb.memory_test_burst: in 32-beat burst, gen data = 0xec00ecd8
+top.u_bfm_ahb.memory_test_burst: in 32-beat burst, gen data = 0xf4a820e9
+top.u_bfm_ahb.memory_test_burst: in 32-beat burst, gen data = 0x93677826
+top.u_bfm_ahb.memory_test_burst: in 32-beat burst, gen data = 0xc226a484
+top.u_bfm_ahb.memory_test_burst: in 32-beat burst, gen data = 0x11d9bd23
+top.u_bfm_ahb.memory_test_burst: in 32-beat burst, gen data = 0x14921729
+top.u_bfm_ahb.memory_test_burst: in 32-beat burst, gen data = 0xf8929ef1
+top.u_bfm_ahb.memory_test_burst: in 32-beat burst, gen data = 0x1d57593a
+top.u_bfm_ahb.memory_test_burst: in 32-beat burst, gen data = 0x44b63789
+top.u_bfm_ahb.memory_test_burst: in 32-beat burst, gen data = 0x7ad787f5
+top.u_bfm_ahb.memory_test_burst: in 32-beat burst, gen data = 0xd6089eac
+top.u_bfm_ahb.memory_test_burst: in 32-beat burst, gen data = 0x72395de4
+top.u_bfm_ahb.memory_test_burst: in 32-beat burst, gen data = 0xbd77e67a
+top.u_bfm_ahb.memory_test_burst: in 32-beat burst, gen data = 0xb4319068
+top.u_bfm_ahb.memory_test_burst: in 32-beat burst, gen data = 0x5e70e3bc
+top.u_bfm_ahb.memory_test_burst: in 32-beat burst, gen data = 0x3d5a317a
+top.u_bfm_ahb.memory_test_burst: in 32-beat burst, gen data = 0xe4b718c9
+top.u_bfm_ahb.memory_test_burst: in 32-beat burst, gen data = 0x8a710c14
+top.u_bfm_ahb.memory_test_burst: in 32-beat burst, gen data = 0xa537984a
+top.u_bfm_ahb.memory_test_burst: in 32-beat burst, gen data = 0xb6950e6d
+top.u_bfm_ahb.memory_test_burst: in 32-beat burst, gen data = 0xd30edaa6
+top.u_bfm_ahb.memory_test_burst: in 32-beat burst, gen data = 0x9d5a983a
+top.u_bfm_ahb.memory_test_burst: in 32-beat burst, gen data = 0x32b9ab65
+top.u_bfm_ahb.memory_test_burst: in 32-beat burst, gen data = 0xb44ef068
+top.u_bfm_ahb.memory_test_burst: in 32-beat burst, gen data = 0x5428f7a8
+top.u_bfm_ahb.memory_test_burst: in 32-beat burst, gen data = 0x6f4291de
+top.u_bfm_ahb.memory_test_burst: in 32-beat burst, gen data = 0x0930c512
+top.u_bfm_ahb.memory_test_burst: in 32-beat burst, gen data = 0x98729430
+top.u_bfm_ahb.memory_test_burst: in 32-beat burst, gen data = 0x7889fbf1
 top.u_bfm_ahb.memory_test_burst  32-length burst read-after-write OK: from 00000000h to 000000ffh
 $finish called from file "/home/ICer/xilinx_prj/ahb_lite/vcs/srcs/bfm_ahb.v", line 78.
 $finish at simulation time            231810000
            V C S   S i m u l a t i o n   R e p o r t 
 Time: 231810000 ps
-CPU Time:      0.480 seconds;       Data structure size:   0.0Mb
-Wed Mar 13 13:26:05 2024
-CPU time: .687 seconds to compile + .401 seconds to elab + .251 seconds to link + .543 seconds in simulation
+CPU Time:      0.350 seconds;       Data structure size:   0.0Mb
+Wed Mar 13 16:48:19 2024
+CPU time: .567 seconds to compile + .298 seconds to elab + .285 seconds to link + .384 seconds in simulation
