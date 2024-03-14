@@ -79,6 +79,8 @@ module bfm_ahb #(parameter START_ADDR=0
        memory_test_burst(START_ADDR, END_ADDR, 1);
        memory_test_burst(START_ADDR, END_ADDR, 2);
        memory_test_burst(START_ADDR, END_ADDR, 4);
+       memory_test_burst(START_ADDR, END_ADDR, 8);
+       memory_test_burst(START_ADDR, END_ADDR, 16);
        repeat (5) @ (posedge HCLK);
        `endif
        $finish(2);
@@ -97,7 +99,7 @@ module bfm_ahb #(parameter START_ADDR=0
         reg [31:0] data, gen, got;
         reg [31:0] reposit[START_ADDR:END_ADDR];
         begin
-            $display("%m: read-after-write test with %d-byte access", size);
+            $display("[%10d], %m: read-after-write test with %d-byte access", $time, size);
             error = 0;
             gen = $random(7);
             for (i=start; i<(finish-size+1); i=i+size) begin
@@ -149,7 +151,7 @@ module bfm_ahb #(parameter START_ADDR=0
         reg [31:0] reposit[0:1023];
         integer seed;
         begin
-          $display("%m: read-all-after-write-all burst test with %d-beat access", leng);
+          $display("[%10d], %m: read-all-after-write-all burst test with %d-beat access", $time, leng);
           error = 0;
           seed  = 111;
           gen = $random(seed);
