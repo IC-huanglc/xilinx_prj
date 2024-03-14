@@ -1,0 +1,11 @@
+ahb_arbiter_m2.v,verilog,xil_defaultlib,/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/ahb_arbiter_m2.v,
+ahb_decoder_s3.v,verilog,xil_defaultlib,/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/ahb_decoder_s3.v,
+ahb_default_slave.v,verilog,xil_defaultlib,/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/ahb_default_slave.v,
+ahb_lite_s3.v,verilog,xil_defaultlib,/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/ahb_lite_s3.v,
+ahb_m2s_m2.v,verilog,xil_defaultlib,/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/ahb_m2s_m2.v,
+ahb_s2m_s3.v,verilog,xil_defaultlib,/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/ahb_s2m_s3.v,
+amba_ahb_m2s3.v,verilog,xil_defaultlib,/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/amba_ahb_m2s3.v,
+bfm_ahb.v,verilog,xil_defaultlib,/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/bfm_ahb.v,
+mem_ahb.v,verilog,xil_defaultlib,/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/mem_ahb.v,
+top.v,verilog,xil_defaultlib,/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/top.v,
+glbl.v,Verilog,xil_defaultlib,/home/ICer/xilinx_prj/amba_ahb/vcs/glbl.v

@@ -1,0 +1,22 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /home/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab -wto f575f2496caa493c823602c857882469 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot top_behav xil_defaultlib.top xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.bfm_ahb(START_ADDR=32'b0)
+Compiling module xil_defaultlib.bfm_ahb(START_ADDR=32'b010000000...
+Compiling module xil_defaultlib.ahb_arbiter_m2
+Compiling module xil_defaultlib.ahb_m2s_m2
+Compiling module xil_defaultlib.ahb_decoder_s3(P_NUM=3,P_ADDR_ST...
+Compiling module xil_defaultlib.ahb_s2m_s3
+Compiling module xil_defaultlib.ahb_default_slave
+Compiling module xil_defaultlib.ahb_lite_s3
+Compiling module xil_defaultlib.amba_ahb_m2s3(P_HSEL0_SIZE=16'b0...
+Compiling module xil_defaultlib.mem_ahb(DELAY=1)
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_behav
