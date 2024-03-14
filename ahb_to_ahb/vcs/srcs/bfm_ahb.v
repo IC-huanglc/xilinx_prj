@@ -230,7 +230,7 @@ module bfm_ahb #(parameter START_ADDR=0
          end
    endfunction
    //-----------------------------------------------------
-   `include "bfm_ahb_tasks.v"
+   `include "/home/ICer/xilinx_prj/ahb_to_ahb/vcs/srcs/bfm_ahb_tasks.v"
    //-----------------------------------------------------
 endmodule
 //--------------------------------------------------------
