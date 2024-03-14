@@ -1,5 +1,23 @@
 This is 2 ahb masters and 3 ahb slaves, add arbiter.
-
+The arbiter uses casex to decode bus request, and the casex has its priority.
+Code sinp is below:
+#            if (HREADY==1'b1) begin
+#               casex ({hbusreq,hgrant})
+#                   // priority
+#                   4'b1x_00: hgrant <= 2'b10;
+#                   4'b01_00: hgrant <= 2'b01;
+#                   // stay
+#                   4'b1x_10: hgrant <= 2'b10;
+#                   4'bx1_01: hgrant <= 2'b01;
+#                   // last
+#                   4'b00_xx: hgrant <= 2'b00;
+#                   // last and handover
+#                   4'b01_10: hgrant <= 2'b01;
+#                   4'b00_10: hgrant <= 2'b00;
+#                   4'b10_01: hgrant <= 2'b10;
+#                   4'b00_01: hgrant <= 2'b00;
+#                   default : hgrant <= 2'b00;
+#               endcase
 ################################################################################
 # Vivado (TM) v2019.1 (64-bit)
 #
