@@ -14,6 +14,8 @@
 `define SIZE_IN_BYTES 1024
 `endif
 
+`include "/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/bfm_ahb.v"
+
 module top ;
    //------------------------------------------------
    localparam SIZE_IN_BYTES=`SIZE_IN_BYTES // memory size

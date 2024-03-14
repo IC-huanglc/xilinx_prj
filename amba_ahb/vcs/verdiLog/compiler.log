@@ -1,0 +1,23 @@
+*design* DebussyLib (btIdent Verdi_O-2018.09-SP2)
+Command arguments:
+    +define+verilog
+    -f file.f
+        +incdir+/home/ICer/xilinx_prj/amba_ahb/vcs/srcs
+        /home/ICer/xilinx_prj/amba_ahb/vcs/srcs/ahb_arbiter_m2.v
+        /home/ICer/xilinx_prj/amba_ahb/vcs/srcs/ahb_decoder_s3.v
+        /home/ICer/xilinx_prj/amba_ahb/vcs/srcs/ahb_default_slave.v
+        /home/ICer/xilinx_prj/amba_ahb/vcs/srcs/ahb_lite_s3.v
+        /home/ICer/xilinx_prj/amba_ahb/vcs/srcs/ahb_m2s_m2.v
+        /home/ICer/xilinx_prj/amba_ahb/vcs/srcs/ahb_s2m_s3.v
+        /home/ICer/xilinx_prj/amba_ahb/vcs/srcs/amba_ahb_m2s3.v
+        /home/ICer/xilinx_prj/amba_ahb/vcs/srcs/bfm_ahb.v
+        /home/ICer/xilinx_prj/amba_ahb/vcs/srcs/mem_ahb.v
+        /home/ICer/xilinx_prj/amba_ahb/vcs/srcs/top.v
+
+
+*Error* Module bfm_ahb redefined
+"/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/bfm_ahb.v", 45: 
+Highest level modules:
+top
+
+Total	1 error(s),   0 warning(s)

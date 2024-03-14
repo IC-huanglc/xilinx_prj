@@ -1,0 +1,154 @@
+                         Chronologic VCS (TM)
+        Version O-2018.09-1_Full64 -- Thu Mar 14 11:00:57 2024
+               Copyright (c) 1991-2018 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file '/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/ahb_arbiter_m2.v'
+Parsing design file '/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/ahb_decoder_s3.v'
+Parsing design file '/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/ahb_default_slave.v'
+Parsing design file '/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/ahb_lite_s3.v'
+Parsing design file '/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/ahb_m2s_m2.v'
+Parsing design file '/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/ahb_s2m_s3.v'
+Parsing design file '/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/amba_ahb_m2s3.v'
+Parsing design file '/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/bfm_ahb.v'
+Parsing design file '/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/mem_ahb.v'
+Parsing design file '/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/top.v'
+CPU time: 2.622 seconds to compile
+                         Chronologic VCS (TM)
+        Version O-2018.09-1_Full64 -- Thu Mar 14 11:00:59 2024
+               Copyright (c) 1991-2018 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file '/home/ICer/xilinx_prj/amba_ahb/vcs/glbl.v'
+CPU time: .147 seconds to compile
+                         Chronologic VCS (TM)
+        Version O-2018.09-1_Full64 -- Thu Mar 14 11:27:16 2024
+               Copyright (c) 1991-2018 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file '/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/ahb_arbiter_m2.v'
+Parsing design file '/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/ahb_decoder_s3.v'
+Parsing design file '/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/ahb_default_slave.v'
+Parsing design file '/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/ahb_lite_s3.v'
+Parsing design file '/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/ahb_m2s_m2.v'
+Parsing design file '/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/ahb_s2m_s3.v'
+Parsing design file '/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/amba_ahb_m2s3.v'
+Parsing design file '/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/bfm_ahb.v'
+Parsing design file '/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/mem_ahb.v'
+Parsing design file '/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/top.v'
+
+Error-[UC] Unexpected character
+  The character '/' is illegal in the context. 
+  "/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/top.v", 17
+  Source info: `include /home/ICer/xilinx_prj/amba_ahb/vcs/srcs/bfm_ahb.v
+
+1 error
+CPU time: .603 seconds to compile
+                         Chronologic VCS (TM)
+        Version O-2018.09-1_Full64 -- Thu Mar 14 11:27:17 2024
+               Copyright (c) 1991-2018 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file '/home/ICer/xilinx_prj/amba_ahb/vcs/glbl.v'
+CPU time: .173 seconds to compile
+                         Chronologic VCS (TM)
+        Version O-2018.09-1_Full64 -- Thu Mar 14 11:28:00 2024
+               Copyright (c) 1991-2018 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file '/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/ahb_arbiter_m2.v'
+Parsing design file '/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/ahb_decoder_s3.v'
+Parsing design file '/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/ahb_default_slave.v'
+Parsing design file '/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/ahb_lite_s3.v'
+Parsing design file '/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/ahb_m2s_m2.v'
+Parsing design file '/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/ahb_s2m_s3.v'
+Parsing design file '/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/amba_ahb_m2s3.v'
+Parsing design file '/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/bfm_ahb.v'
+Parsing design file '/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/mem_ahb.v'
+Parsing design file '/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/top.v'
+Parsing included file '/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/bfm_ahb.v'.
+
+Error-[MPD] Module previously declared
+  The module was previously declared at: 
+  "/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/bfm_ahb.v", 45
+  It is redeclared later at:
+  "/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/bfm_ahb.v", 45: token is 'bfm_ahb'
+  module bfm_ahb #(parameter START_ADDR=0
+                ^
+  Please remove one of the declarations and compile again.
+
+Back to file '/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/top.v'.
+1 error
+CPU time: .258 seconds to compile
+                         Chronologic VCS (TM)
+        Version O-2018.09-1_Full64 -- Thu Mar 14 11:28:00 2024
+               Copyright (c) 1991-2018 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file '/home/ICer/xilinx_prj/amba_ahb/vcs/glbl.v'
+CPU time: .152 seconds to compile
+                         Chronologic VCS (TM)
+        Version O-2018.09-1_Full64 -- Thu Mar 14 11:28:38 2024
+               Copyright (c) 1991-2018 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file '/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/ahb_arbiter_m2.v'
+Parsing design file '/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/ahb_decoder_s3.v'
+Parsing design file '/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/ahb_default_slave.v'
+Parsing design file '/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/ahb_lite_s3.v'
+Parsing design file '/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/ahb_m2s_m2.v'
+Parsing design file '/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/ahb_s2m_s3.v'
+Parsing design file '/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/amba_ahb_m2s3.v'
+Parsing design file '/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/mem_ahb.v'
+Parsing design file '/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/top.v'
+Parsing included file '/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/bfm_ahb.v'.
+
+Warning-[TMR] Text macro redefined
+/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/bfm_ahb.v, 37
+  Text macro (MEM_DELAY) is redefined. The last definition will override 
+  previous ones.
+  Location of previous definition: 
+  /home/ICer/xilinx_prj/amba_ahb/vcs/srcs/top.v, 11.
+  Previous value: 0
+
+Back to file '/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/top.v'.
+CPU time: .252 seconds to compile
+                         Chronologic VCS (TM)
+        Version O-2018.09-1_Full64 -- Thu Mar 14 11:28:38 2024
+               Copyright (c) 1991-2018 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file '/home/ICer/xilinx_prj/amba_ahb/vcs/glbl.v'
+CPU time: .143 seconds to compile

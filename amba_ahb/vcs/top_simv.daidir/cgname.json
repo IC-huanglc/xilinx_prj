@@ -1,0 +1,32 @@
+{
+    "glbl": [
+        "glbl",
+        "WZg7r",
+        "module",
+        2
+    ],
+    "top": [
+        "top",
+        "Emx8S",
+        "module",
+        1
+    ],
+    "XIL_DEFAULTLIB.amba_ahb_m2s3": [
+        "XIL_DEFAULTLIB0x2eamba_ahb_m2s3",
+        "Qj6SR",
+        "module",
+        3
+    ],
+    "XIL_DEFAULTLIB.mem_ahb": [
+        "XIL_DEFAULTLIB0x2emem_ahb",
+        "i3M17",
+        "module",
+        4
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        5
+    ]
+}

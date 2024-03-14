@@ -1,0 +1,216 @@
+{
+    "Modules": {
+        "...MASTER...": {
+            "start_perf": [
+                0.64553403854370117,
+                0.204038,
+                0.414877,
+                341672,
+                341692,
+                1710386920.5977271,
+                9273561653329
+            ],
+            "child_modules": {
+                "glbl": 1,
+                "top": 1
+            },
+            "end_perf": [
+                0.65668606758117676,
+                0.20541799999999999,
+                0.41877999999999999,
+                341684,
+                341692,
+                9273598866348,
+                0,
+                0
+            ],
+            "nMops": 0,
+            "nQuads": 0,
+            "nRouts": 5
+        },
+        "glbl": {
+            "start_perf": [
+                0.72770309448242188,
+                0.26775500000000002,
+                0.43442500000000001,
+                343652,
+                343652,
+                1710386920.6798961,
+                9273835566491
+            ],
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 2,
+            "end_perf": [
+                0.72957491874694824,
+                0.268731,
+                0.435529,
+                343652,
+                343656,
+                9273841826318,
+                17179869185,
+                0
+            ],
+            "nMops": 301,
+            "nQuads": 196,
+            "nRouts": 29
+        },
+        "top": {
+            "start_perf": [
+                0.65679001808166504,
+                0.205456,
+                0.41885800000000001,
+                341684,
+                341692,
+                1710386920.608983,
+                9273599161880
+            ],
+            "child_modules": {
+                "XIL_DEFAULTLIB.amba_ahb_m2s3": 1,
+                "XIL_DEFAULTLIB.mem_ahb": 3
+            },
+            "Compiled": "Yes",
+            "Compiled Times": 2,
+            "end_perf": [
+                0.7275700569152832,
+                0.26760600000000001,
+                0.43442500000000001,
+                343652,
+                343652,
+                9273835388013,
+                12884901889,
+                0
+            ],
+            "nMops": 13078,
+            "nQuads": 5000,
+            "nRouts": 318
+        },
+        "XIL_DEFAULTLIB.amba_ahb_m2s3": {
+            "start_perf": [
+                0.72961902618408203,
+                0.26874900000000002,
+                0.43556,
+                343652,
+                343656,
+                1710386920.681812,
+                9273841921640
+            ],
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 2,
+            "end_perf": [
+                0.73677396774291992,
+                0.27667599999999998,
+                0.43556,
+                343652,
+                343656,
+                9273865837853,
+                21474836481,
+                0
+            ],
+            "nMops": 2859,
+            "nQuads": 1177,
+            "nRouts": 136
+        },
+        "XIL_DEFAULTLIB.mem_ahb": {
+            "start_perf": [
+                0.73682498931884766,
+                0.27673399999999998,
+                0.43556,
+                343652,
+                343656,
+                1710386920.689018,
+                9273865944176
+            ],
+            "child_modules": {},
+            "Compiled": "Yes",
+            "Compiled Times": 2,
+            "end_perf": [
+                0.75051999092102051,
+                0.29145300000000002,
+                0.43602400000000002,
+                343652,
+                343676,
+                9273911655258,
+                55834574849,
+                0
+            ],
+            "nMops": 1815,
+            "nQuads": 741,
+            "nRouts": 97
+        }
+    },
+    "CompUnits": {
+        "Emx8S_d": {
+            "mod": "top",
+            "archive": "archive.1/_25595_archive_1.a",
+            "mode": 4,
+            "out": "Emx8S_d.o",
+            "checksum": 0,
+            "bytes": 113754,
+            "text": 44973
+        },
+        "i3M17_d": {
+            "mod": "XIL_DEFAULTLIB.mem_ahb",
+            "archive": "archive.1/_25595_archive_1.a",
+            "mode": 4,
+            "out": "i3M17_d.o",
+            "checksum": 0,
+            "bytes": 27588,
+            "text": 11999
+        }
+    },
+    "reusePaths": {
+        "amcQw_d": {
+            "icPath": "csrc"
+        },
+        "WZg7r_d": {
+            "icPath": "csrc"
+        },
+        "Qj6SR_d": {
+            "icPath": "csrc"
+        }
+    },
+    "ObjArchives": [
+        {
+            "archive": "archive.1/_25595_archive_1.a",
+            "objects": [
+                [
+                    "Emx8S_d.o",
+                    113754
+                ],
+                [
+                    "i3M17_d.o",
+                    27588
+                ],
+                [
+                    "amcQwB.o",
+                    123560
+                ]
+            ],
+            "size": 264902
+        }
+    ],
+    "stat": {
+        "ru_self_end": {
+            "ru_utime_sec": 0.293572,
+            "ru_maxrss_kb": 107872,
+            "ru_stime_sec": 0.45335399999999998,
+            "ru_majflt": 78,
+            "ru_minflt": 39435,
+            "ru_nvcsw": 797,
+            "ru_nivcsw": 35
+        },
+        "ru_childs_end": {
+            "ru_utime_sec": 0.036804999999999997,
+            "ru_maxrss_kb": 48764,
+            "ru_stime_sec": 0.116733,
+            "ru_majflt": 20,
+            "ru_minflt": 14578,
+            "ru_nvcsw": 140,
+            "ru_nivcsw": 14
+        },
+        "cpu_cycles_end": 9274255604516,
+        "peak_mem_kb": 343676
+    }
+}

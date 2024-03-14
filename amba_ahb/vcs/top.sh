@@ -73,7 +73,6 @@ compile()
     $ref_dir/ahb_m2s_m2.v \
     $ref_dir/ahb_s2m_s3.v \
     $ref_dir/amba_ahb_m2s3.v \
-    $ref_dir/bfm_ahb.v \
     $ref_dir/mem_ahb.v \
     $ref_dir/top.v \
   2>&1 | tee -a vlogan.log

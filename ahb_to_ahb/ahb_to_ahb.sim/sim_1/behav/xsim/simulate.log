@@ -1,0 +1,7 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+Info: top.u_ahb_lite.Uahb_decoder HSEL0: from 0x0000_0000 to 0x00ff_FFFF
+Info: top.u_ahb_lite.Uahb_decoder HSEL1: from 0x1000_0000 to 0x10ff_FFFF
+Info: top.u_ahb_lite.Uahb_decoder HSEL2: from 0x2000_0000 to 0x20ff_FFFF
+top HCLK 20.000000 nsec 50.000000 Mhz
+top.u_bfm_ahb.memory_test: read-after-write test with 4-byte access

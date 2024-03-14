@@ -1,0 +1,581 @@
+debImport "-f" "file.f"
+debLoadSimResult /home/ICer/xilinx_prj/amba_ahb/vcs/top.vf
+wvCreateWindow
+srcHBSelect "top" -win $_nTrace1
+srcSetScope -win $_nTrace1 "top" -delim "."
+srcHBSelect "top" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -inst "u_amba_ahb" -line 78 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -inst "u_mem_srcDeselectAll -win $_nTrace1
+debExit
+rcSearchString "bfm" -win $_nTrace1 -next -case
+srcDeselectAll -win $_nTrace1
+srcAction -pos 52 1 3 -win $_nTrace1 -name "bfm_ahb" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcAction -pos 52 1 4 -win $_nTrace1 -name "bfm_ahb" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcHBSelect "top.u_amba_ahb" -win $_nTrace1
+srcSetScope -win $_nTrace1 "top.u_amba_ahb" -delim "."
+srcHBSelect "top.u_amba_ahb" -win $_nTrace1
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "top" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSearchString "bfm" -win $_nTrace1 -prev -case
+srcSelect -win $_nTrace1 -range {54 54 2 2 3 6}
+srcDeselectAll -win $_nTrace1
+srcCopyFilePath -win $_nTrace1
+debReload
+srcHBSelect "top.u_amba_ahb" -win $_nTrace1
+srcSetScope -win $_nTrace1 "top.u_amba_ahb" -delim "."
+srcHBSelect "top.u_amba_ahb" -win $_nTrace1
+srcHBSelect "top" -win $_nTrace1
+srcSetScope -win $_nTrace1 "top" -delim "."
+srcHBSelect "top" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -word -line 16 -pos 3 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -word -line 16 -pos 3 -win $_nTrace1
+srcAction -pos 16 3 26 -win $_nTrace1 -name \
+          "\"/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/bfm_ahb.v\"" -ctrlKey off
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "top" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -inst "u_bfm_ahb" -line 56 -pos 1 -win $_nTrace1
+srcAction -pos 55 1 3 -win $_nTrace1 -name "u_bfm_ahb" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -inst "u_bfm_ahb" -line 56 -pos 1 -win $_nTrace1
+srcAction -pos 55 1 3 -win $_nTrace1 -name "u_bfm_ahb" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -inst "u_bfm_ahb" -line 56 -pos 1 -win $_nTrace1
+srcAction -pos 55 1 3 -win $_nTrace1 -name "u_bfm_ahb" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -inst "u_bfm_ahb" -line 56 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -word -line 16 -pos 3 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -word -line 16 -pos 3 -win $_nTrace1
+srcAction -pos 16 3 40 -win $_nTrace1 -name \
+          "\"/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/bfm_ahb.v\"" -ctrlKey off
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "top" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "M_HBUSREQ\[GM\]" -line 59 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G1" 1 )} 
+wvCut -win $_nWave2
+wvSetPosition -win $_nWave2 {("G2" 0)}
+wvSetPosition -win $_nWave2 {("G1" 0)}
+srcDeselectAll -win $_nTrace1
+srcSelect -inst "u_amba_ahb" -line 80 -pos 1 -win $_nTrace1
+srcAction -pos 79 1 7 -win $_nTrace1 -name "u_amba_ahb" -ctrlKey off
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "top" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "HRESETn" -line 81 -pos 2 -win $_nTrace1
+srcSelect -signal "HCLK" -line 82 -pos 2 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "M_HBUSREQ\[0\]" -line 83 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -inst "u_amba_ahb" -line 80 -pos 1 -win $_nTrace1
+srcAction -pos 79 1 7 -win $_nTrace1 -name "u_amba_ahb" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "M_HADDR_0" -line 24 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "M_HSIZE_0" -line 26 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "M_HTRANS_0" -line 25 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "HADDR" -line 44 -pos 1 -win $_nTrace1
+srcAction -pos 43 11 1 -win $_nTrace1 -name "HADDR" -ctrlKey off
+srcShowCalling -win $_nTrace1
+srcSelect -win $_nTrace1 -range {118 118 2 3 1 1}
+srcHBSelect "top.u_amba_ahb" -win $_nTrace1
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "top.u_amba_ahb" -win $_nTrace1
+srcHBSelect "top.u_amba_ahb.Uahb_lite" -win $_nTrace1
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "top.u_amba_ahb" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "HADDR" -line 44 -pos 1 -win $_nTrace1
+srcAction -pos 43 11 2 -win $_nTrace1 -name "HADDR" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "M_HADDR" -line 60 -pos 1 -win $_nTrace1
+srcAction -pos 59 7 3 -win $_nTrace1 -name "M_HADDR" -ctrlKey off
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "top.u_amba_ahb.Uahb_m2s" -win $_nTrace1
+srcHBSelect "top.u_amba_ahb.Uahb_lite" -win $_nTrace1
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "top.u_amba_ahb" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "HADDR" -line 44 -pos 1 -win $_nTrace1
+srcAction -pos 43 11 3 -win $_nTrace1 -name "HADDR" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "M_HADDR" -line 60 -pos 1 -win $_nTrace1
+srcAction -pos 59 7 2 -win $_nTrace1 -name "M_HADDR" -ctrlKey off
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "top.u_amba_ahb.Uahb_m2s" -win $_nTrace1
+srcHBSelect "top.u_amba_ahb.Uahb_lite" -win $_nTrace1
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "top.u_amba_ahb" -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvZoom -win $_nWave2 0.000000 3059372.062500
+wvZoom -win $_nWave2 309761.421328 667325.531133
+wvZoomOut -win $_nWave2
+wvZoom -win $_nWave2 408538.506662 539049.406740
+wvZoomOut -win $_nWave2
+srcHBSelect "top" -win $_nTrace1
+srcSetScope -win $_nTrace1 "top" -delim "."
+srcHBSelect "top" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -word -line 16 -pos 3 -win $_nTrace1
+srcAction -pos 16 3 11 -win $_nTrace1 -name \
+          "\"/home/ICer/xilinx_prj/amba_ahb/vcs/srcs/bfm_ahb.v\"" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -word -line 83 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -word -line 83 -pos 1 -win $_nTrace1
+srcAction -pos 83 1 5 -win $_nTrace1 -name "memory_test" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -word -line 83 -pos 1 -win $_nTrace1
+srcAction -pos 83 1 8 -win $_nTrace1 -name "memory_test" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -word -line 83 -pos 1 -win $_nTrace1
+srcAction -pos 83 1 8 -win $_nTrace1 -name "memory_test" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -word -line 83 -pos 1 -win $_nTrace1
+srcAction -pos 83 1 8 -win $_nTrace1 -name "memory_test" -ctrlKey off
+srcSearchString "memory_test" -win $_nTrace1 -next -case
+srcSearchString "memory_test" -win $_nTrace1 -next -case
+srcSearchString "memory_test" -win $_nTrace1 -next -case
+srcSearchString "memory_test" -win $_nTrace1 -next -case
+srcSearchString "memory_test" -win $_nTrace1 -next -case
+srcSearchString "memory_test" -win $_nTrace1 -next -case
+srcSearchString "memory_test" -win $_nTrace1 -next -case
+srcSearchString "memory_test" -win $_nTrace1 -next -case
+srcSearchString "memory_test" -win $_nTrace1 -next -case
+srcSearchString "memory_test" -win $_nTrace1 -next -case
+srcSearchString "memory_test" -win $_nTrace1 -next -case
+wvSetCursor -win $_nWave2 389940.703400 -snap {("G1" 3)}
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoom -win $_nWave2 472449.458285 859414.277018
+wvZoomOut -win $_nWave2
+wvSetCursor -win $_nWave2 849740.156550 -snap {("G1" 3)}
+wvZoom -win $_nWave2 769444.956663 859897.983042
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+srcHBSelect "top" -win $_nTrace1
+srcSetScope -win $_nTrace1 "top" -delim "."
+srcHBSelect "top" -win $_nTrace1
+srcHBSelect "top.u_amba_ahb" -win $_nTrace1
+srcHBSelect "top.u_amba_ahb" -win $_nTrace1
+srcSetScope -win $_nTrace1 "top.u_amba_ahb" -delim "."
+srcHBSelect "top.u_amba_ahb" -win $_nTrace1
+srcHBSelect "top" -win $_nTrace1
+srcSetScope -win $_nTrace1 "top" -delim "."
+srcHBSelect "top" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "M_HBUSREQ" -line 26 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "M_HADDR  \[0\]" -line 85 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "M_HADDR  \[1\]" -line 94 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvSetCursor -win $_nWave2 777133.463905 -snap {("G1" 5)}
+wvSetCursor -win $_nWave2 771480.149756 -snap {("G1" 3)}
+srcActiveTrace "top.u_amba_ahb.HADDR\[31:0\]" -win $_nTrace1 -TraceByDConWave \
+           -TraceTime 771000 -TraceValue 00010000000000000000000000000001
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "M_HADDR" -line 60 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "M_HADDR" -line 60 -pos 1 -win $_nTrace1
+srcAction -pos 59 7 3 -win $_nTrace1 -name "M_HADDR" -ctrlKey off
+srcHBSelect "top.u_amba_ahb" -win $_nTrace1
+srcSetScope -win $_nTrace1 "top.u_amba_ahb" -delim "."
+srcHBSelect "top.u_amba_ahb" -win $_nTrace1
+srcHBSelect "top" -win $_nTrace1
+srcSetScope -win $_nTrace1 "top" -delim "."
+srcHBSelect "top" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -inst "u_amba_ahb" -line 80 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -inst "u_amba_ahb" -line 80 -pos 1 -win $_nTrace1
+srcAction -pos 79 1 8 -win $_nTrace1 -name "u_amba_ahb" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "M_HMASTER" -line 77 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "REMAP" -line 65 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomIn -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoom -win $_nWave2 467725.781250 1492267.968750
+wvZoomOut -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "HRESETn" -line 70 -pos 2 -win $_nTrace1
+wvSelectSignal -win $_nWave2 {( "G1" 7 )} 
+wvCut -win $_nWave2
+wvSetPosition -win $_nWave2 {("G2" 0)}
+wvSetPosition -win $_nWave2 {("G1" 6)}
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "M_HBUSREQ_0" -line 73 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "M_HBUSREQ_1" -line 74 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G1" 7 )} 
+wvSetCursor -win $_nWave2 345782.988281 -snap {("G1" 8)}
+wvZoom -win $_nWave2 317608.078125 598076.501953
+wvZoom -win $_nWave2 335137.354614 396665.115092
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoom -win $_nWave2 251033.262747 580822.058906
+wvSetCursor -win $_nWave2 352443.317566 -snap {("G1" 8)}
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "M_HGRANT_0" -line 75 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "M_HGRANT_0" -line 75 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "M_HGRANT_1" -line 76 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvSetCursor -win $_nWave2 370375.583357 -snap {("G1" 9)}
+wvSetCursor -win $_nWave2 389544.557134 -snap {("G1" 2)}
+wvSetCursor -win $_nWave2 372848.999328 -snap {("G1" 9)}
+wvZoom -win $_nWave2 360894.155468 407064.586930
+wvZoom -win $_nWave2 368771.985336 372956.180687
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "M_HMASTER" -line 77 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvSetCursor -win $_nWave2 356232.970384 -snap {("G1" 8)}
+srcDeselectAll -win $_nTrace1
+srcSelect -inst "Uahb_arbiter" -line 69 -pos 1 -win $_nTrace1
+srcAction -pos 68 3 0 -win $_nTrace1 -name "Uahb_arbiter" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -win $_nTrace1 -range {7 8 1 1 9 1}
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -win $_nTrace1 -range {8 8 1 1 5 9}
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -win $_nTrace1 -range {8 8 1 2 4 1}
+srcDeselectAll -win $_nTrace1
+srcSelect -win $_nTrace1 -range {7 7 1 2 11 1}
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "P_NUM" -line 15 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -word -line 14 -pos 2 -win $_nTrace1
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "top.u_amba_ahb.Uahb_arbiter" -win $_nTrace1
+srcHBSelect "top.u_amba_ahb" -win $_nTrace1
+srcForwardHistory -win $_nTrace1
+srcHBSelect "top.u_amba_ahb" -win $_nTrace1
+srcHBSelect "top.u_amba_ahb.Uahb_arbiter" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "hgrant" -line 28 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "hgrant" -line 28 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "HCLK" -line 31 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "HGRANT_0" -line 22 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "HGRANT_1" -line 23 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "HREADY" -line 34 -pos 1 -win $_nTrace1
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "top.u_amba_ahb.Uahb_arbiter" -win $_nTrace1
+srcHBSelect "top.u_amba_ahb" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "M_HREADY" -line 72 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G1" 12 )} 
+wvCut -win $_nWave2
+wvSetPosition -win $_nWave2 {("G2" 0)}
+wvSetPosition -win $_nWave2 {("G1" 11)}
+srcForwardHistory -win $_nTrace1
+srcHBSelect "top.u_amba_ahb" -win $_nTrace1
+srcHBSelect "top.u_amba_ahb.Uahb_arbiter" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "HREADY" -line 34 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "hbusreq" -line 35 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "hgrant" -line 35 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -win $_nTrace1 -range {37 37 2 2 4 6}
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -win $_nTrace1 -range {37 37 2 3 7 1}
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -win $_nTrace1 -range {42 42 2 2 4 6}
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -win $_nTrace1 -range {42 43 2 4 4 1}
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -win $_nTrace1 -range {45 45 2 2 4 6}
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -win $_nTrace1 -range {45 45 2 3 7 1}
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "hgrant" -line 45 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -win $_nTrace1 -range {45 45 9 11 1 1}
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -win $_nTrace1 -range {47 47 2 2 4 6}
+srcDeselectAll -win $_nTrace1
+srcSelect -win $_nTrace1 -range {47 47 2 3 7 1}
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -win $_nTrace1 -range {61 61 2 3 4 1}
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "hgrant" -line 60 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G1" 13 )} 
+wvSetCursor -win $_nWave2 517609.184411 -snap {("G1" 13)}
+wvSelectSignal -win $_nWave2 {( "G1" 9 )} 
+wvSetCursor -win $_nWave2 516939.573565 -snap {("G1" 11)}
+wvSetCursor -win $_nWave2 508234.632559 -snap {("G1" 13)}
+wvZoom -win $_nWave2 493503.193934 578543.771451
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G1" 10 )} 
+wvSelectSignal -win $_nWave2 {( "G1" 11 )} 
+wvSetCursor -win $_nWave2 596532.245093 -snap {("G1" 13)}
+wvSetCursor -win $_nWave2 606952.022300 -snap {("G1" 2)}
+wvSetCursor -win $_nWave2 594795.615559 -snap {("G1" 13)}
+wvSetCursor -win $_nWave2 557458.080567 -snap {("G1" 13)}
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "top.u_amba_ahb.Uahb_arbiter" -win $_nTrace1
+srcHBSelect "top.u_amba_ahb" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "M_HMASTER" -line 77 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -inst "Uahb_m2s" -line 87 -pos 1 -win $_nTrace1
+srcAction -pos 86 3 5 -win $_nTrace1 -name "Uahb_m2s" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "HMASTER" -line 56 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "HMASTER" -line 56 -pos 1 -win $_nTrace1
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "top.u_amba_ahb.Uahb_m2s" -win $_nTrace1
+srcHBSelect "top.u_amba_ahb" -win $_nTrace1
+srcForwardHistory -win $_nTrace1
+srcHBSelect "top.u_amba_ahb" -win $_nTrace1
+srcHBSelect "top.u_amba_ahb.Uahb_m2s" -win $_nTrace1
+wvZoom -win $_nWave2 475836.492447 641684.612990
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "HMASTER" -line 55 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "HMASTER" -line 56 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvSetCursor -win $_nWave2 510710.108094 -snap {("G1" 14)}
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "HADDR" -line 57 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G1" 3 )} 
+wvSelectSignal -win $_nWave2 {( "G1" 4 )} 
+wvSelectSignal -win $_nWave2 {( "G1" 5 )} 
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "HADDR_0" -line 57 -pos 1 -win $_nTrace1
+srcSelect -signal "HADDR_1" -line 58 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvSelectSignal -win $_nWave2 {( "G1" 17 )} 
+wvSelectSignal -win $_nWave2 {( "G1" 16 17 )} 
+wvCut -win $_nWave2
+wvSetPosition -win $_nWave2 {("G1" 15)}
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "top.u_amba_ahb.Uahb_m2s" -win $_nTrace1
+srcHBSelect "top.u_amba_ahb" -win $_nTrace1
+srcForwardHistory -win $_nTrace1
+srcHBSelect "top.u_amba_ahb" -win $_nTrace1
+srcHBSelect "top.u_amba_ahb.Uahb_m2s" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "hmaster_delay" -line 47 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "HREADY" -line 49 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvSetCursor -win $_nWave2 497586.198108 -snap {("G1" 17)}
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvSetCursor -win $_nWave2 547541.726440 -snap {("G1" 17)}
+wvSelectGroup -win $_nWave2 {G2}
+wvSelectSignal -win $_nWave2 {( "G1" 17 )} 
+wvCut -win $_nWave2
+wvSetPosition -win $_nWave2 {("G2" 0)}
+wvSetPosition -win $_nWave2 {("G1" 16)}
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "HMASTER" -line 50 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -win $_nTrace1 -range {59 60 9 1 1 1}
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -win $_nTrace1 -range {65 66 9 1 1 1}
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -win $_nTrace1 -range {59 60 9 1 1 1}
+srcDeselectAll -win $_nTrace1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvZoom -win $_nWave2 501396.365523 548388.430310
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+srcDeselectAll -win $_nTrace1
+srcSelect -win $_nTrace1 -range {59 59 5 12 1 1}
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "HPROT" -line 63 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave2
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvSetCursor -win $_nWave2 549483.012547 -snap {("G1" 2)}
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollDown -win $_nWave2 0
+wvSelectSignal -win $_nWave2 {( "G1" 2 )} 
+wvAddSignal -win $_nWave2 "/top/HCLK"
+wvSetPosition -win $_nWave2 {("G1" 18)}
+wvSetPosition -win $_nWave2 {("G1" 19)}
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 0
+wvSetCursor -win $_nWave2 532689.422068 -snap {("G1" 19)}
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "top.u_amba_ahb.Uahb_m2s" -win $_nTrace1
+srcHBSelect "top.u_amba_ahb" -win $_nTrace1
+srcForwardHistory -win $_nTrace1
+srcHBSelect "top.u_amba_ahb" -win $_nTrace1
+srcHBSelect "top.u_amba_ahb.Uahb_m2s" -win $_nTrace1
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "top.u_amba_ahb.Uahb_m2s" -win $_nTrace1
+srcHBSelect "top.u_amba_ahb" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+debExit

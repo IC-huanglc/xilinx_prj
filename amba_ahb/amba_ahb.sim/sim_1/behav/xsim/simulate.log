@@ -915,3 +915,17 @@ top.GM_BLK[1].u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xee675adc, ali
 top.GM_BLK[0].u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x8117d802, aligned data = 0x8117d802, added by huanglc
 top.GM_BLK[1].u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x6e078bdc, aligned data = 0x6e078bdc, added by huanglc
 top.GM_BLK[0].u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x79ef70f, aligned data = 0x79ef70f, added by huanglc
+top.GM_BLK[1].u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x213a9f42, aligned data = 0x213a9f42, added by huanglc
+top.GM_BLK[0].u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0x333bfd66, aligned data = 0x333bfd66, added by huanglc
+top.GM_BLK[1].u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xe0eab1c, aligned data = 0xe0eab1c, added by huanglc
+top.GM_BLK[0].u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xa9cda453, aligned data = 0xa9cda453, added by huanglc
+top.GM_BLK[1].u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xeae211d, aligned data = 0xeae211d, added by huanglc
+top.GM_BLK[0].u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xb8945271, aligned data = 0xb8945271, added by huanglc
+top.GM_BLK[1].u_bfm_ahb.memory_test: after $random&~32'b0, gen = 0xa8362e50, aligned data = 0xa8362e50, added by huanglc
+[    264930] top.GM_BLK[0].u_bfm_ahb.memory_test OK: from 00000000 to 000000ff
+top.GM_BLK[0].u_bfm_ahb.memory_test read-all-after-write-all with 4-byte access
+[    265010] top.GM_BLK[1].u_bfm_ahb.memory_test OK: from 10000000 to 100000ff
+top.GM_BLK[1].u_bfm_ahb.memory_test read-all-after-write-all with 4-byte access
+[    285090] top.GM_BLK[0].u_bfm_ahb.memory_test OK: from 00000000 to 000000ff
+$finish called at time : 285090 ns : File "/home/ICer/xilinx_prj/amba_ahb/amba_ahb.srcs/sim_1/imports/imports/sim/bfm_ahb.v" Line 102
+Memory in use : 125320 KB (peak memory: 182592 KB)     CPU usage : 190 ms

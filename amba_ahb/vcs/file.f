@@ -1,3 +1,4 @@
++incdir+/home/ICer/xilinx_prj/amba_ahb/vcs/srcs
 /home/ICer/xilinx_prj/amba_ahb/vcs/srcs/ahb_arbiter_m2.v 
 /home/ICer/xilinx_prj/amba_ahb/vcs/srcs/ahb_decoder_s3.v 
 /home/ICer/xilinx_prj/amba_ahb/vcs/srcs/ahb_default_slave.v 
