@@ -89,82 +89,82 @@ module ahb2ahb_master_core
               STH_WRITE2    = 'hD;
    always @ (posedge HCLK or negedge HRESETn) begin
        if (HRESETn==0) begin
-           HBUSREQ  <= 1'b0;
-           HADDR    <= ~32'h0;
-           HTRANS   <= 2'h0;
-           HWRITE   <= 1'b0;
-           HSIZE    <= 3'h0;
-           HBURST   <= 3'h0;
-           HWDATA   <= 32'h0;
-           frd_rdy_gate <= 1'b0;
-           frd_rdy_loc  <= 1'b0;
-           bwr_vld  <= 1'b0;
-           bwr_dat  <= 32'h0;
-           counter  <= 'h0;
-           T_ADDR   <= 23'h0;
-           T_WRITE  <= 1'b0;
-           T_TRANS  <= 2'b0;
-           T_SIZE   <= 3'b0;
-           T_BURST  <= 3'b0;
-           T_LENG   <= 5'h0;
+           HBUSREQ  <= #1 1'b0;
+           HADDR    <= #1 ~32'h0;
+           HTRANS   <= #1 2'h0;
+           HWRITE   <= #1 1'b0;
+           HSIZE    <= #1 3'h0;
+           HBURST   <= #1 3'h0;
+           HWDATA   <= #1 32'h0;
+           frd_rdy_gate <= #1 1'b0;
+           frd_rdy_loc  <= #1 1'b0;
+           bwr_vld  <= #1 1'b0;
+           bwr_dat  <= #1 32'h0;
+           counter  <= #1 'h0;
+           T_ADDR   <= #1 23'h0;
+           T_WRITE  <= #1 1'b0;
+           T_TRANS  <= #1 2'b0;
+           T_SIZE   <= #1 3'b0;
+           T_BURST  <= #1 3'b0;
+           T_LENG   <= #1 5'h0;
            // synthesis translate_off
-           check_resp <=1'b0;
+           check_resp <= #11'b0;
            // synthesis translate_on
-           state      <= STH_IDLE;
+           state      <= #1 STH_IDLE;
        end else begin // if (HRESETn==0) begin
            case (state)
            STH_IDLE: begin
                 if (frd_vld&(frd_cnt>=2)) begin
-                   {T_SIZE,T_BURST,T_TRANS,T_WRITE} <= frd_dat;
-                   frd_rdy_loc <= 1'b1;
-                   state   <= STH_GET_ADDR0;
+                   {T_SIZE,T_BURST,T_TRANS,T_WRITE} <= #1 frd_dat;
+                   frd_rdy_loc <= #1 1'b1;
+                   state   <= #1 STH_GET_ADDR0;
                 end
                 // synthesis translate_off
                 if (HREADY&&check_resp) begin
-                    check_resp <= 1'b0;
+                    check_resp <= #1 1'b0;
                     if (HRESP!=2'b00) $display($time,,"%m ERROR non-OK response");
                 end
                 // synthesis translate_on
                 end // STH_IDLE
            STH_GET_ADDR0: begin
-                T_LENG <= burst_leng(T_BURST);
-                state  <= STH_GET_ADDR1;
+                T_LENG <= #1 burst_leng(T_BURST);
+                state  <= #1 STH_GET_ADDR1;
                 end // STH_IDLE
            STH_GET_ADDR1: begin
-                T_ADDR   <= frd_dat;
-                HBUSREQ  <= 1'b1;
+                T_ADDR   <= #1 frd_dat;
+                HBUSREQ  <= #1 1'b1;
                 if (T_WRITE) begin
                     if (frd_cnt>T_LENG) begin
                         // since frd_cnt counts address as well
-                        frd_rdy_loc  <= 1'b0;
-                        state    <= STH_WRITE_ARB;
+                        frd_rdy_loc  <= #1 1'b0;
+                        state    <= #1 STH_WRITE_ARB;
                     end else begin
-                        frd_rdy_loc  <= 1'b0;
-                        state    <= STH_WRITE_WAIT;
+                        frd_rdy_loc  <= #1 1'b0;
+                        state    <= #1 STH_WRITE_WAIT;
                     end
                 end else begin
-                    frd_rdy_loc  <= 1'b0;
+                    frd_rdy_loc  <= #1 1'b0;
                     if (bwr_rdy&(bwr_cnt>=T_LENG)) begin
-                        state    <= STH_READ_ARB;
+                        state    <= #1 STH_READ_ARB;
                     end else begin
-                        state   <= STH_READ_WAIT;
+                        state   <= #1 STH_READ_WAIT;
                     end
                 end
                 end // STH_IDLE
            STH_READ_WAIT: begin
                 if (bwr_rdy&(bwr_cnt>=T_LENG)) begin
-                    state   <= STH_READ_ARB;
+                    state   <= #1 STH_READ_ARB;
                 end
                 end // STH_READ_WAIT
            STH_READ_ARB: begin
                 if (HGRANT&&HREADY) begin
-                      HADDR   <= T_ADDR;
-                      HWRITE  <= T_WRITE;
-                      HTRANS  <= T_TRANS; // should be 2'b10 NON_SEQ
-                      HBURST  <= T_BURST;
-                      HSIZE   <= T_SIZE;
-                      counter <= 2;
-                      state   <= STH_READ0;
+                      HADDR   <= #1 T_ADDR;
+                      HWRITE  <= #1 T_WRITE;
+                      HTRANS  <= #1 T_TRANS; // should be 2'b10 NON_SEQ
+                      HBURST  <= #1 T_BURST;
+                      HSIZE   <= #1 T_SIZE;
+                      counter <= #1 2;
+                      state   <= #1 STH_READ0;
                       // synopsys translate_off
                       `ifdef RIGOR
                       if (T_TRANS!=2'b10) $display($time,,"%m: ERROR HTRANS is not NON_SEQ");
@@ -175,74 +175,74 @@ module ahb2ahb_master_core
            STH_READ0: begin
                 if (HREADY) begin
                     if (T_LENG>1) begin
-                       HADDR   <= get_next_haddr(HADDR,T_BURST);
-                       HTRANS  <= 2'b11; // SEQ
-                       state   <= STH_READ1;
+                       HADDR   <= #1 get_next_haddr(HADDR,T_BURST);
+                       HTRANS  <= #1 2'b11; // SEQ
+                       state   <= #1 STH_READ1;
                     end else begin
-                       HBUSREQ <= 1'b0;
-                       HTRANS  <= 2'b00; // IDLE
-                       state   <= STH_READ2;
+                       HBUSREQ <= #1 1'b0;
+                       HTRANS  <= #1 2'b00; // IDLE
+                       state   <= #1 STH_READ2;
                     end
                 end
                 end // STH_READ0
            STH_READ1: begin
                 if (HREADY) begin
-                    bwr_vld <= 1'b1;
-                    bwr_dat <= HRDATA;
+                    bwr_vld <= #1 1'b1;
+                    bwr_dat <= #1 HRDATA;
                     if (counter>=T_LENG) begin
-                       HBUSREQ <= 1'b0;
-                       HTRANS  <= 2'b00; // IDLE
-                       state   <= STH_READ2;
+                       HBUSREQ <= #1 1'b0;
+                       HTRANS  <= #1 2'b00; // IDLE
+                       state   <= #1 STH_READ2;
                     end else begin
-                       HADDR   <= get_next_haddr(HADDR,T_BURST);
-                       HTRANS  <= 2'b11; // SEQ
-                       counter <= counter + 1;
+                       HADDR   <= #1 get_next_haddr(HADDR,T_BURST);
+                       HTRANS  <= #1 2'b11; // SEQ
+                       counter <= #1 counter + 1;
                     end
                     // synthesis translate_off
                     if (HRESP!=2'b00) $display($time,,"%m ERROR non-OK response");
                     // synthesis translate_on
                 end else begin
-                    bwr_vld <= 1'b0;
+                    bwr_vld <= #1 1'b0;
                 end
                 end // STH_READ1
            STH_READ2: begin
                 if (HREADY) begin
-                    bwr_vld <= 1'b1;
-                    bwr_dat <= HRDATA;
-                    state   <= STH_READ3;
+                    bwr_vld <= #1 1'b1;
+                    bwr_dat <= #1 HRDATA;
+                    state   <= #1 STH_READ3;
                     // synthesis translate_off
                     if (HRESP!=2'b00) $display($time,,"%m ERROR non-OK response");
                     // synthesis translate_on
                 end else begin
-                    bwr_vld <= 1'b0;
+                    bwr_vld <= #1 1'b0;
                 end
                 end // STH_READ2
            STH_READ3: begin
-                bwr_vld <= 1'b0;
-                state   <= STH_IDLE;
+                bwr_vld <= #1 1'b0;
+                state   <= #1 STH_IDLE;
                 // synthesis translate_off
-                check_resp <= 1'b0;
+                check_resp <= #1 1'b0;
                 // synthesis translate_on
                 end // STH_READ3
            STH_WRITE_WAIT: begin
                 //if (frd_cnt>T_LENG) begin 2010.01.07.
                 if (frd_cnt>=T_LENG) begin
                         // it waits data only
-                        frd_rdy_loc  <= 1'b0;
-                        state    <= STH_WRITE_ARB;
+                        frd_rdy_loc  <= #1 1'b0;
+                        state    <= #1 STH_WRITE_ARB;
                 end
                 end // STH_WRITE_WAIT
            STH_WRITE_ARB: begin // A (10)
-                frd_rdy_loc  <= 1'b0;
+                frd_rdy_loc  <= #1 1'b0;
                 if (HGRANT&&HREADY) begin
-                      HADDR   <= T_ADDR;
-                      HWRITE  <= T_WRITE;
-                      HTRANS  <= T_TRANS; // should be 2'b10 NON_SEQ
-                      HBURST  <= T_BURST;
-                      HSIZE   <= T_SIZE;
-                      counter <= 1;
-                      frd_rdy_gate <= 1'b1;
-                      state   <= STH_WRITE0;
+                      HADDR   <= #1 T_ADDR;
+                      HWRITE  <= #1 T_WRITE;
+                      HTRANS  <= #1 T_TRANS; // should be 2'b10 NON_SEQ
+                      HBURST  <= #1 T_BURST;
+                      HSIZE   <= #1 T_SIZE;
+                      counter <= #1 1;
+                      frd_rdy_gate <= #1 1'b1;
+                      state   <= #1 STH_WRITE0;
                       // synopsys translate_off
                       `ifdef RIGOR
                       if (T_TRANS!=2'b10) $display($time,,"%m: ERROR HTRANS is not NON_SEQ");
@@ -252,32 +252,32 @@ module ahb2ahb_master_core
                 end // STH_READ_ARB
            STH_WRITE0: begin // B (11)
                    if (HREADY) begin
-                      HWDATA   <= frd_dat;
+                      HWDATA   <= #1 frd_dat;
                       if (T_LENG>1) begin
-                          HADDR    <= get_next_haddr(HADDR,T_BURST);
-                          HTRANS   <= 2'b11; // NON-SEQ
-                          counter  <= counter + 1;
-                          state    <= STH_WRITE1;
+                          HADDR    <= #1 get_next_haddr(HADDR,T_BURST);
+                          HTRANS   <= #1 2'b11; // NON-SEQ
+                          counter  <= #1 counter + 1;
+                          state    <= #1 STH_WRITE1;
                       end else begin
-                          HBUSREQ  <= 1'b0;
-                          HTRANS   <= 2'b00; // IDLE
-                          frd_rdy_gate <= 1'b0;
-                          state    <= STH_WRITE2;
+                          HBUSREQ  <= #1 1'b0;
+                          HTRANS   <= #1 2'b00; // IDLE
+                          frd_rdy_gate <= #1 1'b0;
+                          state    <= #1 STH_WRITE2;
                       end
                    end
                 end // STH_WDATA0
            STH_WRITE1: begin // C (12)
                 if (HREADY) begin
-                    HWDATA   <= frd_dat;
+                    HWDATA   <= #1 frd_dat;
                     if (counter>=T_LENG) begin
-                       HBUSREQ <= 1'b0;
-                       HTRANS  <= 2'b00; // IDLE
-                       frd_rdy_gate <= 1'b0;
-                       state   <= STH_WRITE2;
+                       HBUSREQ <= #1 1'b0;
+                       HTRANS  <= #1 2'b00; // IDLE
+                       frd_rdy_gate <= #1 1'b0;
+                       state   <= #1 STH_WRITE2;
                     end else begin
-                       HADDR   <= get_next_haddr(HADDR,T_BURST);
-                       HTRANS  <= 2'b11; // SEQ
-                       counter <= counter + 1;
+                       HADDR   <= #1 get_next_haddr(HADDR,T_BURST);
+                       HTRANS  <= #1 2'b11; // SEQ
+                       counter <= #1 counter + 1;
                     end
                     // synthesis translate_off
                     if (HRESP!=2'b00) $display($time,,"%m ERROR non-OK response");
@@ -285,9 +285,9 @@ module ahb2ahb_master_core
                 end
                 end // STH_WDATA1
            STH_WRITE2: begin // 0xD (13)
-                state   <= STH_IDLE;
+                state   <= #1 STH_IDLE;
                 // synthesis translate_off
-                check_resp <= 1'b1;
+                check_resp <= #1 1'b1;
                 // synthesis translate_on
                 end // STH_WRITE2
            endcase // state

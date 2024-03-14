@@ -76,93 +76,93 @@ module ahb2ahb_slave_core
               STH_WRITE1 = 'h7;
    always @ (posedge HCLK or negedge HRESETn) begin
        if (HRESETn==0) begin
-           HRDATA     <= 32'h0;
-           HREADYout  <= 1'b1;
-           HRESP      <= 2'b00; //`HRESP_OKAY;
-           fwr_vld    <= 1'b0;
-           fwr_dat    <= 32'h0;
-           brd_rdy    <= 1'b0;
-           T_ADDR     <= 32'h0;
-           T_WRITE    <= 1'b0;
-           T_TRANS    <= 2'h0;
-           T_BURST    <= 3'h0;
-           T_SIZE     <= 3'h0;
-           T_LENG     <= 'h0;
-           counter    <= 5'h0;
-           state      <= STH_IDLE;
+           HRDATA     <= #1 32'h0;
+           HREADYout  <= #1 1'b1;
+           HRESP      <= #1 2'b00; //`HRESP_OKAY;
+           fwr_vld    <= #1 1'b0;
+           fwr_dat    <= #1 32'h0;
+           brd_rdy    <= #1 1'b0;
+           T_ADDR     <= #1 32'h0;
+           T_WRITE    <= #1 1'b0;
+           T_TRANS    <= #1 2'h0;
+           T_BURST    <= #1 3'h0;
+           T_SIZE     <= #1 3'h0;
+           T_LENG     <= #1 'h0;
+           counter    <= #1 5'h0;
+           state      <= #1 STH_IDLE;
        end else begin // if (HRESETn==0) begin
            case (state)
            STH_IDLE: begin
-                fwr_vld   <= 1'b0; // see STH_WRITE1 (should be here)
+                fwr_vld   <= #1 1'b0; // see STH_WRITE1 (should be here)
                 if (HSEL && HREADYin) begin
                    case (HTRANS)
                    2'b00, 2'b01: begin //`HTRANS_IDLE,`HTRANS_BUSY
-                          HREADYout <= 1'b1;
-                          state     <= STH_IDLE;
+                          HREADYout <= #1 1'b1;
+                          state     <= #1 STH_IDLE;
                     end
                    2'b10, 2'b11: begin //`HTRANS_NONSEQ,`HTRANS_SEQ
-                          T_ADDR    <= HADDR;
-                          T_WRITE   <= HWRITE;
-                          T_TRANS   <= HTRANS;
-                          T_BURST   <= HBURST;
-                          T_SIZE    <= HSIZE;
-                          T_LENG    <= burst_leng(HBURST);
-                          HREADYout <= 1'b0;
+                          T_ADDR    <= #1 HADDR;
+                          T_WRITE   <= #1 HWRITE;
+                          T_TRANS   <= #1 HTRANS;
+                          T_BURST   <= #1 HBURST;
+                          T_SIZE    <= #1 HSIZE;
+                          T_LENG    <= #1 burst_leng(HBURST);
+                          HREADYout <= #1 1'b0;
                           if (fwr_rdy&&(fwr_cnt>(burst_leng(HBURST)+2))) begin
-                              fwr_dat   <= {HSIZE,HBURST,HTRANS,HWRITE};
-                              fwr_vld   <= 1'b1;
-                              state     <= STH_ADDR;
+                              fwr_dat   <= #1 {HSIZE,HBURST,HTRANS,HWRITE};
+                              fwr_vld   <= #1 1'b1;
+                              state     <= #1 STH_ADDR;
                           end else begin
-                              state     <= STH_WAIT;
+                              state     <= #1 STH_WAIT;
                           end
                     end
                    endcase
                 end else begin// if (HSEL && HREADYin)
-                    HREADYout <= 1'b1;
+                    HREADYout <= #1 1'b1;
                 end
                 end // STH_IDLE
            STH_WAIT: begin // wait until FIFO is available
                 if (fwr_rdy&&(fwr_cnt>(T_LENG+2))) begin
-                   fwr_dat   <= {T_SIZE,T_BURST,T_TRANS,T_WRITE};
-                   fwr_vld   <= 1'b1;
-                   state     <= STH_ADDR;
+                   fwr_dat   <= #1 {T_SIZE,T_BURST,T_TRANS,T_WRITE};
+                   fwr_vld   <= #1 1'b1;
+                   state     <= #1 STH_ADDR;
                 end else begin
-                   fwr_vld   <= 1'b0; // see STH_WRITE1 (should be here)
+                   fwr_vld   <= #1 1'b0; // see STH_WRITE1 (should be here)
                 end
                 end // STH_WAIT
            STH_ADDR: begin
                 if (fwr_rdy) begin
-                   fwr_dat <= T_ADDR;
-                   fwr_vld <= 1'b1;
+                   fwr_dat <= #1 T_ADDR;
+                   fwr_vld <= #1 1'b1;
                    if (T_WRITE) begin
-                      counter   <= 1;
-                      state     <= STH_WRITE0;
+                      counter   <= #1 1;
+                      state     <= #1 STH_WRITE0;
                    end else begin
-                      HREADYout <= 1'b0;
-                      state     <= STH_READ0;
+                      HREADYout <= #1 1'b0;
+                      state     <= #1 STH_READ0;
                    end
                 end
                 end // STH_ADDR
            STH_READ0: begin
                 if (fwr_rdy) begin
-                    fwr_vld <= 1'b0;
-                    state   <= STH_READ1;
+                    fwr_vld <= #1 1'b0;
+                    state   <= #1 STH_READ1;
                 end
                 end // STH_READ0
            STH_READ1: begin
                 if (brd_vld&&(brd_cnt>=T_LENG)) begin
-                    brd_rdy <= 1'b1;
-                    counter <= 1;
-                    state   <= STH_READ2;
+                    brd_rdy <= #1 1'b1;
+                    counter <= #1 1;
+                    state   <= #1 STH_READ2;
                 end
                 end // STH_READ1
            STH_READ2: begin
-                   HRDATA    <= brd_dat;
-                   HREADYout <= 1'b1;
-                   counter   <= counter + 1;
+                   HRDATA    <= #1 brd_dat;
+                   HREADYout <= #1 1'b1;
+                   counter   <= #1 counter + 1;
                    if (counter>=T_LENG) begin
-                       brd_rdy <= 1'b0;
-                       state   <= STH_IDLE;
+                       brd_rdy <= #1 1'b0;
+                       state   <= #1 STH_IDLE;
                    end
                    // synopsys translate_off
                    `ifdef RIGOR
@@ -172,10 +172,10 @@ module ahb2ahb_slave_core
                    // synopsys translate_on
                 end // STH_READ1
            STH_WRITE0: begin
-                HREADYout <= 1'b1;
-                fwr_vld   <= 1'b0;
-                counter   <= 1;
-                state     <= STH_WRITE1;
+                HREADYout <= #1 1'b1;
+                fwr_vld   <= #1 1'b0;
+                counter   <= #1 1;
+                state     <= #1 STH_WRITE1;
                 // synopsys translate_off
                 `ifdef RIGOR
                 if (fwr_rdy==1'b0) $display("%m: Error: fwr_rdy should not be '0'.");
@@ -184,30 +184,30 @@ module ahb2ahb_slave_core
                 // synopsys translate_on
                 end // STH_WRITE0
            STH_WRITE1: begin
-                fwr_dat  <= HWDATA;
-                fwr_vld  <= 1'b1;
-                counter  <= counter + 1;
+                fwr_dat  <= #1 HWDATA;
+                fwr_vld  <= #1 1'b1;
+                counter  <= #1 counter + 1;
                 if (counter>=T_LENG) begin
-                   fwr_vld   <= 1'b1;
+                   fwr_vld   <= #1 1'b1;
                    if (HSEL && HREADYin) begin
                       case (HTRANS)
                       2'b00, 2'b01: begin //`HTRANS_IDLE,`HTRANS_BUSY
-                             HREADYout <= 1'b1;
-                             state     <= STH_IDLE;
+                             HREADYout <= #1 1'b1;
+                             state     <= #1 STH_IDLE;
                        end
                       2'b10, 2'b11: begin //`HTRANS_NONSEQ,`HTRANS_SEQ
-                             T_ADDR    <= HADDR;
-                             T_WRITE   <= HWRITE;
-                             T_TRANS   <= HTRANS;
-                             T_BURST   <= HBURST;
-                             T_SIZE    <= HSIZE;
-                             T_LENG    <= burst_leng(HBURST);
-                             HREADYout <= 1'b0;
-                             state     <= STH_WAIT;
+                             T_ADDR    <= #1 HADDR;
+                             T_WRITE   <= #1 HWRITE;
+                             T_TRANS   <= #1 HTRANS;
+                             T_BURST   <= #1 HBURST;
+                             T_SIZE    <= #1 HSIZE;
+                             T_LENG    <= #1 burst_leng(HBURST);
+                             HREADYout <= #1 1'b0;
+                             state     <= #1 STH_WAIT;
                        end
                       endcase
                    end else begin// if (HSEL && HREADYin)
-                       state     <= STH_IDLE;
+                       state     <= #1 STH_IDLE;
                    end
                 end
                 end // STH_WRITE1
