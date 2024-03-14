@@ -29,7 +29,7 @@
 `define MEM_DELAY  1
 //-----------------------------------------------------------------------
 `define SINGLE_TEST
-//`define BURST_TEST
+`define BURST_TEST
 //-----------------------------------------------------------------------
 `endif
 
@@ -103,6 +103,7 @@ module bfm_ahb #(parameter START_ADDR=0
             for (i=start; i<(finish-size+1); i=i+size) begin
                 gen = $random&~32'b0;
                 data = align(i, gen, size);
+                $display("%m:in read-after-write, gen= 0x%8h, but write data= 0x%8h",gen,data);
                 ahb_write(i, size, data);
                 ahb_read(i, size, got);
                 got = align(i, got, size);
@@ -120,6 +121,7 @@ module bfm_ahb #(parameter START_ADDR=0
             for (i=start; i<(finish-size+1); i=i+size) begin
                 gen = {$random} & ~32'b0;
                 data = align(i, gen, size);
+                $display("%m:in read-all-after-write-all, gen= 0x%8h, but write data= 0x%8h",gen,data);
                 reposit[i] = data;
                 ahb_write(i, size, data);
             end
@@ -156,6 +158,8 @@ module bfm_ahb #(parameter START_ADDR=0
              for (i=start; i<(finish-(leng*4)+1); i=i+leng*4) begin
                  for (j=0; j<leng; j=j+1) begin
                      data_burst[j] = $random;
+                      $display("%m:in read-all-after-write-all, data_burst = 0x%8h",data_burst[j]);
+
                      reposit[j+k*leng] = data_burst[j];
                  end
                  @ (posedge HCLK);
