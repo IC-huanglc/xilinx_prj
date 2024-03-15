@@ -1,3 +1,9 @@
+bfm_ahb.v作为master，向DUT发送请求。
+
+DUT会将请求通过Uslave模块写入Ufwd FIFO，存入请求和数据。之后FIFO将数据推出，传给Umaster模块，配合Ubwd FIFO，将请求发送给3个slave mem。
+
+目前只研究了Uslave中的代码，到此为止就够了。其中Uslave中会先写入控制信号以及ADDR到Ufwd FIFO中，之后拉低HREADY，一段时间后拉高HREADY，再写入DATA，完完全全符合多周期等待的AHB总线时序。
+
 ################################################################################
 # Vivado (TM) v2019.1 (64-bit)
 #
