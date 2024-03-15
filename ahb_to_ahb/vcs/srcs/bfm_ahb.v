@@ -70,9 +70,9 @@ module bfm_ahb #(parameter START_ADDR=0
        while  (HRESETn===1'b0) @ (posedge HCLK);
        `ifdef SINGLE_TEST
        repeat (3) @ (posedge HCLK);
-       memory_test(START_ADDR, END_ADDR, 4);
-       memory_test(START_ADDR, END_ADDR, 2);
        memory_test(START_ADDR, END_ADDR, 1);
+       memory_test(START_ADDR, END_ADDR, 2);
+       memory_test(START_ADDR, END_ADDR, 4);
        `endif
        `ifdef BURST_TEST
        repeat (5) @ (posedge HCLK);

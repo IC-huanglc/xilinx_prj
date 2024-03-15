@@ -2,7 +2,7 @@ Magic 271485
 Revision Verdi_O-2018.09-SP2
 
 ; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
-viewPort 0 27 963 872 211 65
+viewPort 0 27 1920 497 211 65
 
 ; File list:
 ; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
@@ -16,19 +16,25 @@ signalSpacing 5
 
 ; windowTimeUnit is used for zoom, cursor & marker
 ; waveform viewport range
-zoom 374249.155774 480391.701393
-cursor 391000.000000
+zoom 469834652.740614 470269003.394357
+cursor 470110000.000000
 marker 0.000000
 
 ; user define markers
 ; userMarker time_pos marker_name color linestyle
-userMarker 469991000 "1st write burst" ID_GREEN5 long_dashed
+userMarker 501030000 "burst, INCR4" ID_GREEN5 long_dashed
+userMarker 469991000 "burst, INCR, 2 beat" ID_GREEN5 long_dashed
+userMarker 427711000 "begin burst, INCR, 1 beat" ID_GREEN5 long_dashed
 userMarker 391000 "1st write 1 byte" ID_GREEN5 long_dashed
 
+; set reference marker 
+; refMarker marker_name
+refMarker burst, INCR4
+
 ; visible top row signal index
-top 11
+top 39
 ; marker line index
-markerPos 46
+markerPos 56
 
 ; event list
 ; addEvent event_name event_expression
@@ -127,11 +133,21 @@ addSignal -h 15 -holdScope HREADYout
 addSignal -h 15 -UNSIGNED -UDEC -holdScope fwr_cnt[5:0]
 aliasname ahb2ahb_slave_core.state
 addSignal -h 15 -UNSIGNED -HEX -holdScope state[2:0]
+addSignal -h 15 -holdScope fwr_vld
 addSignal -h 15 -holdScope fwr_dat[31:0]
 addSignal -h 15 -holdScope counter[4:0]
 addSignal -h 15 -holdScope fwr_vld
 addSignal -h 15 -holdScope T_LENG[4:0]
 addSignal -h 15 -holdScope HTRANS[1:0]
+addSignal -h 15 -holdScope HWDATA[31:0]
+addSignal -h 15 /top/u_ahb2ahb/HCLK
+addSignal -h 15 /top/u_ahb2ahb/Uslave/HADDR[31:0]
+addSignal -h 15 -holdScope HWRITE
+addSignal -h 15 -holdScope HTRANS[1:0]
+addSignal -h 15 -holdScope HBURST[2:0]
+addSignal -h 15 -holdScope HSIZE[2:0]
+addSignal -h 15 -holdScope HREADYin
+addSignal -h 15 -holdScope HADDR[31:0]
 addGroup "G3"
 
 ; getSignalForm Scope Hierarchy Status
