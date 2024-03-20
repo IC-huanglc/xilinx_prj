@@ -64,3 +64,209 @@ controlling such use and disclosure.
 
 Parsing design file '/home/ICer/xilinx_prj/latch/vcs/glbl.v'
 CPU time: .132 seconds to compile
+                         Chronologic VCS (TM)
+        Version O-2018.09-1_Full64 -- Wed Mar 20 16:42:44 2024
+               Copyright (c) 1991-2018 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file '/home/ICer/xilinx_prj/latch/vcs/srcs/ram_model.v'
+CPU time: .364 seconds to compile
+                         Chronologic VCS (TM)
+        Version O-2018.09-1_Full64 -- Wed Mar 20 16:42:44 2024
+               Copyright (c) 1991-2018 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file '/home/ICer/xilinx_prj/latch/vcs/srcs/tb_latch.sv'
+
+Error-[SE] Syntax error
+  Following verilog source has syntax error :
+  "/home/ICer/xilinx_prj/latch/vcs/srcs/tb_latch.sv", 69: token is 'end'
+      end
+         ^
+
+1 error
+CPU time: .206 seconds to compile
+                         Chronologic VCS (TM)
+        Version O-2018.09-1_Full64 -- Wed Mar 20 16:42:45 2024
+               Copyright (c) 1991-2018 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file '/home/ICer/xilinx_prj/latch/vcs/glbl.v'
+CPU time: .123 seconds to compile
+                         Chronologic VCS (TM)
+        Version O-2018.09-1_Full64 -- Wed Mar 20 16:43:01 2024
+               Copyright (c) 1991-2018 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file '/home/ICer/xilinx_prj/latch/vcs/srcs/ram_model.v'
+CPU time: .127 seconds to compile
+                         Chronologic VCS (TM)
+        Version O-2018.09-1_Full64 -- Wed Mar 20 16:43:01 2024
+               Copyright (c) 1991-2018 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file '/home/ICer/xilinx_prj/latch/vcs/srcs/tb_latch.sv'
+CPU time: .157 seconds to compile
+                         Chronologic VCS (TM)
+        Version O-2018.09-1_Full64 -- Wed Mar 20 16:43:02 2024
+               Copyright (c) 1991-2018 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file '/home/ICer/xilinx_prj/latch/vcs/glbl.v'
+CPU time: .127 seconds to compile
+                         Chronologic VCS (TM)
+        Version O-2018.09-1_Full64 -- Wed Mar 20 16:48:47 2024
+               Copyright (c) 1991-2018 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file '/home/ICer/xilinx_prj/latch/vcs/srcs/ram_model.v'
+CPU time: .154 seconds to compile
+                         Chronologic VCS (TM)
+        Version O-2018.09-1_Full64 -- Wed Mar 20 16:48:47 2024
+               Copyright (c) 1991-2018 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file '/home/ICer/xilinx_prj/latch/vcs/srcs/tb_latch.sv'
+CPU time: .169 seconds to compile
+                         Chronologic VCS (TM)
+        Version O-2018.09-1_Full64 -- Wed Mar 20 16:48:48 2024
+               Copyright (c) 1991-2018 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file '/home/ICer/xilinx_prj/latch/vcs/glbl.v'
+CPU time: .126 seconds to compile
+                         Chronologic VCS (TM)
+        Version O-2018.09-1_Full64 -- Wed Mar 20 16:51:46 2024
+               Copyright (c) 1991-2018 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file '/home/ICer/xilinx_prj/latch/vcs/srcs/ram_model.v'
+CPU time: .194 seconds to compile
+                         Chronologic VCS (TM)
+        Version O-2018.09-1_Full64 -- Wed Mar 20 16:51:46 2024
+               Copyright (c) 1991-2018 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file '/home/ICer/xilinx_prj/latch/vcs/srcs/tb_latch.sv'
+CPU time: .146 seconds to compile
+                         Chronologic VCS (TM)
+        Version O-2018.09-1_Full64 -- Wed Mar 20 16:51:47 2024
+               Copyright (c) 1991-2018 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file '/home/ICer/xilinx_prj/latch/vcs/glbl.v'
+CPU time: .130 seconds to compile
+                         Chronologic VCS (TM)
+        Version O-2018.09-1_Full64 -- Wed Mar 20 16:53:38 2024
+               Copyright (c) 1991-2018 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file '/home/ICer/xilinx_prj/latch/vcs/srcs/ram_model.v'
+CPU time: .131 seconds to compile
+                         Chronologic VCS (TM)
+        Version O-2018.09-1_Full64 -- Wed Mar 20 16:53:38 2024
+               Copyright (c) 1991-2018 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file '/home/ICer/xilinx_prj/latch/vcs/srcs/tb_latch.sv'
+CPU time: .127 seconds to compile
+                         Chronologic VCS (TM)
+        Version O-2018.09-1_Full64 -- Wed Mar 20 16:53:39 2024
+               Copyright (c) 1991-2018 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file '/home/ICer/xilinx_prj/latch/vcs/glbl.v'
+CPU time: .126 seconds to compile
+                         Chronologic VCS (TM)
+        Version O-2018.09-1_Full64 -- Wed Mar 20 17:06:22 2024
+               Copyright (c) 1991-2018 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file '/home/ICer/xilinx_prj/latch/vcs/srcs/ram_model.v'
+CPU time: .195 seconds to compile
+                         Chronologic VCS (TM)
+        Version O-2018.09-1_Full64 -- Wed Mar 20 17:06:23 2024
+               Copyright (c) 1991-2018 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file '/home/ICer/xilinx_prj/latch/vcs/srcs/tb_latch.sv'
+CPU time: .144 seconds to compile
+                         Chronologic VCS (TM)
+        Version O-2018.09-1_Full64 -- Wed Mar 20 17:06:23 2024
+               Copyright (c) 1991-2018 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file '/home/ICer/xilinx_prj/latch/vcs/glbl.v'
+CPU time: .137 seconds to compile

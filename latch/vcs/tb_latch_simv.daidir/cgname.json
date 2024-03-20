@@ -1,9 +1,9 @@
 {
-    "glbl": [
-        "glbl",
-        "WZg7r",
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
         "module",
-        3
+        4
     ],
     "std": [
         "std",
@@ -17,10 +17,10 @@
         "module",
         2
     ],
-    "...MASTER...": [
-        "SIM",
-        "amcQw",
+    "glbl": [
+        "glbl",
+        "WZg7r",
         "module",
-        4
+        3
     ]
 }

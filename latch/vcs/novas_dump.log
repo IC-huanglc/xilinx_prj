@@ -151,7 +151,7 @@ VCS compile option:
  option[38]: -o
  option[39]: tb_latch_simv
  option[40]: -uum
- option[41]: -elaboration_options=/tmp/vcs_20240320071432_19614/elaboptfile_19614
+ option[41]: -elaboration_options=/tmp/vcs_20240320090623_20599/elaboptfile_20599
  option[42]: -full64
  option[43]: -picarchive
  option[44]: +vcsd
@@ -160,7 +160,7 @@ VCS compile option:
  option[47]: -debug=1
  option[48]: +memcbk
  option[49]: +vpi
- option[50]: -VHDLelab=-mxunielab -uni_make -nc -R -fsdb -fsdb -t ps -licqueue -exe tb_latch_simv -uum -elaboration_options /tmp/vcs_20240320071432_19614/elaboptfile_19614 -picarchive -debug 1 
+ option[50]: -VHDLelab=-mxunielab -uni_make -nc -R -fsdb -fsdb -t ps -licqueue -exe tb_latch_simv -uum -elaboration_options /tmp/vcs_20240320090623_20599/elaboptfile_20599 -picarchive -debug 1 
  option[51]: -gen_obj
  option[52]: -f
  option[53]: tb_latch_simv.daidir/mxopt.db
@@ -188,7 +188,7 @@ Runtime environment variables:
 XDG_VTNR=1
 LC_PAPER=zh_CN.UTF-8
 XDG_SESSION_ID=1
-SSH_AGENT_PID=3174
+SSH_AGENT_PID=3455
 LC_MONETARY=zh_CN.UTF-8
 HOSTNAME=IC_EDA
 IMSETTINGS_INTEGRATE_DESKTOP=yes
@@ -197,7 +197,7 @@ SHELL=/bin/bash
 TERM=xterm-256color
 VTE_VERSION=5204
 HISTSIZE=1000
-GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/61a3519a_2ccd_42b7_9686_9d7e129cc99f
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/9c88440f_c812_4541_a6ee_d483652677a4
 QUESTASIM_HOME=/home/mentor/questasim
 LC_NUMERIC=zh_CN.UTF-8
 QTDIR=/usr/lib/qt-3.3
@@ -207,11 +207,11 @@ IMSETTINGS_MODULE=none
 USER=ICer
 LS_COLORS=rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=05;48;5;232;38;5;15:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;34:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.Z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.axv=38;5;13:*.anx=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.axa=38;5;45:*.oga=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:
 LD_LIBRARY_PATH=:/home/synopsys/verdi/Verdi_O-2018.09-SP2/share/PLI/lib/LINUX64:/home/synopsys/verdi/Verdi_O-2018.09-SP2/share/PLI/IUS/LINUX64/boot:/home/cadence/INCISIVE152/tools.lnx86/lib
-GNOME_TERMINAL_SERVICE=:1.103
+GNOME_TERMINAL_SERVICE=:1.105
 SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
 DVE_HOME=/home/synopsys/vcs-mx/O-2018.09-1
 USERNAME=ICer
-SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/3045,unix/unix:/tmp/.ICE-unix/3045
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/3327,unix/unix:/tmp/.ICE-unix/3327
 SNPSLMD_LICENSE_FILE=27000@IC_EDA
 MMSIMHOME=/home/cadence/MMSIM151
 GNOME_SHELL_SESSION_MODE=classic
@@ -254,7 +254,7 @@ DC_HOME=/home/synopsys/syn/O-2018.06-SP1
 QTLIB=/usr/lib/qt-3.3/lib
 SPYGLASS_HOME=/home/synopsys/SpyGlass-L2016.06/SPYGLASS_HOME/
 MGLS_LICENSE_FILE=/home/mentor/questasim/mentor.dat
-DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-315wJwPjhC,guid=afe01f37ebe7f32e78fc611965fa8499
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-4FD8CxxG7N,guid=64747e83c08816e12b0e74f665fa9d55
 XDG_DATA_DIRS=/home/ICer/.local/share/flatpak/exports/share/:/var/lib/flatpak/exports/share/:/usr/local/share/:/usr/share/
 CDS_LIC_FILE=/home/cadence/license/cadence.dat
 LESSOPEN=||/usr/bin/lesspipe.sh %s
@@ -269,7 +269,7 @@ LC_HOME=/home/synopsys/lc/O-2018.06-SP1
 XDG_CURRENT_DESKTOP=GNOME-Classic:GNOME
 INCISIVE_HOME=/home/cadence/INCISIVE152
 LC_TIME=zh_CN.UTF-8
-XAUTHORITY=/run/gdm/auth-for-ICer-QatcPb/database
+XAUTHORITY=/run/gdm/auth-for-ICer-WXZhWC/database
 COLORTERM=truecolor
 _=./tb_latch_simv
 VCS_HEAP_EXEC=true
@@ -288,8 +288,8 @@ argv[4]=simulate.log
 argv[5]=-do
 argv[6]=simulate.do
 289 profile - 100
-          CPU/Mem usage: 0.040 sys,  0.240 user,  316.87M mem
-290 Wed Mar 20 15:14:36 2024
+          CPU/Mem usage: 0.050 sys,  0.240 user,  316.88M mem
+290 Wed Mar 20 17:06:26 2024
 291 pliAppInit
 292 FSDB_GATE is set.
 293 FSDB_RTL is set.
@@ -300,8 +300,8 @@ argv[6]=simulate.do
 298 FSDB Dumper for VCS, Release Verdi_O-2018.09-SP2, Linux x86_64/64bit, 02/21/2019
 299 (C) 1996 - 2019 by Synopsys, Inc.
 300 FSDB_VCS_ENABLE_FAST_VC is enable
-301 sps_call_fsdbAutoSwitchDumpfile_main_vd at 0 : /home/ICer/xilinx_prj/latch/vcs/srcs/tb_latch.sv(67)
-302 sps_call_fsdbAutoSwitchDumpfile at 0 : /home/ICer/xilinx_prj/latch/vcs/srcs/tb_latch.sv(67)
+301 sps_call_fsdbAutoSwitchDumpfile_main_vd at 0 : /home/ICer/xilinx_prj/latch/vcs/srcs/tb_latch.sv(113)
+302 sps_call_fsdbAutoSwitchDumpfile at 0 : /home/ICer/xilinx_prj/latch/vcs/srcs/tb_latch.sv(113)
 303 argv[0]: (10000)
 304 argv[1]: (tb_latch.fsdb)
 305 argv[2]: (100)
@@ -318,7 +318,7 @@ argv[6]=simulate.do
 316   "vcs '-full64' '-debug_pp' '-R' '-fsdb' '-t' 'ps' '-licqueue' '-l' 'elaborate.log' 'xil_defaultlib.tb_latch' 'xil_defaultlib.glbl' '-o' 'tb_latch_simv' 2>&1"
 317 *Verdi* : Create the file 'wave_file.log' to log the time range of each FSDB file.
 318 *Verdi* : Create virtual FSDB file 'tb_latch.vf' to log each FSDB file.
-319 sps_call_fsdbDumpvars_vd_main at 0 : /home/ICer/xilinx_prj/latch/vcs/srcs/tb_latch.sv(68)
+319 sps_call_fsdbDumpvars_vd_main at 0 : /home/ICer/xilinx_prj/latch/vcs/srcs/tb_latch.sv(114)
 320 argv[0]: (0)
 321 argv[1]: (handle) tb_latch
 322 [spi_vcs_vd_ppi_create_root]: no upf option
@@ -326,61 +326,61 @@ argv[6]=simulate.do
 324 *Verdi* : Begin traversing the scope (tb_latch), layer (0).
 325 *Verdi* : End of traversing.
 326 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.050 sys,  0.240 user,  409.71M mem
-                   incr: 0.000 sys,  0.000 user,  5.04M mem
-                   accu: 0.000 sys,  0.000 user,  5.04M mem
-              accu incr: 0.000 sys,  0.000 user,  5.04M mem
+          CPU/Mem usage: 0.060 sys,  0.240 user,  409.73M mem
+                   incr: 0.010 sys,  0.000 user,  5.05M mem
+                   accu: 0.010 sys,  0.000 user,  5.05M mem
+              accu incr: 0.010 sys,  0.000 user,  5.05M mem
 
-          Count usage: 9 var,  5 idcode,  5 callback
-                 incr: 9 var,  5 idcode,  5 callback
-                 accu: 9 var,  5 idcode,  5 callback
-            accu incr: 9 var,  5 idcode,  5 callback
-327 Wed Mar 20 15:14:36 2024
+          Count usage: 14 var,  10 idcode,  10 callback
+                 incr: 14 var,  10 idcode,  10 callback
+                 accu: 14 var,  10 idcode,  10 callback
+            accu incr: 14 var,  10 idcode,  10 callback
+327 Wed Mar 20 17:06:26 2024
 328 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.050 sys,  0.240 user,  410.76M mem
+          CPU/Mem usage: 0.060 sys,  0.240 user,  410.78M mem
                    incr: 0.000 sys,  0.000 user,  1.05M mem
-                   accu: 0.000 sys,  0.000 user,  6.09M mem
+                   accu: 0.010 sys,  0.000 user,  6.10M mem
               accu incr: 0.000 sys,  0.000 user,  1.05M mem
 
-          Count usage: 9 var,  5 idcode,  5 callback
+          Count usage: 14 var,  10 idcode,  10 callback
                  incr: 0 var,  0 idcode,  0 callback
-                 accu: 9 var,  5 idcode,  5 callback
+                 accu: 14 var,  10 idcode,  10 callback
             accu incr: 0 var,  0 idcode,  0 callback
-329 Wed Mar 20 15:14:36 2024
-330 sps_call_fsdbDumpMDA_vd_main at 0 : /home/ICer/xilinx_prj/latch/vcs/srcs/tb_latch.sv(69)
+329 Wed Mar 20 17:06:26 2024
+330 sps_call_fsdbDumpMDA_vd_main at 0 : /home/ICer/xilinx_prj/latch/vcs/srcs/tb_latch.sv(115)
 331 *Verdi* : Begin traversing the MDAs, layer (0).
 332 *Verdi* : Enable +mda and +packedmda dumping.
 333 *Verdi* : End of traversing the MDAs.
 334 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.050 sys,  0.240 user,  410.76M mem
+          CPU/Mem usage: 0.060 sys,  0.240 user,  410.78M mem
                    incr: 0.000 sys,  0.000 user,  0.00M mem
                    accu: 0.000 sys,  0.000 user,  0.00M mem
               accu incr: 0.000 sys,  0.000 user,  0.00M mem
 
-          Count usage: 18 var,  14 idcode,  6 callback
+          Count usage: 23 var,  19 idcode,  11 callback
                  incr: 9 var,  9 idcode,  1 callback
                  accu: 9 var,  9 idcode,  1 callback
             accu incr: 9 var,  9 idcode,  1 callback
-335 Wed Mar 20 15:14:36 2024
+335 Wed Mar 20 17:06:26 2024
 336 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.050 sys,  0.240 user,  410.76M mem
+          CPU/Mem usage: 0.060 sys,  0.240 user,  410.78M mem
                    incr: 0.000 sys,  0.000 user,  0.00M mem
                    accu: 0.000 sys,  0.000 user,  0.00M mem
               accu incr: 0.000 sys,  0.000 user,  0.00M mem
 
-          Count usage: 18 var,  14 idcode,  6 callback
+          Count usage: 23 var,  19 idcode,  11 callback
                  incr: 0 var,  0 idcode,  0 callback
                  accu: 9 var,  9 idcode,  1 callback
             accu incr: 0 var,  0 idcode,  0 callback
-337 Wed Mar 20 15:14:36 2024
-338 End of simulation at 21800000
-339 Wed Mar 20 15:14:36 2024
+337 Wed Mar 20 17:06:26 2024
+338 End of simulation at 10315000
+339 Wed Mar 20 17:06:26 2024
 340 Begin FSDB profile info:
-341 FSDB Writer : bc1(0) bcn(68) mtf/stf(0/0)
-FSDB Writer elapsed time : flush(0.002216) io wait(0.000000) theadpool wait(0.000000) target functin(0.000000)
+341 FSDB Writer : bc1(2066) bcn(6205) mtf/stf(0/0)
+FSDB Writer elapsed time : flush(0.008936) io wait(0.000000) theadpool wait(0.000000) target functin(0.000000)
 FSDB Writer cpu time : MT Compression : 0
 342 End FSDB profile info
 343 Parallel profile    -  Flush:4 Expand:0 ProduceWait:0 ConsumerWait:0 BlockUsed:0
-344                        ProduceTime:0.300500706 ConsumerTime:0.000000000 Buffer:64MB
+344                        ProduceTime:0.318375601 ConsumerTime:0.000000000 Buffer:64MB
 345 SimExit
 346 Sim process exit

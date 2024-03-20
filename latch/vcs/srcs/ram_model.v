@@ -51,7 +51,17 @@ module ram_model(
             9'h1bf : mem[6] = keydin;
             9'h17f : mem[7] = keydin;
             9'h0ff : mem[8] = keydin;
-            default: ;
+            default: begin
+                mem[0] = mem[0] ; 
+                mem[1] = mem[1] ; 
+                mem[2] = mem[2] ; 
+                mem[3] = mem[3] ; 
+                mem[4] = mem[4] ; 
+                mem[5] = mem[5] ; 
+                mem[6] = mem[6] ; 
+                mem[7] = mem[7] ; 
+                mem[8] = mem[8] ; 
+            end
         endcase
     end
     

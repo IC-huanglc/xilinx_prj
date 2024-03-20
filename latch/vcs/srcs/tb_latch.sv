@@ -21,45 +21,91 @@
 
 
 module tb_latch();
+    reg clk;
+    reg rstn;
+
     reg [ 8:0] keywe_b  ;
     reg [31:0] keydin   ;
     reg [ 8:0] keyrd    ;
-    
+
     wire [31:0] keyrd_data;
     
     
-        ram_model u_dut(
-            .keywe_b(keywe_b),
-            .keydin(keydin),
-            .keyrd(keyrd),
-            .keyrd_data(keyrd_data)
-        );
+    ram_model u_dut(
+        .keywe_b(keywe_b),
+        .keydin(keydin),
+        .keyrd(keyrd),
+        .keyrd_data(keyrd_data)
+    );
     
-    
-    
+    initial 
+        clk = 0;
+
+    always #5 clk = ~clk;
+
+    initial begin 
+        rstn = 0;
+        repeat(10) @(posedge clk);
+        rstn = 1;
+    end
+   
+   reg [9:0] cnt;
+    always @ (posedge clk or negedge rstn) begin
+        if(~rstn)
+            cnt <= 0;
+        else
+            cnt <= cnt + 1'b1;
+    end
+   
+    reg [3:0] cnt2;
+    always @ (posedge clk or negedge rstn) begin
+        if(~rstn)
+            cnt2 <= 0;
+        else if(cnt >= 20 && cnt[0])
+            cnt2 <= cnt2 + 1;
+    end
+
+
+    reg [8:0] keywe_bn;
+    always @ (posedge clk or negedge rstn) begin
+        if(~rstn)
+            keywe_bn <= 0;
+        else if (cnt >= 20 && cnt[0])
+            keywe_bn[cnt2] <= 1'b1;
+        else
+            keywe_bn <= 0;
+    end
+
+    always @ (posedge clk or negedge rstn) begin
+        if(~rstn)
+            keywe_b <= 'h1ff;
+        else
+            keywe_b <= ~keywe_bn;
+    end
+
+    always @ (posedge clk or negedge rstn) begin
+        if(~rstn)
+            keydin <= 0;
+        else
+            keydin <= cnt;
+    end
+
+
+    always @ (posedge clk or negedge rstn) begin
+        if(~rstn)
+            keyrd <= 0;
+        else if (cnt == 60)
+            keyrd <= 1'b1;
+        else if (cnt >= 50)
+            keyrd <= {keyrd[7:0], keyrd[8]};
+        else
+            keyrd <= 0;
+    end
+
     initial begin
-        keywe_b = 9'h1ff;
-        keydin  = 0;
-        keyrd   = 0;
-        
-        #10000;
-        
-        #100; keywe_b = 9'h1fe; keydin = 32'h1;
-        #100; keywe_b = 9'h1fd; keydin = 32'h2;
-        #100; keywe_b = 9'h1fb; keydin = 32'h3;
-        #100; keywe_b = 9'h1f7; keydin = 32'h4;
-        #100; keywe_b = 9'h1ef; keydin = 32'h5;
-        #100; keywe_b = 9'h1df; keydin = 32'h6;
-        #100; keywe_b = 9'h1bf; keydin = 32'h7;
-        #100; keywe_b = 9'h17f; keydin = 32'h8;
-        #100; keywe_b = 9'h0ff; keydin = 32'h9;
-        
-        #10000;
-        #100; keyrd = 1'b1;
-        repeat (8) begin
-            #100; keyrd = keyrd << 1;
-        end
-        
+         
+        wait (cnt == 1023);
+          
         $finish(2);
     end
 

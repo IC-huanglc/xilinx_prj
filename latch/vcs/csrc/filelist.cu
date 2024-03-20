@@ -1,16 +1,16 @@
 PIC_LD=ld
 
 ARCHIVE_OBJS=
-ARCHIVE_OBJS += _20369_archive_1.so
-_20369_archive_1.so : archive.1/_20369_archive_1.a
+ARCHIVE_OBJS += _21354_archive_1.so
+_21354_archive_1.so : archive.6/_21354_archive_1.a
 	@$(AR) -s $<
-	@$(PIC_LD) -shared  -Bsymbolic  -o .//../tb_latch_simv.daidir//_20369_archive_1.so --whole-archive $< --no-whole-archive
+	@$(PIC_LD) -shared  -Bsymbolic  -o .//../tb_latch_simv.daidir//_21354_archive_1.so --whole-archive $< --no-whole-archive
 	@rm -f $@
-	@ln -sf .//../tb_latch_simv.daidir//_20369_archive_1.so $@
+	@ln -sf .//../tb_latch_simv.daidir//_21354_archive_1.so $@
 
 
 ARCHIVE_OBJS += _prev_archive_1.so
-_prev_archive_1.so : archive.1/_prev_archive_1.a
+_prev_archive_1.so : archive.6/_prev_archive_1.a
 	@$(AR) -s $<
 	@$(PIC_LD) -shared  -Bsymbolic  -o .//../tb_latch_simv.daidir//_prev_archive_1.so --whole-archive $< --no-whole-archive
 	@rm -f $@
