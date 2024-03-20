@@ -1,0 +1,22 @@
+
+VLOGAN	= vlogan
+VLOGAN_OPT	= -full64 +v2k -work xil_defaultlib -full64
+
+all :		_VCSgd_zMQzfb_1.db \
+	_VCSgd_rvFWKb_1.db \
+	_VCSgd_wO5BXb_1.db \
+
+
+
+_VCSgd_zMQzfb_1.db :	/home/ICer/xilinx_prj/latch/vcs/glbl.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/xilinx_prj/latch/vcs/glbl.v
+
+
+_VCSgd_rvFWKb_1.db :	/home/ICer/xilinx_prj/latch/vcs/srcs/tb_latch.sv 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/xilinx_prj/latch/vcs/srcs/tb_latch.sv
+
+
+_VCSgd_wO5BXb_1.db :	/home/ICer/xilinx_prj/latch/vcs/srcs/ram_model.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/xilinx_prj/latch/vcs/srcs/ram_model.v
+
+

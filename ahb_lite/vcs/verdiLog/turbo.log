@@ -1,2 +1,3 @@
-Command Line: /home/synopsys/verdi/Verdi_O-2018.09-SP2/platform/LINUXAMD64/bin/Novas -f file.f -ssf top.vf
+Command Line: /home/synopsys/verdi/Verdi_O-2018.09-SP2/platform/LINUXAMD64/bin/Novas -f file.f -ssf top.vf -sswr signal.rc
 uname(Linux IC_EDA 3.10.0-1160.53.1.el7.x86_64 #1 SMP Fri Jan 14 13:59:45 UTC 2022 x86_64)
+au time 3302.964668 13.175164 33.691817 delta 387149824 387149824 total 812232704 812232704

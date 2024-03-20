@@ -19,15 +19,15 @@ Console = FALSE
 powerDumped = 0
 [hb]
 postSimFile = /home/ICer/xilinx_prj/ahb_lite/vcs/top.vf
-syncTime = 0
-viewport = 0 20 1914 860 0 0 253 898
-activeNode = "top.u_ahb_lite"
-activeScope = "top.u_ahb_lite"
-activeFile = "/home/ICer/xilinx_prj/ahb_lite/vcs/srcs/ahb_lite_s3.v"
+syncTime = 224611000
+viewport = 0 27 1920 977 0 0 366 1918
+activeNode = "top.u_bfm_ahb.memory_test"
+activeScope = "top.u_bfm_ahb.memory_test:1"
+activeFile = "/home/ICer/xilinx_prj/ahb_lite/vcs/srcs/bfm_ahb.v"
 interactiveMode = False
 viewType = Source
 simulatorMode = False
-sourceBeginLine = 18
+sourceBeginLine = 87
 baMode = False
 srcLineNum = True
 AutoWrap = True
@@ -44,25 +44,27 @@ DnDtraceCrossHierOnly = True
 traceIncTopPort = False
 leadingZero = False
 signalPane = False
-Scope1 = "top.u_ahb_lite"
-Scope2 = "top.u_bfm_ahb"
-Scope3 = "top"
-multipleSelection = 1 28 13 0 0
+Scope1 = "top.u_bfm_ahb.memory_test:1"
+Scope2 = "top.u_bfm_ahb.ahb_write"
+Scope3 = "top.u_bfm_ahb.ahb_read"
+Scope4 = "top.u_bfm_ahb"
+Scope5 = "top"
+multipleSelection = 1 100 24 0 0
 sdfCheckUndef = FALSE
 simFlow = FALSE
 [hb.design]
 importCmd = "-f" "file.f" 
 invokeDir = /home/ICer/xilinx_prj/ahb_lite/vcs
 [hb.sourceTab.1]
-scope = top.u_ahb_lite
-File = /home/ICer/xilinx_prj/ahb_lite/vcs/srcs/ahb_lite_s3.v
-Line = 19
+scope = top.u_bfm_ahb.memory_test:1
+File = /home/ICer/xilinx_prj/ahb_lite/vcs/srcs/bfm_ahb.v
+Line = 88
 [nMemoryManager]
 WaveformFile = /home/ICer/xilinx_prj/ahb_lite/vcs/top.vf
 UserActionNum = 0
 nMemWindowNum = 0
 [wave.0]
-viewPort = 0 27 1914 334 100 65
+viewPort = 0 27 1920 392 330 65
 primaryWindow = TRUE
 SessionFile = /home/ICer/xilinx_prj/ahb_lite/vcs/verdiLog/novas_autosave.ses.wave.0
 displayGrid = FALSE

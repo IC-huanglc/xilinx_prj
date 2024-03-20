@@ -1,0 +1,15 @@
+rc file Version 1.0
+
+[Design]
+COMPILE_PATH=/home/ICer/xilinx_prj/ahb_to_ahb/vcs
+SystemC=FALSE
+UUM=TRUE
+KDB=FALSE
+USE_NOVAS_HOME=FALSE
+COSIM=FALSE
+SYNOPSYS_SIM_SETUP=/home/ICer/xilinx_prj/ahb_to_ahb/vcs/synopsys_sim.setup 
+TOP=XIL_DEFAULTLIB.top XIL_DEFAULTLIB.glbl 
+
+[Value]
+WREALX=ffff534e50535f58
+WREALZ=ffff534e50535f5a

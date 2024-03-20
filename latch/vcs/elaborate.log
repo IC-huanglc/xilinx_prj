@@ -1,0 +1,66 @@
+Command: vcs -full64 -debug_pp -R -fsdb -t ps -licqueue -l elaborate.log xil_defaultlib.tb_latch \
+xil_defaultlib.glbl -o tb_latch_simv
+Doing common elaboration 
+
+Warning-[DEBUG_DEP] Option will be deprecated
+  The option '-fsdb' will be deprecated in a future release.  Please use 
+  '-debug_acc+dmptf -debug_region+cell+encrypt' instead.
+
+                         Chronologic VCS (TM)
+        Version O-2018.09-1_Full64 -- Wed Mar 20 15:14:34 2024
+               Copyright (c) 1991-2018 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Top Level Modules:
+       tb_latch
+       glbl
+TimeScale is 1 ps / 1 ps
+Starting vcs inline pass...
+2 modules and 0 UDP read.
+recompiling module tb_latch
+	However, due to incremental compilation, only 1 module needs to be compiled. 
+rm -f _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+ld -shared  -Bsymbolic  -o .//../tb_latch_simv.daidir//_csrc0.so objs/amcQw_d.o  \
+
+rm -f _csrc0.so
+if [ -x ../tb_latch_simv ]; then chmod -x ../tb_latch_simv; fi
+g++  -o ../tb_latch_simv    -Wl,-rpath-link=./ -Wl,-rpath='$ORIGIN'/tb_latch_simv.daidir/ \
+-Wl,-rpath=./tb_latch_simv.daidir/ -Wl,-rpath='$ORIGIN'/tb_latch_simv.daidir//scsim.db.dir \
+-rdynamic -Wl,-rpath=/home/synopsys/vcs-mx/O-2018.09-1/linux64/lib -L/home/synopsys/vcs-mx/O-2018.09-1/linux64/lib \
+_20369_archive_1.so _prev_archive_1.so _csrc0.so  SIM_l.o  _csrc0.so     rmapats_mop.o \
+rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          -lzerosoft_rt_stubs \
+-lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile -lvirsim -luclinative /home/synopsys/vcs-mx/O-2018.09-1/linux64/lib/vcs_tls.o \
+-Wl,-whole-archive -lvcsucli -Wl,-no-whole-archive        _vcs_pli_stub_.o   /home/synopsys/vcs-mx/O-2018.09-1/linux64/lib/vcs_save_restore_new.o \
+/home/synopsys/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/LINUX64/pli.a -ldl  -lc -lm \
+-lpthread -ldl 
+../tb_latch_simv up to date
+Command: /home/ICer/xilinx_prj/latch/vcs/./tb_latch_simv +vcs+lic+wait -a elaborate.log
+Chronologic VCS simulator copyright 1991-2018
+Contains Synopsys proprietary information.
+Compiler version O-2018.09-1_Full64; Runtime version O-2018.09-1_Full64;  Mar 20 15:14 2024
+*Verdi* Loading libsscore_vcs201809.so
+FSDB Dumper for VCS, Release Verdi_O-2018.09-SP2, Linux x86_64/64bit, 02/21/2019
+(C) 1996 - 2019 by Synopsys, Inc.
+*Verdi* FSDB: The switch FSDB file size might not match the input size (10000MB) because of performance concerns.
+*Verdi* FSDB: To have the FSDB file size match the input size (10000MB), set the FSDB_ENV_PRECISE_AUTOSWITCH environment, though the dumping performance might decrease.
+*Verdi* : Enable automatic switching of the FSDB file.
+*Verdi* : (Filename='tb_latch', Limit Size=10000MB, File Amount=100).
+*Verdi* : Create FSDB file 'tb_latch_000.fsdb'
+*Verdi* : Create the file 'wave_file.log' to log the time range of each FSDB file.
+*Verdi* : Create virtual FSDB file 'tb_latch.vf' to log each FSDB file.
+*Verdi* : Begin traversing the scope (tb_latch), layer (0).
+*Verdi* : End of traversing.
+*Verdi* : Begin traversing the MDAs, layer (0).
+*Verdi* : Enable +mda and +packedmda dumping.
+*Verdi* : End of traversing the MDAs.
+$finish called from file "/home/ICer/xilinx_prj/latch/vcs/srcs/tb_latch.sv", line 63.
+$finish at simulation time             21800000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 21800000 ps
+CPU Time:      0.500 seconds;       Data structure size:   0.0Mb
+Wed Mar 20 15:14:36 2024
+CPU time: .709 seconds to compile + .265 seconds to elab + .312 seconds to link + .532 seconds in simulation

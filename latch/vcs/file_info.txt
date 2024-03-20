@@ -1,0 +1,3 @@
+ram_model.v,verilog,xil_defaultlib,/home/ICer/xilinx_prj/latch/vcs/srcs/ram_model.v,
+tb_latch.sv,systemverilog,xil_defaultlib,/home/ICer/xilinx_prj/latch/vcs/srcs/tb_latch.sv,
+glbl.v,Verilog,xil_defaultlib,/home/ICer/xilinx_prj/latch/vcs/glbl.v

@@ -1,0 +1,6 @@
+debImport "-f" "./srcs/tb_latch.sv" "-f" "./srcs/ram_model.v"
+wvCreateWindow
+wvSetPosition -win $_nWave2 {("G1" 0)}
+wvOpenFile -win $_nWave2 {/home/ICer/xilinx_prj/latch/vcs/tb_latch.vf}
+verdiWindowResize -win $_Verdi_1 "539" "109" "900" "700"
+debExit

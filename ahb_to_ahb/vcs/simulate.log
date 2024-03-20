@@ -1,0 +1,1232 @@
+Command: /home/ICer/xilinx_prj/ahb_to_ahb/vcs/./top_simv -ucli -licqueue -l simulate.log -do simulate.do
+Chronologic VCS simulator copyright 1991-2018
+Contains Synopsys proprietary information.
+Compiler version O-2018.09-1_Full64; Runtime version O-2018.09-1_Full64;  Mar 15 09:01 2024
+ucli% run
+Info: top.u_ahb_lite.Uahb_decoder HSEL0: from 0x0000_0000 to 0x00ff_FFFF
+Info: top.u_ahb_lite.Uahb_decoder HSEL1: from 0x1000_0000 to 0x10ff_FFFF
+Info: top.u_ahb_lite.Uahb_decoder HSEL2: from 0x2000_0000 to 0x20ff_FFFF
+*Verdi* Loading libsscore_vcs201809.so
+FSDB Dumper for VCS, Release Verdi_O-2018.09-SP2, Linux x86_64/64bit, 02/21/2019
+(C) 1996 - 2019 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* FSDB: The switch FSDB file size might not match the input size (10000MB) because of performance concerns.
+*Verdi* FSDB: To have the FSDB file size match the input size (10000MB), set the FSDB_ENV_PRECISE_AUTOSWITCH environment, though the dumping performance might decrease.
+*Verdi* : Enable automatic switching of the FSDB file.
+*Verdi* : (Filename='top', Limit Size=10000MB, File Amount=100).
+*Verdi* : Create FSDB file 'top_000.fsdb'
+*Verdi* : Create the file 'wave_file.log' to log the time range of each FSDB file.
+*Verdi* : Create virtual FSDB file 'top.vf' to log each FSDB file.
+*Verdi* : Begin traversing the scope (top), layer (0).
+*Verdi* : End of traversing.
+*Verdi* : Begin traversing the MDAs, layer (0).
+*Verdi* : Enable +mda and +packedmda dumping.
+*Verdi* : End of traversing the MDAs.
+top HCLK 20.000000 nsec 50.000000 Mhz
+[       330], top.u_bfm_ahb.memory_test: read-after-write test with 1-byte access
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x466c4b8c, but write data= 0x0000008c
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x2d57715a, but write data= 0x00007100
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x2e6dfb5c, but write data= 0x006d0000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xbd82ea7b, but write data= 0xbd000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x4fc5f39f, but write data= 0x0000009f
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xdebaaebd, but write data= 0x0000ae00
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x8270a604, but write data= 0x00700000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xd1d788a3, but write data= 0xd1000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x81de9003, but write data= 0x00000003
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xdb5f10b6, but write data= 0x00001000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x8d3b801a, but write data= 0x003b0000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x9c8b8839, but write data= 0x9c000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xf91d02f2, but write data= 0x000000f2
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xf6cec2ed, but write data= 0x0000c200
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xe4afc2c9, but write data= 0x00af0000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xcf07f89e, but write data= 0xcf000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x283be550, but write data= 0x00000050
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x2664b34c, but write data= 0x0000b300
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x8c986c19, but write data= 0x00980000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xbda4a27b, but write data= 0xbd000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xdae592b5, but write data= 0x000000b5
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x84388a08, but write data= 0x00008a00
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x49a63793, but write data= 0x00a60000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x9f74143e, but write data= 0x9f000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xa8102850, but write data= 0x00000050
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x8ecab81d, but write data= 0x0000b800
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x5a2b9fb4, but write data= 0x002b0000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x08cf9911, but write data= 0x08000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x30198360, but write data= 0x00000060
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x517067a2, but write data= 0x00006700
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x5098e1a1, but write data= 0x00980000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x2ca33b59, but write data= 0x2c000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x42a33d85, but write data= 0x00000085
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xe17f80c2, but write data= 0x00008000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x8bb7f817, but write data= 0x00b70000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x3079c960, but write data= 0x30000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xc82eb090, but write data= 0x00000090
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x5c3ab5b8, but write data= 0x0000b500
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x88a8a211, but write data= 0x00a80000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x9f48cc3e, but write data= 0x9f000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x0b78ff16, but write data= 0x00000016
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x517d6da2, but write data= 0x00006d00
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x0a9c5915, but write data= 0x009c0000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xc6fc948d, but write data= 0xc6000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xbe96fe7d, but write data= 0x0000007d
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x4727d58e, but write data= 0x0000d500
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xd4525aa8, but write data= 0x00520000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x8cc42a19, but write data= 0x8c000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xd7d14eaf, but write data= 0x000000af
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xc14ada82, but write data= 0x0000da00
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x6f53a1de, but write data= 0x00530000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x041d5b08, but write data= 0x04000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x22404b44, but write data= 0x00000044
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xfb1428f6, but write data= 0x00002800
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x3ceee979, but write data= 0x00ee0000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xd4a0b2a9, but write data= 0xd4000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x1e280f3c, but write data= 0x0000003c
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x3c7a2d78, but write data= 0x00002d00
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xccf4ae99, but write data= 0x00f40000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x3a8d7d75, but write data= 0x3a000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x8d14761a, but write data= 0x0000001a
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x78a811f1, but write data= 0x00001100
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x36332f6c, but write data= 0x00330000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x2e15c55c, but write data= 0x2e000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xc5b51e8b, but write data= 0x0000008b
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xa129c042, but write data= 0x0000c000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xecb264d9, but write data= 0x00b20000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xfd6a58fa, but write data= 0xfd000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xab796056, but write data= 0x00000056
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xd9d7eab3, but write data= 0x0000ea00
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x51b00da3, but write data= 0x00b00000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x6586c3cb, but write data= 0x65000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xe5ec5ccb, but write data= 0x000000cb
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x7983f9f3, but write data= 0x0000f900
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xf95ba2f2, but write data= 0x005b0000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xf5bd50eb, but write data= 0xf5000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xb3d0ea67, but write data= 0x00000067
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x83641806, but write data= 0x00001800
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x625261c4, but write data= 0x00520000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x4a030d94, but write data= 0x4a000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x75fda9eb, but write data= 0x000000eb
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x053f330a, but write data= 0x00003300
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x9adb4435, but write data= 0x00db0000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x67fbc3cf, but write data= 0x67000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xcdf8f29b, but write data= 0x0000009b
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x8658f80c, but write data= 0x0000f800
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x0fe30d1f, but write data= 0x00e30000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x4ac5ff95, but write data= 0x4a000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xec54e4d8, but write data= 0x000000d8
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x731dd1e6, but write data= 0x0000d100
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x81b83003, but write data= 0x00b80000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x69870fd3, but write data= 0x69000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x6acb5bd5, but write data= 0x000000d5
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x318eeb63, but write data= 0x0000eb00
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xda86eeb5, but write data= 0x00860000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xc4b6fe89, but write data= 0xc4000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xce19f09c, but write data= 0x0000009c
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x4a6e3194, but write data= 0x00003100
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x629543c5, but write data= 0x00950000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xc62c988c, but write data= 0xc6000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x8b9e0017, but write data= 0x00000017
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xd32a50a6, but write data= 0x00005000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x8e3ee61c, but write data= 0x003e0000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xffe968ff, but write data= 0xff000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x2eb0ab5d, but write data= 0x0000005d
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x048ab509, but write data= 0x0000b500
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x61b15bc3, but write data= 0x00b10000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x95a5ba2b, but write data= 0x95000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xf9c2c6f3, but write data= 0x000000f3
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xaa1b8a54, but write data= 0x00008a00
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x2667d94c, but write data= 0x00670000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xdd1c9cba, but write data= 0xdd000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x1f38f33e, but write data= 0x0000003e
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xd659bcac, but write data= 0x0000bc00
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xee675adc, but write data= 0x00670000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x8117d802, but write data= 0x81000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x6e078bdc, but write data= 0x000000dc
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x079ef70f, but write data= 0x0000f700
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x213a9f42, but write data= 0x003a0000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x333bfd66, but write data= 0x33000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x0e0eab1c, but write data= 0x0000001c
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xa9cda453, but write data= 0x0000a400
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x0eae211d, but write data= 0x00ae0000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xb8945271, but write data= 0xb8000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xa8362e50, but write data= 0x00000050
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xa0bcf441, but write data= 0x0000f400
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x434c1d86, but write data= 0x004c0000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xdcdee8b9, but write data= 0xdc000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x1649b32c, but write data= 0x0000002c
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x4764d38e, but write data= 0x0000d300
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x1a988f35, but write data= 0x00980000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x98988631, but write data= 0x98000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x769491ed, but write data= 0x000000ed
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x0fc9e71f, but write data= 0x0000e700
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xcb0d3296, but write data= 0x000d0000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x75c8bdeb, but write data= 0x75000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x3f3de97e, but write data= 0x0000007e
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xafa9a05f, but write data= 0x0000a000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xe7d582cf, but write data= 0x00d50000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xff8dd6ff, but write data= 0xff000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xad64925a, but write data= 0x0000005a
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x85e62c0b, but write data= 0x00002c00
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x144abf28, but write data= 0x004a0000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xc868de90, but write data= 0xc8000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xabfb2c57, but write data= 0x00000057
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xa4b27449, but write data= 0x00007400
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x652fdfca, but write data= 0x002f0000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x5349a1a6, but write data= 0x53000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x0e64131c, but write data= 0x0000001c
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xac7e2458, but write data= 0x00002400
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xabada257, but write data= 0x00ad0000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xeb5aaad6, but write data= 0xeb000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xbacd6075, but write data= 0x00000075
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x63a1abc7, but write data= 0x0000ab00
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xa60e824c, but write data= 0x000e0000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x368d476d, but write data= 0x36000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x204cf340, but write data= 0x00000040
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xb6ca2e6d, but write data= 0x00002e00
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xd23abca4, but write data= 0x003a0000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x0ee5811d, but write data= 0x0e000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x14bc6529, but write data= 0x00000029
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x8e25a21c, but write data= 0x0000a200
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x5df44dbb, but write data= 0x00f40000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xee8626dd, but write data= 0xee000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xf65510ec, but write data= 0x000000ec
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xa34eae46, but write data= 0x0000ae00
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x70d2ede1, but write data= 0x00d20000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xfa7cc2f4, but write data= 0xfa000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xad0c165a, but write data= 0x0000005a
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x43f8bf87, but write data= 0x0000bf00
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xcc001c98, but write data= 0x00000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x784da3f0, but write data= 0x78000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xe7ae4ecf, but write data= 0x000000cf
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xad5bfe5a, but write data= 0x0000fe00
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x7bb315f7, but write data= 0x00b30000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x3a3fd174, but write data= 0x3a000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xb0bc5661, but write data= 0x00000061
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x6c615dd8, but write data= 0x00005d00
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x166cd52c, but write data= 0x006c0000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x4e69199c, but write data= 0x4e000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x37068b6e, but write data= 0x0000006e
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xee8e82dd, but write data= 0x00008200
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xc5f4148b, but write data= 0x00f40000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xfc7a08f8, but write data= 0xfc000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x660907cc, but write data= 0x000000cc
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x2fb1df5f, but write data= 0x0000df00
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x1611532c, but write data= 0x00110000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xde49eabc, but write data= 0xde000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xaa07a654, but write data= 0x00000054
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x304e9b60, but write data= 0x00009b00
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x450acb8a, but write data= 0x000a0000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x9f22ca3e, but write data= 0x9f000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xfbea06f7, but write data= 0x000000f7
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xa0c8a241, but write data= 0x0000a200
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x91e07823, but write data= 0x00e00000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xadcd765b, but write data= 0xad000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x10d78121, but write data= 0x00000021
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xed50a4da, but write data= 0x0000a400
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xc4481888, but write data= 0x00480000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xed5d78da, but write data= 0xed000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x49933593, but write data= 0x00000093
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x96900a2d, but write data= 0x00000a00
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xea6924d4, but write data= 0x00690000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x30bd1d61, but write data= 0x30000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xbd97fa7b, but write data= 0x0000007b
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x83150006, but write data= 0x00000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x0858dd10, but write data= 0x00580000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x0cf97119, but write data= 0x0c000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x7df471fb, but write data= 0x000000fb
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xb57e746a, but write data= 0x00007400
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x3556396a, but write data= 0x00560000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x4e4e419c, but write data= 0x4e000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xebe6f2d7, but write data= 0x000000d7
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x93681026, but write data= 0x00001000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x62c5f7c5, but write data= 0x00c50000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x1bf21537, but write data= 0x1b000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xbf399c7e, but write data= 0x0000007e
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xa9164252, but write data= 0x00004200
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xc8ee9491, but write data= 0x00ee0000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x96a23c2d, but write data= 0x96000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x185e4b30, but write data= 0x00000030
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x95e2342b, but write data= 0x00003400
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xb5744a6a, but write data= 0x00740000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x7deec5fb, but write data= 0x7d000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xba4a9874, but write data= 0x00000074
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x8d65d21a, but write data= 0x0000d200
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x3795156f, but write data= 0x00950000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x28467550, but write data= 0x28000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x4813e190, but write data= 0x00000090
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x9967ca32, but write data= 0x0000ca00
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xe624b2cc, but write data= 0x00240000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xd9c2deb3, but write data= 0xd9000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x224b4344, but write data= 0x00000044
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x88878611, but write data= 0x00008600
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xbb489e76, but write data= 0x00480000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x45b4498b, but write data= 0x45000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x40199780, but write data= 0x00000080
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x35a9336b, but write data= 0x00003300
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xc1f41283, but write data= 0x00f40000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xc6edc28d, but write data= 0xc6000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x201b7b40, but write data= 0x00000040
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x9421bc28, but write data= 0x0000bc00
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x11240f22, but write data= 0x00240000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x9ad11635, but write data= 0x9a000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xacfd4a59, but write data= 0x00000059
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xaca2d059, but write data= 0x0000d000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x50db4ba1, but write data= 0x00db0000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x2b1ad356, but write data= 0x2b000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xb1d72263, but write data= 0x00000063
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x76e6d7ed, but write data= 0x0000d700
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xc4de4489, but write data= 0x00de0000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x326e4164, but write data= 0x32000000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x3a48df74, but write data= 0x00000074
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x3c1cff78, but write data= 0x0000ff00
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x992f3832, but write data= 0x002f0000
+[    122730] top.u_bfm_ahb.memory_test OK: from 00000000 to 000000ff
+top.u_bfm_ahb.memory_test read-all-after-write-all with 1-byte access
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x9c598438, but write data= 0x00000038
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x43593986, but write data= 0x00003900
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xae130c5c, but write data= 0x00130000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x672307ce, but write data= 0x67000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x63cc97c7, but write data= 0x000000c7
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xe3132cc6, but write data= 0x00002c00
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xf9d762f3, but write data= 0x00d70000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x61d767c3, but write data= 0x61000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xaf8f485f, but write data= 0x0000005f
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x23886547, but write data= 0x00006500
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xc4eb2089, but write data= 0x00eb0000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xbf269c7e, but write data= 0xbf000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xa2dc1845, but write data= 0x00000045
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xaeda305d, but write data= 0x00003000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x48d42191, but write data= 0x00d40000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x376dd36e, but write data= 0x37000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xc78b428f, but write data= 0x0000008f
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x1e3c9d3c, but write data= 0x00009d00
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xe4dc02c9, but write data= 0x00dc0000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x718af5e3, but write data= 0x71000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xee4ec2dc, but write data= 0x000000dc
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x9602722c, but write data= 0x00007200
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xafac205f, but write data= 0x00ac0000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x88c8b011, but write data= 0x88000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x68ae55d1, but write data= 0x000000d1
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x00693f00, but write data= 0x00003f00
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xe8a994d1, but write data= 0x00a90000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x7f8a71ff, but write data= 0x7f000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x98c37231, but write data= 0x00000031
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xb3254c66, but write data= 0x00004c00
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xa5113c4a, but write data= 0x00110000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x4ab86395, but write data= 0x4a000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x92b55c25, but write data= 0x00000025
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x0badab17, but write data= 0x0000ab00
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xd4d3b6a9, but write data= 0x00d30000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xe1eb6ec3, but write data= 0xe1000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x4bf50b97, but write data= 0x00000097
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x4e48239c, but write data= 0x00002300
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x7b315bf6, but write data= 0x00310000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x80594600, but write data= 0x80000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x94393c28, but write data= 0x00000028
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xd3d542a7, but write data= 0x00004200
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xb716466e, but write data= 0x00160000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x02805105, but write data= 0x02000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xd43a6aa8, but write data= 0x000000a8
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x525c55a4, but write data= 0x00005500
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xf73654ee, but write data= 0x00360000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x0c93bd19, but write data= 0x0c000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x4e2ed39c, but write data= 0x0000009c
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xcc576498, but write data= 0x00006400
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x75e925eb, but write data= 0x00e90000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x65a777cb, but write data= 0x65000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x5c0671b8, but write data= 0x000000b8
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x72bf41e5, but write data= 0x00004100
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xd8c610b1, but write data= 0x00c60000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xb39c2667, but write data= 0xb3000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xe766fece, but write data= 0x000000ce
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x85d7720b, but write data= 0x00007200
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x90003220, but write data= 0x00000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x83cb3c07, but write data= 0x83000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x1767fd2e, but write data= 0x0000002e
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x00ba4901, but write data= 0x00004900
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x518269a3, but write data= 0x00820000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x4c72e598, but write data= 0x4c000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xf00ea2e0, but write data= 0x000000e0
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x9ba4cc37, but write data= 0x0000cc00
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xcbcb5097, but write data= 0x00cb0000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xd2e208a5, but write data= 0xd2000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x5f89f1bf, but write data= 0x000000bf
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x7102cbe2, but write data= 0x0000cb00
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x6c8943d9, but write data= 0x00890000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x22645544, but write data= 0x22000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xf52e9eea, but write data= 0x000000ea
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x513ad1a2, but write data= 0x0000d100
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xd6f65cad, but write data= 0x00f60000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xffee34ff, but write data= 0xff000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x3e332b7c, but write data= 0x0000007c
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x913a2822, but write data= 0x00002800
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x65f479cb, but write data= 0x00f40000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x8688d60d, but write data= 0x86000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x842bd008, but write data= 0x00000008
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xdfc0debf, but write data= 0x0000de00
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xd5e936ab, but write data= 0x00e90000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x587e27b0, but write data= 0x58000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x69468dd2, but write data= 0x000000d2
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x6d6dc1da, but write data= 0x0000c100
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xf259f0e4, but write data= 0x00590000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x9144cc22, but write data= 0x91000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x9e471a3c, but write data= 0x0000003c
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x738a59e7, but write data= 0x00005900
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xe347c0c6, but write data= 0x00470000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x642c3bc8, but write data= 0x64000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xae42f45c, but write data= 0x0000005c
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xe596f4cb, but write data= 0x0000f400
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x764b85ec, but write data= 0x004b0000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x13c89727, but write data= 0x13000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x9c1d5a38, but write data= 0x00000038
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xd9969cb3, but write data= 0x00009c00
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x7f71d9fe, but write data= 0x00710000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xae1ed05c, but write data= 0xae000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xcdc3449b, but write data= 0x0000009b
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xf31b22e6, but write data= 0x00002200
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x2dd71b5b, but write data= 0x00d70000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xb9909273, but write data= 0xb9000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x81277002, but write data= 0x00000002
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xdd110cba, but write data= 0x00000c00
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xf00360e0, but write data= 0x00030000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xbe884a7d, but write data= 0xbe000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xc6fe5c8d, but write data= 0x0000008d
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x9e4baa3c, but write data= 0x0000aa00
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x44068d88, but write data= 0x00060000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x59e523b3, but write data= 0x59000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xbf3a407e, but write data= 0x0000007e
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x54d109a9, but write data= 0x00000900
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x8f54381e, but write data= 0x00540000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x44270788, but write data= 0x44000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x93471826, but write data= 0x00000026
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xa3e5f047, but write data= 0x0000f000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xda5fc0b4, but write data= 0x005f0000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x795aa5f2, but write data= 0x79000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x6a06a5d4, but write data= 0x000000d4
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xe0d9eec1, but write data= 0x0000ee00
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x0bf83f17, but write data= 0x00f80000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x6dc567db, but write data= 0x6d000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x518c5fa3, but write data= 0x000000a3
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xca934e95, but write data= 0x00004e00
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x00649100, but write data= 0x00640000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xfb5178f6, but write data= 0xfb000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xda9980b5, but write data= 0x000000b5
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x57db1faf, but write data= 0x00001f00
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x983f5230, but write data= 0x003f0000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x73b9c9e7, but write data= 0x73000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xe1d90ac3, but write data= 0x000000c3
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xe86928d0, but write data= 0x00002800
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x9b12e036, but write data= 0x00120000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x03760106, but write data= 0x03000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xc2dbb485, but write data= 0x00000085
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xe4affac9, but write data= 0x0000fa00
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x09b55713, but write data= 0x00b50000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x51668fa2, but write data= 0x51000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xf0d3fce1, but write data= 0x000000e1
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x9868de30, but write data= 0x0000de00
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x3c649178, but write data= 0x00640000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x07409d0e, but write data= 0x07000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xb1121e62, but write data= 0x00000062
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xd3dfe0a7, but write data= 0x0000e000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xe8a22ad1, but write data= 0x00a20000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xaeba165d, but write data= 0xae000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x734017e6, but write data= 0x000000e6
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x9fffce3f, but write data= 0x0000ce00
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xeacf7ed5, but write data= 0x00cf0000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x0f75ab1e, but write data= 0x0f000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x035da106, but write data= 0x00000006
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x111e3322, but write data= 0x00003300
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x6f89addf, but write data= 0x00890000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xf9aec2f3, but write data= 0xf9000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x917c3622, but write data= 0x00000022
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x04875b09, but write data= 0x00005b00
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xd8c58cb1, but write data= 0x00c50000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x29a58b53, but write data= 0x29000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x4b3b1996, but write data= 0x00000096
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x54ca51a9, but write data= 0x00005100
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x7aabbdf5, but write data= 0x00ab0000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xafcaf05f, but write data= 0xaf000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x03033f06, but write data= 0x00000006
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xd0c4e0a1, but write data= 0x0000e000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x0c349918, but write data= 0x00340000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x09ac9f13, but write data= 0x09000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x21036742, but write data= 0x00000042
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x016f9902, but write data= 0x00009900
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x67843dcf, but write data= 0x00840000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xd7a102af, but write data= 0xd7000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xd9ec0cb3, but write data= 0x000000b3
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x8a69c214, but write data= 0x0000c200
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xf60684ec, but write data= 0x00060000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xdb3346b6, but write data= 0xdb000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x676b6dce, but write data= 0x000000ce
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xb1456a62, but write data= 0x00006a00
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xe44b0cc8, but write data= 0x004b0000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xaa4f5654, but write data= 0xaa000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xbe69827c, but write data= 0x0000007c
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x57935faf, but write data= 0x00005f00
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xf9a12ef3, but write data= 0x00a10000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x432de186, but write data= 0x43000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xff040afe, but write data= 0x000000fe
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x73af29e7, but write data= 0x00002900
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xaf740a5e, but write data= 0x00740000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x6d004fda, but write data= 0x6d000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x9a4a8034, but write data= 0x00000034
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xd44b16a8, but write data= 0x00001600
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xe46678c8, but write data= 0x00660000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x915cce22, but write data= 0x91000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xe9ba1ed3, but write data= 0x000000d3
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xbabc3275, but write data= 0x00003200
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x472f178e, but write data= 0x002f0000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x7a6a49f4, but write data= 0x7a000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xb479e268, but write data= 0x00000068
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x98064830, but write data= 0x00004800
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x553441aa, but write data= 0x00340000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x21cc6f43, but write data= 0x21000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xde568abc, but write data= 0x000000bc
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xf8a7e4f1, but write data= 0x0000e400
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x88e81211, but write data= 0x00e80000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x7c4fa7f8, but write data= 0x7c000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x3c7e8f78, but write data= 0x00000078
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x6b2655d6, but write data= 0x00005500
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x13e46927, but write data= 0x00e40000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xee5520dc, but write data= 0xee000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x4bfe2d97, but write data= 0x00000097
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xed59a4da, but write data= 0x0000a400
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x40c6df81, but write data= 0x00c60000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xd4fec6a9, but write data= 0xd4000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x45fb618b, but write data= 0x0000008b
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x2c789f58, but write data= 0x00009f00
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x58cccfb1, but write data= 0x00cc0000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x501b47a0, but write data= 0x50000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xcdb1e49b, but write data= 0x0000009b
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xa3e4ce47, but write data= 0x0000ce00
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xa92f5852, but write data= 0x002f0000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x38d20b71, but write data= 0x38000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x342f3968, but write data= 0x00000068
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x66b681cd, but write data= 0x00008100
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x043f5508, but write data= 0x003f0000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xf10f40e2, but write data= 0xf1000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x0dce971b, but write data= 0x0000001b
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x2008c340, but write data= 0x0000c300
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xda4160b4, but write data= 0x00410000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x77afd3ef, but write data= 0x77000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x9574f82a, but write data= 0x0000002a
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x96055e2c, but write data= 0x00005e00
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xc609d88c, but write data= 0x00090000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xed6d6cda, but write data= 0xed000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x198d1d33, but write data= 0x00000033
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xbbb0e277, but write data= 0x0000e200
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x2958d952, but write data= 0x00580000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x768a7bed, but write data= 0x76000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x6ec37fdd, but write data= 0x000000dd
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x1d76993a, but write data= 0x00009900
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x34f63d69, but write data= 0x00f60000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x253e2b4a, but write data= 0x25000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x24825b49, but write data= 0x00000049
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x34748f68, but write data= 0x00008f00
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x788da1f1, but write data= 0x008d0000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x58e069b1, but write data= 0x58000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xf72dacee, but write data= 0x000000ee
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xec878cd9, but write data= 0x00008c00
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xd64a5eac, but write data= 0x004a0000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xbdd5dc7b, but write data= 0xbd000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xbc1f3078, but write data= 0x00000078
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x691723d2, but write data= 0x00002300
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x763397ec, but write data= 0x00330000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xda3bf6b4, but write data= 0xda000000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xc3626086, but write data= 0x00000086
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xd4a19ca9, but write data= 0x00009c00
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x1548212a, but write data= 0x00480000
+[    245130] top.u_bfm_ahb.memory_test OK: from 00000000 to 000000ff
+[    245130], top.u_bfm_ahb.memory_test: read-after-write test with 2-byte access
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x466c4b8c, but write data= 0x00004b8c
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x2d57715a, but write data= 0x2d570000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x2e6dfb5c, but write data= 0x0000fb5c
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xbd82ea7b, but write data= 0xbd820000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x4fc5f39f, but write data= 0x0000f39f
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xdebaaebd, but write data= 0xdeba0000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x8270a604, but write data= 0x0000a604
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xd1d788a3, but write data= 0xd1d70000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x81de9003, but write data= 0x00009003
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xdb5f10b6, but write data= 0xdb5f0000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x8d3b801a, but write data= 0x0000801a
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x9c8b8839, but write data= 0x9c8b0000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xf91d02f2, but write data= 0x000002f2
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xf6cec2ed, but write data= 0xf6ce0000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xe4afc2c9, but write data= 0x0000c2c9
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xcf07f89e, but write data= 0xcf070000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x283be550, but write data= 0x0000e550
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x2664b34c, but write data= 0x26640000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x8c986c19, but write data= 0x00006c19
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xbda4a27b, but write data= 0xbda40000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xdae592b5, but write data= 0x000092b5
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x84388a08, but write data= 0x84380000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x49a63793, but write data= 0x00003793
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x9f74143e, but write data= 0x9f740000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xa8102850, but write data= 0x00002850
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x8ecab81d, but write data= 0x8eca0000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x5a2b9fb4, but write data= 0x00009fb4
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x08cf9911, but write data= 0x08cf0000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x30198360, but write data= 0x00008360
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x517067a2, but write data= 0x51700000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x5098e1a1, but write data= 0x0000e1a1
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x2ca33b59, but write data= 0x2ca30000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x42a33d85, but write data= 0x00003d85
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xe17f80c2, but write data= 0xe17f0000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x8bb7f817, but write data= 0x0000f817
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x3079c960, but write data= 0x30790000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xc82eb090, but write data= 0x0000b090
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x5c3ab5b8, but write data= 0x5c3a0000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x88a8a211, but write data= 0x0000a211
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x9f48cc3e, but write data= 0x9f480000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x0b78ff16, but write data= 0x0000ff16
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x517d6da2, but write data= 0x517d0000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x0a9c5915, but write data= 0x00005915
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xc6fc948d, but write data= 0xc6fc0000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xbe96fe7d, but write data= 0x0000fe7d
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x4727d58e, but write data= 0x47270000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xd4525aa8, but write data= 0x00005aa8
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x8cc42a19, but write data= 0x8cc40000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xd7d14eaf, but write data= 0x00004eaf
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xc14ada82, but write data= 0xc14a0000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x6f53a1de, but write data= 0x0000a1de
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x041d5b08, but write data= 0x041d0000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x22404b44, but write data= 0x00004b44
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xfb1428f6, but write data= 0xfb140000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x3ceee979, but write data= 0x0000e979
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xd4a0b2a9, but write data= 0xd4a00000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x1e280f3c, but write data= 0x00000f3c
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x3c7a2d78, but write data= 0x3c7a0000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xccf4ae99, but write data= 0x0000ae99
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x3a8d7d75, but write data= 0x3a8d0000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x8d14761a, but write data= 0x0000761a
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x78a811f1, but write data= 0x78a80000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x36332f6c, but write data= 0x00002f6c
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x2e15c55c, but write data= 0x2e150000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xc5b51e8b, but write data= 0x00001e8b
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xa129c042, but write data= 0xa1290000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xecb264d9, but write data= 0x000064d9
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xfd6a58fa, but write data= 0xfd6a0000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xab796056, but write data= 0x00006056
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xd9d7eab3, but write data= 0xd9d70000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x51b00da3, but write data= 0x00000da3
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x6586c3cb, but write data= 0x65860000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xe5ec5ccb, but write data= 0x00005ccb
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x7983f9f3, but write data= 0x79830000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xf95ba2f2, but write data= 0x0000a2f2
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xf5bd50eb, but write data= 0xf5bd0000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xb3d0ea67, but write data= 0x0000ea67
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x83641806, but write data= 0x83640000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x625261c4, but write data= 0x000061c4
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x4a030d94, but write data= 0x4a030000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x75fda9eb, but write data= 0x0000a9eb
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x053f330a, but write data= 0x053f0000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x9adb4435, but write data= 0x00004435
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x67fbc3cf, but write data= 0x67fb0000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xcdf8f29b, but write data= 0x0000f29b
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x8658f80c, but write data= 0x86580000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x0fe30d1f, but write data= 0x00000d1f
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x4ac5ff95, but write data= 0x4ac50000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xec54e4d8, but write data= 0x0000e4d8
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x731dd1e6, but write data= 0x731d0000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x81b83003, but write data= 0x00003003
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x69870fd3, but write data= 0x69870000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x6acb5bd5, but write data= 0x00005bd5
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x318eeb63, but write data= 0x318e0000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xda86eeb5, but write data= 0x0000eeb5
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xc4b6fe89, but write data= 0xc4b60000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xce19f09c, but write data= 0x0000f09c
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x4a6e3194, but write data= 0x4a6e0000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x629543c5, but write data= 0x000043c5
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xc62c988c, but write data= 0xc62c0000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x8b9e0017, but write data= 0x00000017
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xd32a50a6, but write data= 0xd32a0000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x8e3ee61c, but write data= 0x0000e61c
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xffe968ff, but write data= 0xffe90000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x2eb0ab5d, but write data= 0x0000ab5d
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x048ab509, but write data= 0x048a0000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x61b15bc3, but write data= 0x00005bc3
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x95a5ba2b, but write data= 0x95a50000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xf9c2c6f3, but write data= 0x0000c6f3
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xaa1b8a54, but write data= 0xaa1b0000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x2667d94c, but write data= 0x0000d94c
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xdd1c9cba, but write data= 0xdd1c0000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x1f38f33e, but write data= 0x0000f33e
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xd659bcac, but write data= 0xd6590000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xee675adc, but write data= 0x00005adc
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x8117d802, but write data= 0x81170000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x6e078bdc, but write data= 0x00008bdc
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x079ef70f, but write data= 0x079e0000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x213a9f42, but write data= 0x00009f42
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x333bfd66, but write data= 0x333b0000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x0e0eab1c, but write data= 0x0000ab1c
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xa9cda453, but write data= 0xa9cd0000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x0eae211d, but write data= 0x0000211d
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xb8945271, but write data= 0xb8940000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xa8362e50, but write data= 0x00002e50
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xa0bcf441, but write data= 0xa0bc0000
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x434c1d86, but write data= 0x00001d86
+[    306090] top.u_bfm_ahb.memory_test OK: from 00000000 to 000000ff
+top.u_bfm_ahb.memory_test read-all-after-write-all with 2-byte access
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x9c598438, but write data= 0x00008438
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x43593986, but write data= 0x43590000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xae130c5c, but write data= 0x00000c5c
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x672307ce, but write data= 0x67230000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x63cc97c7, but write data= 0x000097c7
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xe3132cc6, but write data= 0xe3130000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xf9d762f3, but write data= 0x000062f3
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x61d767c3, but write data= 0x61d70000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xaf8f485f, but write data= 0x0000485f
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x23886547, but write data= 0x23880000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xc4eb2089, but write data= 0x00002089
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xbf269c7e, but write data= 0xbf260000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xa2dc1845, but write data= 0x00001845
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xaeda305d, but write data= 0xaeda0000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x48d42191, but write data= 0x00002191
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x376dd36e, but write data= 0x376d0000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xc78b428f, but write data= 0x0000428f
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x1e3c9d3c, but write data= 0x1e3c0000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xe4dc02c9, but write data= 0x000002c9
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x718af5e3, but write data= 0x718a0000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xee4ec2dc, but write data= 0x0000c2dc
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x9602722c, but write data= 0x96020000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xafac205f, but write data= 0x0000205f
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x88c8b011, but write data= 0x88c80000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x68ae55d1, but write data= 0x000055d1
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x00693f00, but write data= 0x00690000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xe8a994d1, but write data= 0x000094d1
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x7f8a71ff, but write data= 0x7f8a0000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x98c37231, but write data= 0x00007231
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xb3254c66, but write data= 0xb3250000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xa5113c4a, but write data= 0x00003c4a
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x4ab86395, but write data= 0x4ab80000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x92b55c25, but write data= 0x00005c25
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x0badab17, but write data= 0x0bad0000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xd4d3b6a9, but write data= 0x0000b6a9
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xe1eb6ec3, but write data= 0xe1eb0000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x4bf50b97, but write data= 0x00000b97
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x4e48239c, but write data= 0x4e480000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x7b315bf6, but write data= 0x00005bf6
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x80594600, but write data= 0x80590000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x94393c28, but write data= 0x00003c28
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xd3d542a7, but write data= 0xd3d50000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xb716466e, but write data= 0x0000466e
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x02805105, but write data= 0x02800000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xd43a6aa8, but write data= 0x00006aa8
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x525c55a4, but write data= 0x525c0000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xf73654ee, but write data= 0x000054ee
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x0c93bd19, but write data= 0x0c930000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x4e2ed39c, but write data= 0x0000d39c
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xcc576498, but write data= 0xcc570000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x75e925eb, but write data= 0x000025eb
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x65a777cb, but write data= 0x65a70000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x5c0671b8, but write data= 0x000071b8
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x72bf41e5, but write data= 0x72bf0000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xd8c610b1, but write data= 0x000010b1
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xb39c2667, but write data= 0xb39c0000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xe766fece, but write data= 0x0000fece
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x85d7720b, but write data= 0x85d70000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x90003220, but write data= 0x00003220
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x83cb3c07, but write data= 0x83cb0000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x1767fd2e, but write data= 0x0000fd2e
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x00ba4901, but write data= 0x00ba0000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x518269a3, but write data= 0x000069a3
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x4c72e598, but write data= 0x4c720000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xf00ea2e0, but write data= 0x0000a2e0
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x9ba4cc37, but write data= 0x9ba40000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xcbcb5097, but write data= 0x00005097
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xd2e208a5, but write data= 0xd2e20000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x5f89f1bf, but write data= 0x0000f1bf
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x7102cbe2, but write data= 0x71020000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x6c8943d9, but write data= 0x000043d9
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x22645544, but write data= 0x22640000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xf52e9eea, but write data= 0x00009eea
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x513ad1a2, but write data= 0x513a0000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xd6f65cad, but write data= 0x00005cad
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xffee34ff, but write data= 0xffee0000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x3e332b7c, but write data= 0x00002b7c
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x913a2822, but write data= 0x913a0000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x65f479cb, but write data= 0x000079cb
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x8688d60d, but write data= 0x86880000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x842bd008, but write data= 0x0000d008
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xdfc0debf, but write data= 0xdfc00000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xd5e936ab, but write data= 0x000036ab
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x587e27b0, but write data= 0x587e0000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x69468dd2, but write data= 0x00008dd2
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x6d6dc1da, but write data= 0x6d6d0000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xf259f0e4, but write data= 0x0000f0e4
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x9144cc22, but write data= 0x91440000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x9e471a3c, but write data= 0x00001a3c
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x738a59e7, but write data= 0x738a0000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xe347c0c6, but write data= 0x0000c0c6
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x642c3bc8, but write data= 0x642c0000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xae42f45c, but write data= 0x0000f45c
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xe596f4cb, but write data= 0xe5960000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x764b85ec, but write data= 0x000085ec
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x13c89727, but write data= 0x13c80000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x9c1d5a38, but write data= 0x00005a38
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xd9969cb3, but write data= 0xd9960000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x7f71d9fe, but write data= 0x0000d9fe
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xae1ed05c, but write data= 0xae1e0000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xcdc3449b, but write data= 0x0000449b
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xf31b22e6, but write data= 0xf31b0000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x2dd71b5b, but write data= 0x00001b5b
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xb9909273, but write data= 0xb9900000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x81277002, but write data= 0x00007002
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xdd110cba, but write data= 0xdd110000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xf00360e0, but write data= 0x000060e0
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xbe884a7d, but write data= 0xbe880000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xc6fe5c8d, but write data= 0x00005c8d
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x9e4baa3c, but write data= 0x9e4b0000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x44068d88, but write data= 0x00008d88
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x59e523b3, but write data= 0x59e50000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xbf3a407e, but write data= 0x0000407e
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x54d109a9, but write data= 0x54d10000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x8f54381e, but write data= 0x0000381e
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x44270788, but write data= 0x44270000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x93471826, but write data= 0x00001826
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xa3e5f047, but write data= 0xa3e50000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xda5fc0b4, but write data= 0x0000c0b4
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x795aa5f2, but write data= 0x795a0000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x6a06a5d4, but write data= 0x0000a5d4
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xe0d9eec1, but write data= 0xe0d90000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x0bf83f17, but write data= 0x00003f17
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x6dc567db, but write data= 0x6dc50000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x518c5fa3, but write data= 0x00005fa3
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xca934e95, but write data= 0xca930000
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x00649100, but write data= 0x00009100
+[    367050] top.u_bfm_ahb.memory_test OK: from 00000000 to 000000ff
+[    367050], top.u_bfm_ahb.memory_test: read-after-write test with 4-byte access
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x466c4b8c, but write data= 0x466c4b8c
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x2d57715a, but write data= 0x2d57715a
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x2e6dfb5c, but write data= 0x2e6dfb5c
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xbd82ea7b, but write data= 0xbd82ea7b
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x4fc5f39f, but write data= 0x4fc5f39f
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xdebaaebd, but write data= 0xdebaaebd
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x8270a604, but write data= 0x8270a604
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xd1d788a3, but write data= 0xd1d788a3
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x81de9003, but write data= 0x81de9003
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xdb5f10b6, but write data= 0xdb5f10b6
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x8d3b801a, but write data= 0x8d3b801a
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x9c8b8839, but write data= 0x9c8b8839
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xf91d02f2, but write data= 0xf91d02f2
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xf6cec2ed, but write data= 0xf6cec2ed
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xe4afc2c9, but write data= 0xe4afc2c9
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xcf07f89e, but write data= 0xcf07f89e
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x283be550, but write data= 0x283be550
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x2664b34c, but write data= 0x2664b34c
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x8c986c19, but write data= 0x8c986c19
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xbda4a27b, but write data= 0xbda4a27b
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xdae592b5, but write data= 0xdae592b5
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x84388a08, but write data= 0x84388a08
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x49a63793, but write data= 0x49a63793
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x9f74143e, but write data= 0x9f74143e
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xa8102850, but write data= 0xa8102850
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x8ecab81d, but write data= 0x8ecab81d
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x5a2b9fb4, but write data= 0x5a2b9fb4
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x08cf9911, but write data= 0x08cf9911
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x30198360, but write data= 0x30198360
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x517067a2, but write data= 0x517067a2
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x5098e1a1, but write data= 0x5098e1a1
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x2ca33b59, but write data= 0x2ca33b59
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x42a33d85, but write data= 0x42a33d85
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xe17f80c2, but write data= 0xe17f80c2
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x8bb7f817, but write data= 0x8bb7f817
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x3079c960, but write data= 0x3079c960
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xc82eb090, but write data= 0xc82eb090
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x5c3ab5b8, but write data= 0x5c3ab5b8
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x88a8a211, but write data= 0x88a8a211
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x9f48cc3e, but write data= 0x9f48cc3e
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x0b78ff16, but write data= 0x0b78ff16
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x517d6da2, but write data= 0x517d6da2
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x0a9c5915, but write data= 0x0a9c5915
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xc6fc948d, but write data= 0xc6fc948d
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xbe96fe7d, but write data= 0xbe96fe7d
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x4727d58e, but write data= 0x4727d58e
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xd4525aa8, but write data= 0xd4525aa8
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x8cc42a19, but write data= 0x8cc42a19
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xd7d14eaf, but write data= 0xd7d14eaf
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xc14ada82, but write data= 0xc14ada82
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x6f53a1de, but write data= 0x6f53a1de
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x041d5b08, but write data= 0x041d5b08
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x22404b44, but write data= 0x22404b44
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xfb1428f6, but write data= 0xfb1428f6
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x3ceee979, but write data= 0x3ceee979
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xd4a0b2a9, but write data= 0xd4a0b2a9
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x1e280f3c, but write data= 0x1e280f3c
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x3c7a2d78, but write data= 0x3c7a2d78
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0xccf4ae99, but write data= 0xccf4ae99
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x3a8d7d75, but write data= 0x3a8d7d75
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x8d14761a, but write data= 0x8d14761a
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x78a811f1, but write data= 0x78a811f1
+top.u_bfm_ahb.memory_test:in read-after-write, gen= 0x36332f6c, but write data= 0x36332f6c
+[    397290] top.u_bfm_ahb.memory_test OK: from 00000000 to 000000ff
+top.u_bfm_ahb.memory_test read-all-after-write-all with 4-byte access
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x9c598438, but write data= 0x9c598438
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x43593986, but write data= 0x43593986
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xae130c5c, but write data= 0xae130c5c
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x672307ce, but write data= 0x672307ce
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x63cc97c7, but write data= 0x63cc97c7
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xe3132cc6, but write data= 0xe3132cc6
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xf9d762f3, but write data= 0xf9d762f3
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x61d767c3, but write data= 0x61d767c3
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xaf8f485f, but write data= 0xaf8f485f
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x23886547, but write data= 0x23886547
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xc4eb2089, but write data= 0xc4eb2089
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xbf269c7e, but write data= 0xbf269c7e
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xa2dc1845, but write data= 0xa2dc1845
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xaeda305d, but write data= 0xaeda305d
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x48d42191, but write data= 0x48d42191
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x376dd36e, but write data= 0x376dd36e
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xc78b428f, but write data= 0xc78b428f
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x1e3c9d3c, but write data= 0x1e3c9d3c
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xe4dc02c9, but write data= 0xe4dc02c9
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x718af5e3, but write data= 0x718af5e3
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xee4ec2dc, but write data= 0xee4ec2dc
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x9602722c, but write data= 0x9602722c
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xafac205f, but write data= 0xafac205f
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x88c8b011, but write data= 0x88c8b011
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x68ae55d1, but write data= 0x68ae55d1
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x00693f00, but write data= 0x00693f00
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xe8a994d1, but write data= 0xe8a994d1
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x7f8a71ff, but write data= 0x7f8a71ff
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x98c37231, but write data= 0x98c37231
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xb3254c66, but write data= 0xb3254c66
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xa5113c4a, but write data= 0xa5113c4a
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x4ab86395, but write data= 0x4ab86395
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x92b55c25, but write data= 0x92b55c25
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x0badab17, but write data= 0x0badab17
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xd4d3b6a9, but write data= 0xd4d3b6a9
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xe1eb6ec3, but write data= 0xe1eb6ec3
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x4bf50b97, but write data= 0x4bf50b97
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x4e48239c, but write data= 0x4e48239c
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x7b315bf6, but write data= 0x7b315bf6
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x80594600, but write data= 0x80594600
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x94393c28, but write data= 0x94393c28
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xd3d542a7, but write data= 0xd3d542a7
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xb716466e, but write data= 0xb716466e
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x02805105, but write data= 0x02805105
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xd43a6aa8, but write data= 0xd43a6aa8
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x525c55a4, but write data= 0x525c55a4
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xf73654ee, but write data= 0xf73654ee
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x0c93bd19, but write data= 0x0c93bd19
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x4e2ed39c, but write data= 0x4e2ed39c
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xcc576498, but write data= 0xcc576498
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x75e925eb, but write data= 0x75e925eb
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x65a777cb, but write data= 0x65a777cb
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x5c0671b8, but write data= 0x5c0671b8
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x72bf41e5, but write data= 0x72bf41e5
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xd8c610b1, but write data= 0xd8c610b1
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xb39c2667, but write data= 0xb39c2667
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0xe766fece, but write data= 0xe766fece
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x85d7720b, but write data= 0x85d7720b
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x90003220, but write data= 0x90003220
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x83cb3c07, but write data= 0x83cb3c07
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x1767fd2e, but write data= 0x1767fd2e
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x00ba4901, but write data= 0x00ba4901
+top.u_bfm_ahb.memory_test:in read-all-after-write-all, gen= 0x518269a3, but write data= 0x518269a3
+[    427530] top.u_bfm_ahb.memory_test OK: from 00000000 to 000000ff
+[    427630], top.u_bfm_ahb.memory_test_burst: read-all-after-write-all burst test with   1-beat access
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xca5c4a94
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x05387f0a
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x89eb8613
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xec00ecd8
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xf4a820e9
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x93677826
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xc226a484
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x11d9bd23
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x14921729
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xf8929ef1
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x1d57593a
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x44b63789
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x7ad787f5
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xd6089eac
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x72395de4
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xbd77e67a
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xb4319068
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x5e70e3bc
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x3d5a317a
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xe4b718c9
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x8a710c14
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xa537984a
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xb6950e6d
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xd30edaa6
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x9d5a983a
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x32b9ab65
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xb44ef068
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x5428f7a8
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x6f4291de
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x0930c512
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x98729430
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x7889fbf1
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x81691002
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x065f530c
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x432c7786
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x821d3004
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xdc15f4b8
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x4dfc839b
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xc766d28e
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xb780a66f
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x1e74d93c
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x28e04151
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x5d05a5ba
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x6a1125d4
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xf23116e4
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x84ef3409
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xcce2a899
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x3ab63b75
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x7ed1cffd
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x01c6cf03
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x528959a5
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x696e35d2
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x38d5d971
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x36293b6c
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xafb2f45f
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xbb9a1c77
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x288fd351
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x9a296234
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xed8274db
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x4509bf8a
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x84c21809
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x4216f384
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x0780990f
+top.u_bfm_ahb.memory_test_burst   1-length burst read-after-write OK: from 00000000h to 000000ffh
+[    469910], top.u_bfm_ahb.memory_test_burst: read-all-after-write-all burst test with   2-beat access
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xca5c4a94
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x05387f0a
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x89eb8613
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xec00ecd8
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xf4a820e9
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x93677826
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xc226a484
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x11d9bd23
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x14921729
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xf8929ef1
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x1d57593a
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x44b63789
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x7ad787f5
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xd6089eac
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x72395de4
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xbd77e67a
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xb4319068
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x5e70e3bc
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x3d5a317a
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xe4b718c9
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x8a710c14
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xa537984a
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xb6950e6d
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xd30edaa6
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x9d5a983a
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x32b9ab65
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xb44ef068
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x5428f7a8
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x6f4291de
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x0930c512
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x98729430
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x7889fbf1
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x81691002
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x065f530c
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x432c7786
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x821d3004
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xdc15f4b8
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x4dfc839b
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xc766d28e
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xb780a66f
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x1e74d93c
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x28e04151
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x5d05a5ba
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x6a1125d4
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xf23116e4
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x84ef3409
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xcce2a899
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x3ab63b75
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x7ed1cffd
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x01c6cf03
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x528959a5
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x696e35d2
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x38d5d971
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x36293b6c
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xafb2f45f
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xbb9a1c77
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x288fd351
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x9a296234
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xed8274db
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x4509bf8a
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x84c21809
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x4216f384
+top.u_bfm_ahb.memory_test_burst   2-length burst read-after-write OK: from 00000000h to 000000ffh
+[    501030], top.u_bfm_ahb.memory_test_burst: read-all-after-write-all burst test with   4-beat access
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xca5c4a94
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x05387f0a
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x89eb8613
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xec00ecd8
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xf4a820e9
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x93677826
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xc226a484
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x11d9bd23
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x14921729
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xf8929ef1
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x1d57593a
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x44b63789
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x7ad787f5
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xd6089eac
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x72395de4
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xbd77e67a
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xb4319068
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x5e70e3bc
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x3d5a317a
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xe4b718c9
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x8a710c14
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xa537984a
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xb6950e6d
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xd30edaa6
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x9d5a983a
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x32b9ab65
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xb44ef068
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x5428f7a8
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x6f4291de
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x0930c512
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x98729430
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x7889fbf1
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x81691002
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x065f530c
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x432c7786
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x821d3004
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xdc15f4b8
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x4dfc839b
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xc766d28e
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xb780a66f
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x1e74d93c
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x28e04151
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x5d05a5ba
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x6a1125d4
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xf23116e4
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x84ef3409
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xcce2a899
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x3ab63b75
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x7ed1cffd
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x01c6cf03
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x528959a5
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x696e35d2
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x38d5d971
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x36293b6c
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xafb2f45f
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xbb9a1c77
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x288fd351
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x9a296234
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xed8274db
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x4509bf8a
+top.u_bfm_ahb.memory_test_burst   4-length burst read-after-write OK: from 00000000h to 000000ffh
+[    514850], top.u_bfm_ahb.memory_test_burst: read-all-after-write-all burst test with   8-beat access
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xca5c4a94
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x05387f0a
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x89eb8613
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xec00ecd8
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xf4a820e9
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x93677826
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xc226a484
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x11d9bd23
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x14921729
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xf8929ef1
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x1d57593a
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x44b63789
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x7ad787f5
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xd6089eac
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x72395de4
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xbd77e67a
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xb4319068
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x5e70e3bc
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x3d5a317a
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xe4b718c9
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x8a710c14
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xa537984a
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xb6950e6d
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xd30edaa6
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x9d5a983a
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x32b9ab65
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xb44ef068
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x5428f7a8
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x6f4291de
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x0930c512
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x98729430
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x7889fbf1
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x81691002
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x065f530c
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x432c7786
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x821d3004
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xdc15f4b8
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x4dfc839b
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xc766d28e
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xb780a66f
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x1e74d93c
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x28e04151
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x5d05a5ba
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x6a1125d4
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xf23116e4
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x84ef3409
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xcce2a899
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x3ab63b75
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x7ed1cffd
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x01c6cf03
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x528959a5
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x696e35d2
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x38d5d971
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x36293b6c
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xafb2f45f
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xbb9a1c77
+top.u_bfm_ahb.memory_test_burst   8-length burst read-after-write OK: from 00000000h to 000000ffh
+[    524110], top.u_bfm_ahb.memory_test_burst: read-all-after-write-all burst test with  16-beat access
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xca5c4a94
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x05387f0a
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x89eb8613
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xec00ecd8
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xf4a820e9
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x93677826
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xc226a484
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x11d9bd23
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x14921729
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xf8929ef1
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x1d57593a
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x44b63789
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x7ad787f5
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xd6089eac
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x72395de4
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xbd77e67a
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xb4319068
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x5e70e3bc
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x3d5a317a
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xe4b718c9
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x8a710c14
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xa537984a
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xb6950e6d
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xd30edaa6
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x9d5a983a
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x32b9ab65
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xb44ef068
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x5428f7a8
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x6f4291de
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x0930c512
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x98729430
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x7889fbf1
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x81691002
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x065f530c
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x432c7786
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x821d3004
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xdc15f4b8
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x4dfc839b
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xc766d28e
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xb780a66f
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x1e74d93c
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x28e04151
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x5d05a5ba
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x6a1125d4
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xf23116e4
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x84ef3409
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0xcce2a899
+top.u_bfm_ahb.memory_test_burst:in read-all-after-write-all, data_burst = 0x3ab63b75
+top.u_bfm_ahb.memory_test_burst  16-length burst read-after-write OK: from 00000000h to 000000ffh
+$finish called from file "/home/ICer/xilinx_prj/ahb_to_ahb/vcs/srcs/bfm_ahb.v", line 86.
+$finish at simulation time            530870000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 530870000 ps
+CPU Time:      0.400 seconds;       Data structure size:   0.1Mb
+Fri Mar 15 09:01:18 2024

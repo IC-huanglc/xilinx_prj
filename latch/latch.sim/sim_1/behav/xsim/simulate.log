@@ -1,0 +1,4 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+$finish called at time : 21800 ns : File "/home/ICer/xilinx_prj/latch/latch.srcs/sources_1/new/tb_latch.sv" Line 63
+Memory in use : 124796 KB (peak memory: 182328 KB)     CPU usage : 70 ms

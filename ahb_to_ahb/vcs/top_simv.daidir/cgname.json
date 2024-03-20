@@ -1,0 +1,38 @@
+{
+    "top": [
+        "top",
+        "Emx8S",
+        "module",
+        1
+    ],
+    "glbl": [
+        "glbl",
+        "WZg7r",
+        "module",
+        2
+    ],
+    "XIL_DEFAULTLIB.ahb2ahb_fifo": [
+        "XIL_DEFAULTLIB0x2eahb2ahb_fifo",
+        "Bnzc4",
+        "module",
+        3
+    ],
+    "XIL_DEFAULTLIB.mem_ahb": [
+        "XIL_DEFAULTLIB0x2emem_ahb",
+        "i3M17",
+        "module",
+        5
+    ],
+    "XIL_DEFAULTLIB.ahb_lite_s3": [
+        "XIL_DEFAULTLIB0x2eahb_lite_s3",
+        "BUhr4",
+        "module",
+        4
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        6
+    ]
+}

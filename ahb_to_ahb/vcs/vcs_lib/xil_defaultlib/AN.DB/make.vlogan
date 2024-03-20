@@ -1,0 +1,67 @@
+
+VLOGAN	= vlogan
+VLOGAN_OPT	= -full64 +v2k -work xil_defaultlib -full64
+
+all :		_VCSgd_zMQzfb_1.db \
+	_VCSgd_S5eWrb_1.db \
+	_VCSgd_Vxnsrd_1.db \
+	_VCSgd_ylHvtb_1.db \
+	_VCSgd_oTWZPd_1.db \
+	_VCSgd_TYeSie_1.db \
+	_VCSgd_fbgLQe_1.db \
+	_VCSgd_gTde4d_1.db \
+	_VCSgd_3qSKte_1.db \
+	_VCSgd_ZyHoUd_1.db \
+	_VCSgd_racspc_1.db \
+	_VCSgd_nGFE7b_1.db \
+
+
+
+_VCSgd_zMQzfb_1.db :	/home/ICer/xilinx_prj/ahb_to_ahb/vcs/glbl.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/xilinx_prj/ahb_to_ahb/vcs/glbl.v
+
+
+_VCSgd_S5eWrb_1.db :	/home/ICer/xilinx_prj/ahb_to_ahb/vcs/srcs/ahb2ahb.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/xilinx_prj/ahb_to_ahb/vcs/srcs/ahb2ahb.v
+
+
+_VCSgd_Vxnsrd_1.db :	/home/ICer/xilinx_prj/ahb_to_ahb/vcs/srcs/ahb2ahb_fifo.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/xilinx_prj/ahb_to_ahb/vcs/srcs/ahb2ahb_fifo.v
+
+
+_VCSgd_ylHvtb_1.db :	/home/ICer/xilinx_prj/ahb_to_ahb/vcs/srcs/ahb2ahb_master_core.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/xilinx_prj/ahb_to_ahb/vcs/srcs/ahb2ahb_master_core.v
+
+
+_VCSgd_oTWZPd_1.db :	/home/ICer/xilinx_prj/ahb_to_ahb/vcs/srcs/ahb2ahb_slave_core.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/xilinx_prj/ahb_to_ahb/vcs/srcs/ahb2ahb_slave_core.v
+
+
+_VCSgd_TYeSie_1.db :	/home/ICer/xilinx_prj/ahb_to_ahb/vcs/srcs/ahb_decoder_s3.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/xilinx_prj/ahb_to_ahb/vcs/srcs/ahb_decoder_s3.v
+
+
+_VCSgd_fbgLQe_1.db :	/home/ICer/xilinx_prj/ahb_to_ahb/vcs/srcs/ahb_default_slave.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/xilinx_prj/ahb_to_ahb/vcs/srcs/ahb_default_slave.v
+
+
+_VCSgd_gTde4d_1.db :	/home/ICer/xilinx_prj/ahb_to_ahb/vcs/srcs/ahb_lite_s3.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/xilinx_prj/ahb_to_ahb/vcs/srcs/ahb_lite_s3.v
+
+
+_VCSgd_3qSKte_1.db :	/home/ICer/xilinx_prj/ahb_to_ahb/vcs/srcs/ahb_s2m_s3.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/xilinx_prj/ahb_to_ahb/vcs/srcs/ahb_s2m_s3.v
+
+
+_VCSgd_ZyHoUd_1.db :	/home/ICer/xilinx_prj/ahb_to_ahb/vcs/srcs/bfm_ahb.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/xilinx_prj/ahb_to_ahb/vcs/srcs/bfm_ahb.v
+
+
+_VCSgd_racspc_1.db :	/home/ICer/xilinx_prj/ahb_to_ahb/vcs/srcs/mem_ahb.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/xilinx_prj/ahb_to_ahb/vcs/srcs/mem_ahb.v
+
+
+_VCSgd_nGFE7b_1.db :	/home/ICer/xilinx_prj/ahb_to_ahb/vcs/srcs/top.v 
+		${VLOGAN}  ${VLOGAN_OPT} /home/ICer/xilinx_prj/ahb_to_ahb/vcs/srcs/top.v
+
+

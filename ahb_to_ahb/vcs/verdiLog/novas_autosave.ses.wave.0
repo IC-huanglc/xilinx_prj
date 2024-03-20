@@ -1,0 +1,171 @@
+Magic 271485
+Revision Verdi_O-2018.09-SP2
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 27 1920 497 211 65
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/home/ICer/xilinx_prj/ahb_to_ahb/vcs/top.vf"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 504282202.712235 504670267.880023
+cursor 504431000.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+userMarker 504311000 "burst, INCR4, read" ID_GREEN5 long_dashed
+userMarker 501030000 "burst, INCR4" ID_GREEN5 long_dashed
+userMarker 469991000 "burst, INCR, 2 beat" ID_GREEN5 long_dashed
+userMarker 427711000 "begin burst, INCR, 1 beat" ID_GREEN5 long_dashed
+userMarker 391000 "1st write 1 byte" ID_GREEN5 long_dashed
+
+; set reference marker 
+; refMarker marker_name
+refMarker burst, INCR4
+
+; visible top row signal index
+top 53
+; marker line index
+markerPos 70
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByValue
+
+
+aliasmapname ahb2ahb_slave_core.state
+nalias STH_ADDR		3'b010		NULL
+nalias STH_READ0		3'b011		NULL
+nalias STH_WRITE0		3'b110		NULL
+nalias STH_WRITE1		3'b111		NULL
+nalias STH_IDLE		3'b000		NULL
+nalias STH_READ1		3'b100		NULL
+nalias STH_WAIT		3'b001		NULL
+nalias STH_READ2		3'b101		NULL
+
+aliasmapname ahb2ahb_master_core.state
+nalias STH_IDLE		4'b0000		NULL
+nalias STH_READ_ARB		4'b0100		NULL
+nalias STH_GET_ADDR0		4'b0001		NULL
+nalias STH_READ0		4'b0101		NULL
+nalias STH_WRITE_ARB		4'b1010		NULL
+nalias STH_WRITE0		4'b1011		NULL
+nalias STH_READ3		4'b1000		NULL
+nalias STH_GET_ADDR1		4'b0010		NULL
+nalias STH_WRITE1		4'b1100		NULL
+nalias STH_READ1		4'b0110		NULL
+nalias STH_READ_WAIT		4'b0011		NULL
+nalias STH_WRITE_WAIT		4'b1001		NULL
+nalias STH_WRITE2		4'b1101		NULL
+nalias STH_READ2		4'b0111		NULL
+
+aliasmapname ahb_default_slave.state
+nalias STH_IDLE		2'b00		NULL
+nalias STH_WRITE		2'b01		NULL
+nalias STH_READ0		2'b10		NULL
+
+aliasmapname mem_ahb.state
+nalias IDLE		1'b0		NULL
+nalias WAIT		1'b1		NULL
+
+addGroup "G1"
+activeDirFile "" "/home/ICer/xilinx_prj/ahb_to_ahb/vcs/top.vf"
+addSignal -h 15 /top/u_ahb2ahb/HCLK
+addSignal -h 15 /top/HRESETn
+addSignal -h 15 -holdScope T_HBUSREQ
+addSignal -h 15 -holdScope T_HGRANT
+addSignal -h 15 -holdScope T_HSEL
+addSignal -h 15 -holdScope T_HADDR[31:0]
+addSignal -h 15 -holdScope T_HTRANS[1:0]
+addSignal -h 15 -holdScope T_HWRITE
+addSignal -h 15 -holdScope T_HSIZE[2:0]
+addSignal -h 15 -holdScope T_HBURST[2:0]
+addSignal -h 15 -holdScope T_HWDATA[31:0]
+addSignal -h 15 -holdScope T_HRDATA[31:0]
+addSignal -h 15 -holdScope T_HRESP[1:0]
+addSignal -h 15 /top/u_ahb2ahb/sHSEL
+addSignal -h 15 -holdScope sHADDR[31:0]
+addSignal -h 15 -holdScope sHTRANS[1:0]
+addSignal -h 15 -holdScope sHWRITE
+addSignal -h 15 -holdScope sHSIZE[2:0]
+addSignal -h 15 -holdScope sHBURST[2:0]
+addSignal -h 15 -holdScope sHWDATA[31:0]
+addSignal -h 15 -holdScope sHRDATA[31:0]
+addSignal -h 15 -holdScope sHRESP[1:0]
+addGroup "G2"
+addSignal -h 15 /top/u_ahb2ahb/HCLK
+addSignal -h 15 /top/u_ahb2ahb/Uslave/HSEL
+addSignal -h 15 -holdScope HREADYin
+addSignal -h 15 -holdScope fwr_rdy
+addSignal -h 15 -holdScope HADDR[31:0]
+addSignal -h 15 -holdScope HWRITE
+addSignal -h 15 -holdScope HTRANS[1:0]
+addSignal -h 15 -holdScope HBURST[2:0]
+addSignal -h 15 -holdScope HSIZE[2:0]
+addSignal -h 15 -holdScope T_ADDR[31:0]
+addSignal -h 15 -holdScope T_WRITE
+addSignal -h 15 -holdScope T_TRANS[1:0]
+addSignal -h 15 -holdScope T_BURST[2:0]
+addSignal -h 15 -holdScope T_SIZE[2:0]
+addSignal -h 15 -holdScope T_LENG[4:0]
+addSignal -h 15 -holdScope HREADYout
+addSignal -h 15 -UNSIGNED -UDEC -holdScope fwr_cnt[5:0]
+aliasname ahb2ahb_slave_core.state
+addSignal -h 15 -UNSIGNED -HEX -holdScope state[2:0]
+addSignal -h 15 -holdScope fwr_vld
+addSignal -h 15 -holdScope fwr_dat[31:0]
+addSignal -h 15 -holdScope counter[4:0]
+addSignal -h 15 -holdScope fwr_vld
+addSignal -h 15 -holdScope T_LENG[4:0]
+addSignal -h 15 -holdScope HTRANS[1:0]
+addSignal -h 15 -holdScope HWDATA[31:0]
+addSignal -h 15 /top/u_ahb2ahb/HCLK
+addSignal -h 15 /top/u_ahb2ahb/Uslave/HADDR[31:0]
+addSignal -h 15 -holdScope HWRITE
+addSignal -h 15 -holdScope HTRANS[1:0]
+addSignal -h 15 -holdScope HBURST[2:0]
+addSignal -h 15 -holdScope HSIZE[2:0]
+addSignal -h 15 -holdScope HREADYin
+addSignal -h 15 -holdScope HADDR[31:0]
+addSignal -h 15 -holdScope T_LENG[4:0]
+addGroup "G3"
+addSignal -h 15 /top/u_ahb2ahb/Uslave/fwr_rdy
+addSignal -h 15 -holdScope fwr_vld
+aliasname ahb2ahb_slave_core.state
+addSignal -h 15 -UNSIGNED -HEX -holdScope state[2:0]
+addSignal -h 15 -holdScope brd_vld
+addSignal -h 15 -UNSIGNED -UDEC -holdScope fwr_cnt[5:0]
+addSignal -h 15 /top/u_ahb2ahb/Ufwd_fifo/rd_cnt[5:0]
+addSignal -h 15 /top/u_ahb2ahb/Ubwd_fifo/fifo_head[5:0]
+addSignal -h 15 -holdScope fifo_tail[5:0]
+addSignal -h 15 /top/u_ahb2ahb/fwd_rd_rdy
+addSignal -h 15 -holdScope fwd_rd_vld
+addSignal -h 15 /top/u_ahb2ahb/Umaster/frd_rdy_gate
+addSignal -h 15 -holdScope frd_rdy_loc
+addGroup "G4"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+

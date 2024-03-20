@@ -1,0 +1,66 @@
+Magic 271485
+Revision Verdi_O-2018.09-SP2
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 27 1920 392 180 65
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/home/ICer/xilinx_prj/latch/vcs/tb_latch.vf"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 18970163.486280 22018000.000000
+cursor 21700000.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 0
+; marker line index
+markerPos 3
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "G1"
+activeDirFile "" "/home/ICer/xilinx_prj/latch/vcs/tb_latch.vf"
+addSignal -h 15 /tb_latch/u_dut/keywe_b[8:0]
+addSignal -h 15 -holdScope keyrd_data[31:0]
+addSignal -h 15 -holdScope keyrd[8:0]
+addSignal -h 15 -holdScope mem[0][31:0]
+addSignal -h 15 -holdScope mem[1][31:0]
+addSignal -h 15 -holdScope mem[2][31:0]
+addSignal -h 15 -holdScope mem[3][31:0]
+addSignal -h 15 -holdScope mem[4][31:0]
+addSignal -h 15 -holdScope mem[5][31:0]
+addSignal -h 15 -holdScope mem[6][31:0]
+addSignal -h 15 -holdScope mem[7][31:0]
+addSignal -h 15 -holdScope mem[8][31:0]
+addGroup "G2"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+

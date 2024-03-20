@@ -2,7 +2,7 @@ Magic 271485
 Revision Verdi_O-2018.09-SP2
 
 ; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
-viewPort 0 27 1914 334 100 65
+viewPort 0 27 1920 392 330 65
 
 ; File list:
 ; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
@@ -16,16 +16,19 @@ signalSpacing 5
 
 ; windowTimeUnit is used for zoom, cursor & marker
 ; waveform viewport range
-zoom 0.000000 234128100.000000
-cursor 0.000000
-marker 0.000000
+zoom 220767967.700374 227874792.346662
+cursor 224611000.000000
+marker 61671000.000000
 
 ; user define markers
 ; userMarker time_pos marker_name color linestyle
+userMarker 61571000 "1byte write all" ID_GREEN5 long_dashed
+userMarker 214091000 "4 beat burst" ID_GREEN5 long_dashed
+
 ; visible top row signal index
-top 0
+top 1
 ; marker line index
-markerPos 1
+markerPos 27
 
 ; event list
 ; addEvent event_name event_expression
@@ -47,7 +50,33 @@ curSTATUS ByChange
 
 addGroup "G1"
 activeDirFile "" "/home/ICer/xilinx_prj/ahb_lite/vcs/top.vf"
-addSignal -h 15 /top/u_ahb_lite/M_HSIZE[2:0]
+addSignal -h 15 /top/HCLK
+addSignal -h 15 -holdScope M_HBUSREQ
+addSignal -h 15 -holdScope M_HGRANT
+addSignal -h 15 -holdScope M_HADDR[31:0]
+addSignal -h 15 -holdScope M_HPROT[3:0]
+addSignal -h 15 -holdScope M_HLOCK
+addSignal -h 15 -holdScope M_HTRANS[1:0]
+addSignal -h 15 -holdScope M_HWRITE
+addSignal -h 15 -holdScope M_HSIZE[2:0]
+addSignal -h 15 -holdScope M_HBURST[2:0]
+addSignal -h 15 -holdScope M_HWDATA[31:0]
+addSignal -h 15 -holdScope M_HREADY
+addSignal -h 15 -holdScope M_HRDATA[31:0]
+addSignal -h 15 -holdScope M_HRESP[1:0]
+addSignal -h 15 -holdScope S_HADDR[31:0]
+addSignal -h 15 -holdScope S_HPROT[3:0]
+addSignal -h 15 -holdScope S_HTRANS[1:0]
+addSignal -h 15 -holdScope S_HWRITE
+addSignal -h 15 -holdScope S_HSIZE[2:0]
+addSignal -h 15 -holdScope S_HBURST[2:0]
+addSignal -h 15 -holdScope S_HWDATA[31:0]
+addSignal -h 15 -holdScope S_HREADY
+addSignal -h 15 -holdScope S_HRDATA[0:2]
+addSignal -h 15 -holdScope S_HRESP[0:2]
+addSignal -h 15 -holdScope S_HREADYout[0:2]
+addSignal -h 15 -holdScope S_HSEL[0:2]
+addSignal -h 15 /top/BM_BLK[0]/u_mem_ahb/HRDATA[31:0]
 addGroup "G2"
 
 ; getSignalForm Scope Hierarchy Status

@@ -1,0 +1,4 @@
+synopsys_sim.setup_0 ./synopsys_sim.setup
+synopsys_sim.setup_1 /home/ICer/xilinx_vcs_lib/synopsys_sim.setup
+synopsys_sim.setup_2 /home/ICer/synopsys_sim.setup
+synopsys_sim.setup_3 /home/synopsys/vcs-mx/O-2018.09-1/bin/synopsys_sim.setup

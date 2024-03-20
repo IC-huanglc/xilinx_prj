@@ -1,0 +1,11 @@
+*design* DebussyLib (btIdent Verdi_O-2018.09-SP2)
+Command arguments:
+    +define+verilog
+    -f file.f
+        /home/ICer/xilinx_prj/latch/vcs/srcs/ram_model.v
+        /home/ICer/xilinx_prj/latch/vcs/srcs/tb_latch.sv
+
+Highest level modules:
+tb_latch
+
+Total	0 error(s),   0 warning(s)
